@@ -7,6 +7,14 @@ import Contact from "./components/Contact";
 import Choose from "./components/Choose";
 import History from "./components/History";
 import Faqs from "./components/Faqs";
+import Recruitment from "./components/Recruitment";
+import Digital from "./components/Digital";
+import It from "./components/It";
+import Casestudies from "./components/Casestudies";
+import Arm from "./components/Arm";
+import Blog from "./components/Blog";
+import Blog2 from "./components/Blog2";
+import Leadership from "./components/Leadership";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "../src/assets/css/vendor/bootstrap.min.css";
@@ -32,6 +40,14 @@ function App() {
           <Route path="/choose" element={<Choose />} />
           <Route path="/history" element={<History />} />
           <Route path="/faqs" element={<Faqs />} />
+          <Route path="/recruit" element={<Recruitment />} />
+          <Route path="/digital" element={<Digital />} />
+          <Route path="/IT" element={<It />} />
+          <Route path="/casestudies" element={<Casestudies />} />
+          <Route path="/ARM" element={<Arm />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blogs" element={<Blog2 />} />
+          <Route path="/leader" element={<Leadership />} />
         </Routes>
         <Footer />
       </Router>
