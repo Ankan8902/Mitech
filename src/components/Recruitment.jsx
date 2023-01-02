@@ -1,4 +1,7 @@
 import React from "react";
+import image from "../assets/images/hero/recruit-1.jpg";
+import image2 from "../assets/images/hero/about-2.jpg";
+import image3 from "../assets/images/hero/logo-1.jpg";
 
 const Recruitment = () => {
   return (
@@ -7,7 +10,8 @@ const Recruitment = () => {
         <div class="site-wrapper-reveal">
           <div
             class="about-banner-wrap banner-space bg-img"
-            data-bg="assets/images/bg/managed-it-services-hero-bg.webp"
+            data-bg={image}
+            style={{ backgroundImage: `url(${image})` }}
           >
             <div class="container">
               <div class="row">
@@ -138,11 +142,7 @@ const Recruitment = () => {
                   <div class="resources-right-box">
                     <div class="resources-right-inner text-center">
                       <div class="resources-images">
-                        <img
-                          class="img-fluid"
-                          src="assets/images/banners/managed-it-services-book-cover.webp"
-                          alt=""
-                        />
+                        <img class="img-fluid" src={image2} alt="" />
                       </div>
                     </div>
                   </div>
@@ -284,11 +284,7 @@ const Recruitment = () => {
                           <div class="testimonial-slider__one wow move-up">
                             <div class="testimonial-slider--info">
                               <div class="testimonial-slider__media">
-                                <img
-                                  src="assets/images/testimonial/mitech-testimonial-avata-02-90x90.webp"
-                                  class="img-fluid"
-                                  alt=""
-                                />
+                                <img src={image3} class="img-fluid" alt="" />
                               </div>
 
                               <div class="testimonial-slider__author">

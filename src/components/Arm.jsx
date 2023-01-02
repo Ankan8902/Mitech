@@ -1,4 +1,9 @@
 import React from "react";
+import image from "../assets/images/hero/service-1.jpg";
+import image2 from "../assets/images/hero/logo-1.jpg";
+import image3 from "../assets/images/hero/arm-1.jpg";
+import image4 from "../assets/images/hero/arm-2.jpg";
+import image5 from "../assets/images/hero/study.jpg";
 
 const Arm = () => {
   return (
@@ -8,6 +13,7 @@ const Arm = () => {
           <div
             class="about-banner-wrap vision-space bg-img"
             data-bg="assets/images/bg/single-case-study-bg-01.webp"
+            style={{ backgroundImage: `url(${image5})` }}
           >
             <div class="container">
               <div class="row">
@@ -376,7 +382,7 @@ const Arm = () => {
                       <div class="single-popup-wrap">
                         <img
                           class="img-fluid border-radus-5"
-                          src="assets/images/bg/mitech-home-infotechno-box-large-image-03-540x320.webp"
+                          src={image}
                           alt=""
                         />
                         <div class="ht-popup-video video-button">
@@ -418,11 +424,7 @@ const Arm = () => {
                           <div class="testimonial-slider__one wow move-up">
                             <div class="testimonial-slider--info">
                               <div class="testimonial-slider__media">
-                                <img
-                                  src="assets/images/testimonial/mitech-testimonial-avata-02-90x90.webp"
-                                  class="img-fluid"
-                                  alt=""
-                                />
+                                <img src={image2} class="img-fluid" alt="" />
                               </div>
 
                               <div class="testimonial-slider__author">
@@ -567,7 +569,7 @@ const Arm = () => {
                           <div>
                             <img
                               class="img-fluid border-radus-5"
-                              src="assets/images/projects/case-study-02-120x80.webp"
+                              src={image3}
                               alt="portfolio-08-01"
                             />
                             <h6>Smart Technology Source</h6>
@@ -582,7 +584,7 @@ const Arm = () => {
                           <div>
                             <img
                               class="img-fluid border-radus-5"
-                              src="assets/images/projects/case-study-03-120x80.webp"
+                              src={image4}
                               alt="portfolio-06-01"
                             />
                             <h6>A Freeserve case study</h6>

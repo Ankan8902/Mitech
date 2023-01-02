@@ -1,5 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import image from "../assets/images/hero/blogs-1.jpg";
+import image2 from "../assets/images/hero/blog-6.jpg";
+import image3 from "../assets/images/hero/blogs-2.jpg";
+import image4 from "../assets/images/hero/blogs-3.jpg";
+import image5 from "../assets/images/hero/blogs-4.jpg";
+import image6 from "../assets/images/hero/blogs-5.jpg";
+import image7 from "../assets/images/hero/blogs-6.jpg";
+import image8 from "../assets/images/hero/blogs-7.jpg";
+import image9 from "../assets/images/hero/blogs-8.jpg";
 
 const Blog_2 = () => {
   return (
@@ -35,11 +44,7 @@ const Blog_2 = () => {
                 <div class="col-lg-12">
                   {/* <!-- Post Feature Start --> */}
                   <div class="post-feature blog-thumbnail  wow move-up">
-                    <img
-                      class="img-fluid"
-                      src="assets/images/blog/blog-05-1170x570.webp"
-                      alt="Blog Images"
-                    />
+                    <img class="img-fluid" src={image} alt="Blog Images" />
                   </div>
                   {/* <!-- Post Feature End --> */}
                 </div>
@@ -64,7 +69,7 @@ const Blog_2 = () => {
                             <a href="/">
                               <img
                                 class="img-fluid avatar-96"
-                                src="assets/images/team/admin.webp"
+                                src={image2}
                                 alt=""
                               />{" "}
                               Harry Ferguson
@@ -91,7 +96,7 @@ const Blog_2 = () => {
                             Creative jobs website and networking platform The
                             Dots has launched the “bias blocker”, a new browsing
                             mode that stops employers being able to see
-                            candidates’ photos, names, education and employment
+                            candidate's photos, names, education and employment
                             history, on the basis that they should be judged on
                             the “quality of their work” only. Will tools like
                             this help to build a more diverse design workforce?
@@ -183,10 +188,7 @@ const Blog_2 = () => {
                           <div class="entry-author">
                             <div class="author-info">
                               <div class="author-avatar">
-                                <img
-                                  src="assets/images/team/avatar-06-90x90.webp"
-                                  alt=""
-                                />
+                                <img src={image3} alt="" />
                                 <div class="author-social-networks">
                                   <div class="inner">
                                     <a
@@ -240,7 +242,9 @@ const Blog_2 = () => {
                                   <div class="single-blog__item">
                                     <div
                                       class="single-valid__thum bg-img"
-                                      data-bg="assets/images/blog/blog-03-370x120.webp"
+                                      style={{
+                                        backgroundImage: `url(${image4})`,
+                                      }}
                                     ></div>
 
                                     <div class="post-content">
@@ -260,6 +264,9 @@ const Blog_2 = () => {
                                     <div
                                       class="single-valid__thum bg-img"
                                       data-bg="assets/images/blog/blog-05-370x120.webp"
+                                      style={{
+                                        backgroundImage: `url(${image5})`,
+                                      }}
                                     ></div>
 
                                     <div class="post-content">
@@ -287,10 +294,7 @@ const Blog_2 = () => {
                                   <li class="comment border-bottom">
                                     <div class="comment-2">
                                       <div class="comment-author vcard">
-                                        <img
-                                          alt=""
-                                          src="assets/images/team/coment.webp"
-                                        />
+                                        <img alt="" src={image6} />
                                       </div>
                                       <div class="comment-content">
                                         <div class="meta">
@@ -325,10 +329,7 @@ const Blog_2 = () => {
                                   <li class="comment border-bottom">
                                     <div class="comment-2">
                                       <div class="comment-author vcard">
-                                        <img
-                                          alt=""
-                                          src="assets/images/team/comment-2.webp"
-                                        />
+                                        <img alt="" src={image7} />
                                       </div>
                                       <div class="comment-content">
                                         <div class="meta">
@@ -363,10 +364,7 @@ const Blog_2 = () => {
                                   <li class="comment">
                                     <div class="comment-5">
                                       <div class="comment-author vcard">
-                                        <img
-                                          alt=""
-                                          src="assets/images/team/comment-3.webp"
-                                        />
+                                        <img alt="" src={image8} />
                                       </div>
                                       <div class="comment-content">
                                         <div class="meta">
@@ -403,10 +401,7 @@ const Blog_2 = () => {
                                       <li class="comment ">
                                         <div class="comment-6">
                                           <div class="comment-author vcard">
-                                            <img
-                                              alt=""
-                                              src="assets/images/team/reply-comm.webp"
-                                            />
+                                            <img alt="" src={image9} />
                                           </div>
                                           <div class="comment-content">
                                             <div class="meta">

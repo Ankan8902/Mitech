@@ -1,5 +1,15 @@
 import React from "react";
 
+import image from "../assets/images/icons/mitech-box-image-style-05-image-01-60x60.webp";
+import image2 from "../assets/images/icons/mitech-box-image-style-05-image-02-60x60.webp";
+import image3 from "../assets/images/icons/mitech-box-image-style-05-image-03-60x60.webp";
+import image4 from "../assets/images/icons/mitech-box-image-style-05-image-04-60x60.webp";
+import image5 from "../assets/images/icons/mitech-box-image-style-05-image-05-60x60.webp";
+import image6 from "../assets/images/icons/mitech-box-image-style-05-image-06-60x60.webp";
+import image7 from "../assets/images/hero/about-2.jpg";
+import image8 from "../assets/images/hero/logo-1.jpg";
+import image9 from "../assets/images/hero/digital.jpg";
+
 const Digital = () => {
   return (
     <>
@@ -9,6 +19,7 @@ const Digital = () => {
             <div
               class="about-banner-wrap banner-space bg-img"
               data-bg="assets/images/bg/business-solution-hero-bg.webp"
+              style={{ backgroundImage: `url(${image9})` }}
             >
               <div class="container">
                 <div class="row">
@@ -92,11 +103,7 @@ const Digital = () => {
                           <a href="/" class="ht-box-images style-04">
                             <div class="image-box-wrap">
                               <div class="box-image">
-                                <img
-                                  class="img-fulid"
-                                  src="assets/images/icons/mitech-box-image-style-05-image-01-60x60.webp"
-                                  alt=""
-                                />
+                                <img class="img-fulid" src={image} alt="" />
                               </div>
                               <div class="content">
                                 <h5 class="heading">IT Design</h5>
@@ -115,11 +122,7 @@ const Digital = () => {
                           <a href="/" class="ht-box-images style-04">
                             <div class="image-box-wrap">
                               <div class="box-image">
-                                <img
-                                  class="img-fulid"
-                                  src="assets/images/icons/mitech-box-image-style-05-image-02-60x60.webp"
-                                  alt=""
-                                />
+                                <img class="img-fulid" src={image2} alt="" />
                               </div>
                               <div class="content">
                                 <h5 class="heading">IT Management </h5>
@@ -138,7 +141,7 @@ const Digital = () => {
                           <a href="/" class="ht-box-images style-04">
                             <div class="image-box-wrap">
                               <div class="box-image">
-                                {/* <img class="img-fulid" src="assets/images/icons/mitech-box-image-style-05-image-03-60x60.webp" alt=""/> */}
+                                <img class="img-fulid" src={image3} alt="" />
                               </div>
                               <div class="content">
                                 <h5 class="heading">Data Security</h5>
@@ -157,11 +160,7 @@ const Digital = () => {
                           <a href="/" class="ht-box-images style-04">
                             <div class="image-box-wrap">
                               <div class="box-image">
-                                <img
-                                  class="img-fulid"
-                                  src="assets/images/icons/mitech-box-image-style-05-image-04-60x60.webp"
-                                  alt=""
-                                />
+                                <img class="img-fulid" src={image4} alt="" />
                               </div>
                               <div class="content">
                                 <h5 class="heading">Workforce Management</h5>
@@ -181,11 +180,7 @@ const Digital = () => {
                           <a href="/" class="ht-box-images style-04">
                             <div class="image-box-wrap">
                               <div class="box-image">
-                                <img
-                                  class="img-fulid"
-                                  src="assets/images/icons/mitech-box-image-style-05-image-05-60x60.webp"
-                                  alt=""
-                                />
+                                <img class="img-fulid" src={image5} alt="" />
                               </div>
                               <div class="content">
                                 <h5 class="heading">Business Reform</h5>
@@ -204,11 +199,7 @@ const Digital = () => {
                           <a href="/" class="ht-box-images style-04">
                             <div class="image-box-wrap">
                               <div class="box-image">
-                                <img
-                                  class="img-fulid"
-                                  src="assets/images/icons/mitech-box-image-style-05-image-06-60x60.webp"
-                                  alt=""
-                                />
+                                <img class="img-fulid" src={image6} alt="" />
                               </div>
                               <div class="content">
                                 <h5 class="heading">Infrastructure Plan</h5>
@@ -345,11 +336,7 @@ const Digital = () => {
                     <div class="resources-right-box">
                       <div class="resources-right-inner text-center">
                         <div class="resources-images">
-                          <img
-                            class="img-fluid"
-                            src="assets/images/banners/managed-it-services-book-cover.webp"
-                            alt=""
-                          />
+                          <img class="img-fluid" src={image7} alt="" />
                         </div>
                       </div>
                     </div>
@@ -377,11 +364,7 @@ const Digital = () => {
                             <div class="testimonial-slider__one wow move-up">
                               <div class="testimonial-slider--info">
                                 <div class="testimonial-slider__media">
-                                  <img
-                                    src="assets/images/testimonial/mitech-testimonial-avata-02-90x90.webp"
-                                    class="img-fluid"
-                                    alt=""
-                                  />
+                                  <img src={image8} class="img-fluid" alt="" />
                                 </div>
 
                                 <div class="testimonial-slider__author">

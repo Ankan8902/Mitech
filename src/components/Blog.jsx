@@ -1,5 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import image from "../assets/images/hero/blog-1.jpg";
+import image2 from "../assets/images/hero/blog-2.jpg";
+import image3 from "../assets/images/hero/blog-3.jpg";
+import image4 from "../assets/images/hero/blog-4.jpg";
+import image5 from "../assets/images/hero/blog-5.jpg";
+import image6 from "../assets/images/hero/blog-6.jpg";
 
 const Blog = () => {
   return (
@@ -49,7 +55,7 @@ const Blog = () => {
                             <a href="blog-post-layout-one.html">
                               <img
                                 class="img-fluid"
-                                src="assets/images/blog/blog-01-540x330.webp"
+                                src={image}
                                 alt="Blog Images"
                               />
                             </a>
@@ -71,7 +77,7 @@ const Blog = () => {
                                 <a href="/">
                                   <img
                                     class="img-fluid avatar-96"
-                                    src="assets/images/team/admin.webp"
+                                    src={image6}
                                     alt=""
                                   />{" "}
                                   Harry Ferguson
@@ -118,7 +124,7 @@ const Blog = () => {
                             <a href="blog-post-layout-one.html">
                               <img
                                 class="img-fluid"
-                                src="assets/images/blog/blog-08-540x330.webp"
+                                src={image2}
                                 alt="Blog Images"
                               />
                             </a>
@@ -140,7 +146,7 @@ const Blog = () => {
                                 <a href="/">
                                   <img
                                     class="img-fluid avatar-96"
-                                    src="assets/images/team/admin.webp"
+                                    src={image6}
                                     alt=""
                                   />{" "}
                                   James Scott
@@ -187,7 +193,7 @@ const Blog = () => {
                             <a href="blog-post-layout-one.html">
                               <img
                                 class="img-fluid"
-                                src="assets/images/blog/blog-07-540x330.webp"
+                                src={image3}
                                 alt="Blog Images"
                               />
                             </a>
@@ -209,7 +215,7 @@ const Blog = () => {
                                 <a href="/">
                                   <img
                                     class="img-fluid avatar-96"
-                                    src="assets/images/team/admin-02.webp"
+                                    src={image6}
                                     alt=""
                                   />{" "}
                                   James Scott
@@ -256,7 +262,7 @@ const Blog = () => {
                             <a href="blog-post-layout-one.html">
                               <img
                                 class="img-fluid"
-                                src="assets/images/blog/blog-05-540x330.webp"
+                                src={image4}
                                 alt="Blog Images"
                               />
                             </a>
@@ -279,7 +285,7 @@ const Blog = () => {
                                 <a href="/">
                                   <img
                                     class="img-fluid avatar-96"
-                                    src="assets/images/team/admin.webp"
+                                    src={image6}
                                     alt=""
                                   />{" "}
                                   James Scott
@@ -326,7 +332,7 @@ const Blog = () => {
                             <a href="blog-post-layout-one.html">
                               <img
                                 class="img-fluid"
-                                src="assets/images/blog/blog-02-540x330.webp"
+                                src={image5}
                                 alt="Blog Images"
                               />
                             </a>
@@ -348,7 +354,7 @@ const Blog = () => {
                                 <a href="/">
                                   <img
                                     class="img-fluid avatar-96"
-                                    src="assets/images/team/admin-02.webp"
+                                    src={image6}
                                     alt=""
                                   />{" "}
                                   James Scott

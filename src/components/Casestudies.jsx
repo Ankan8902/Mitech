@@ -1,5 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import image from "../assets/images/hero/case-1.jpg";
+import image2 from "../assets/images/hero/case-2.jpg";
+import image3 from "../assets/images/hero/case-3.jpg";
+import image4 from "../assets/images/hero/case-4.jpg";
+import image5 from "../assets/images/hero/case-5.jpg";
+import image6 from "../assets/images/hero/case-6.jpg";
 
 const Casestudies = () => {
   return (
@@ -72,11 +78,7 @@ const Casestudies = () => {
                     <a href="/" class="projects-wrap style-01">
                       <div class="projects-image-box">
                         <div class="projects-image">
-                          <img
-                            class="img-fluid"
-                            src="assets/images/projects/case-study-01-480x298.webp"
-                            alt=""
-                          />
+                          <img class="img-fluid" src={image} alt="" />
                         </div>
                         <div class="content">
                           <h6 class="heading">Mitech-Smart Vision</h6>
@@ -103,11 +105,7 @@ const Casestudies = () => {
                     <a href="/" class="projects-wrap style-01">
                       <div class="projects-image-box">
                         <div class="projects-image">
-                          <img
-                            class="img-fluid"
-                            src="assets/images/projects/case-study-02-480x298.webp"
-                            alt=""
-                          />
+                          <img class="img-fluid" src={image2} alt="" />
                         </div>
                         <div class="content">
                           <h6 class="heading">Arden-Internal Networking</h6>
@@ -133,11 +131,7 @@ const Casestudies = () => {
                     <a href="/" class="projects-wrap style-01">
                       <div class="projects-image-box">
                         <div class="projects-image">
-                          <img
-                            class="img-fluid"
-                            src="assets/images/projects/case-study-03-480x298.webp"
-                            alt=""
-                          />
+                          <img class="img-fluid" src={image3} alt="" />
                         </div>
                         <div class="content">
                           <h6 class="heading">A Freeserve case study</h6>
@@ -163,11 +157,7 @@ const Casestudies = () => {
                     <a href="/" class="projects-wrap style-01">
                       <div class="projects-image-box">
                         <div class="projects-image">
-                          <img
-                            class="img-fluid"
-                            src="assets/images/projects/case-study-04-480x298.webp"
-                            alt=""
-                          />
+                          <img class="img-fluid" src={image4} alt="" />
                         </div>
                         <div class="content">
                           <h6 class="heading">Aqua - Research and Energy</h6>
@@ -195,11 +185,7 @@ const Casestudies = () => {
                     <a href="/" class="projects-wrap style-01">
                       <div class="projects-image-box">
                         <div class="projects-image">
-                          <img
-                            class="img-fluid"
-                            src="assets/images/projects/case-study-05-480x298.webp"
-                            alt=""
-                          />
+                          <img class="img-fluid" src={image5} alt="" />
                         </div>
                         <div class="content">
                           <h6 class="heading">A Sixbase typical case study</h6>
@@ -227,11 +213,7 @@ const Casestudies = () => {
                     <a href="/" class="projects-wrap style-01">
                       <div class="projects-image-box">
                         <div class="projects-image">
-                          <img
-                            class="img-fluid"
-                            src="assets/images/projects/case-study-06-480x298.webp"
-                            alt=""
-                          />
+                          <img class="img-fluid" src={image6} alt="" />
                         </div>
                         <div class="content">
                           <h6 class="heading">

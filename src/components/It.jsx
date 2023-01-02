@@ -1,5 +1,11 @@
 import React from "react";
 
+import image from "../assets/images/hero/service-1.jpg";
+import image2 from "../assets/images/icons/mitech-pricing-box-icon-01-90x90.webp";
+import image3 from "../assets/images/icons/mitech-pricing-box-icon-02-88x88.webp";
+import image4 from "../assets/images/icons/mitech-pricing-box-icon-03-90x90.webp";
+import image5 from "../assets/images/hero/recruit-1.jpg";
+
 const It = () => {
   return (
     <>
@@ -8,6 +14,7 @@ const It = () => {
           <div
             class="about-banner-wrap banner-space bg-img"
             data-bg="assets/images/bg/managed-it-services-hero-bg.webp"
+            style={{ backgroundImage: `url(${image5})` }}
           >
             <div class="container">
               <div class="row">
@@ -225,7 +232,7 @@ const It = () => {
                       <div class="single-popup-wrap">
                         <img
                           class="img-fluid border-radus-5"
-                          src="assets/images/bg/mitech-home-infotechno-box-large-image-03-540x320.webp"
+                          src={image}
                           alt=""
                         />
                         <div class="ht-popup-video video-button">
@@ -425,11 +432,7 @@ const It = () => {
                           <div class="pricing-table__header">
                             <h6 class="sub-title">Basic</h6>
                             <div class="pricing-table__image">
-                              <img
-                                src="assets/images/icons/mitech-pricing-box-icon-01-90x90.webp"
-                                class="img-fluid"
-                                alt=""
-                              />
+                              <img src={image2} class="img-fluid" alt="" />
                             </div>
                             <div class="pricing-table__price-wrap">
                               <h6 class="currency">$</h6>
@@ -466,11 +469,7 @@ const It = () => {
                           <div class="pricing-table__header">
                             <h6 class="sub-title">Professional</h6>
                             <div class="pricing-table__image">
-                              <img
-                                src="assets/images/icons/mitech-pricing-box-icon-02-88x88.webp"
-                                class="img-fluid"
-                                alt=""
-                              />
+                              <img src={image3} class="img-fluid" alt="" />
                             </div>
                             <div class="pricing-table__price-wrap">
                               <h6 class="currency">$</h6>
@@ -498,11 +497,7 @@ const It = () => {
                           <div class="pricing-table__header">
                             <h6 class="sub-title">Professional</h6>
                             <div class="pricing-table__image">
-                              <img
-                                src="assets/images/icons/mitech-pricing-box-icon-03-90x90.webp"
-                                class="img-fluid"
-                                alt=""
-                              />
+                              <img src={image4} class="img-fluid" alt="" />
                             </div>
                             <div class="pricing-table__price-wrap">
                               <h6 class="currency">$</h6>
@@ -577,11 +572,7 @@ const It = () => {
                           <div class="pricing-table__header">
                             <h6 class="sub-title">Professional</h6>
                             <div class="pricing-table__image">
-                              <img
-                                src="assets/images/icons/mitech-pricing-box-icon-02-88x88.webp"
-                                class="img-fluid"
-                                alt=""
-                              />
+                              <img src={image4} class="img-fluid" alt="" />
                             </div>
                             <div class="pricing-table__price-wrap">
                               <h6 class="currency">$</h6>

@@ -1,5 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import image from "../assets/images/hero/leader-1.jpg";
+import image2 from "../assets/images/hero/leader-2.jpg";
+import image3 from "../assets/images/hero/leader-3.jpg";
+import image4 from "../assets/images/hero/leader-4.jpg";
+import image5 from "../assets/images/hero/leader-5.jpg";
+import image6 from "../assets/images/hero/leader-6.jpg";
+import image7 from "../assets/images/hero/leader-7.jpg";
 
 const Leadership = () => {
   return (
@@ -47,11 +54,7 @@ const Leadership = () => {
                   <div class="grid-item">
                     <div class="ht-team-member">
                       <div class="team-image">
-                        <img
-                          class="img-fluid"
-                          src="assets/images/team/team-member-07-370x455.webp"
-                          alt=""
-                        />
+                        <img class="img-fluid" src={image} alt="" />
                         <div class="social-networks">
                           <div class="inner">
                             <a
@@ -92,11 +95,7 @@ const Leadership = () => {
                   <div class="grid-item">
                     <div class="ht-team-member">
                       <div class="team-image">
-                        <img
-                          class="img-fluid"
-                          src="assets/images/team/team-member-01-370x455.webp"
-                          alt=""
-                        />
+                        <img class="img-fluid" src={image2} alt="" />
                         <div class="social-networks">
                           <div class="inner">
                             <a
@@ -137,11 +136,7 @@ const Leadership = () => {
                   <div class="grid-item">
                     <div class="ht-team-member">
                       <div class="team-image">
-                        <img
-                          class="img-fluid"
-                          src="assets/images/team/team-member-06-370x455.webp"
-                          alt=""
-                        />
+                        <img class="img-fluid" src={image3} alt="" />
                         <div class="social-networks">
                           <div class="inner">
                             <a
@@ -184,11 +179,7 @@ const Leadership = () => {
                   <div class="grid-item mb-30">
                     <div class="ht-team-member">
                       <div class="team-image">
-                        <img
-                          class="img-fluid"
-                          src="assets/images/team/team-member-04-370x452.webp"
-                          alt=""
-                        />
+                        <img class="img-fluid" src={image4} alt="" />
                         <div class="social-networks">
                           <div class="inner">
                             <a
@@ -230,11 +221,7 @@ const Leadership = () => {
                   <div class="grid-item  mb-30">
                     <div class="ht-team-member">
                       <div class="team-image">
-                        <img
-                          class="img-fluid"
-                          src="assets/images/team/team-member-05-370x452.webp"
-                          alt=""
-                        />
+                        <img class="img-fluid" src={image5} alt="" />
                         <div class="social-networks">
                           <div class="inner">
                             <a
@@ -276,11 +263,7 @@ const Leadership = () => {
                   <div class="grid-item mb-30">
                     <div class="ht-team-member">
                       <div class="team-image">
-                        <img
-                          class="img-fluid"
-                          src="assets/images/team/team-member-03-370x452.webp"
-                          alt=""
-                        />
+                        <img class="img-fluid" src={image6} alt="" />
                         <div class="social-networks">
                           <div class="inner">
                             <a
@@ -322,11 +305,7 @@ const Leadership = () => {
                   <div class="grid-item mb-30">
                     <div class="ht-team-member">
                       <div class="team-image">
-                        <img
-                          class="img-fluid"
-                          src="assets/images/team/team-member-02-370x452.webp"
-                          alt=""
-                        />
+                        <img class="img-fluid" src={image7} alt="" />
                         <div class="social-networks">
                           <div class="inner">
                             <a
