@@ -3503,7 +3503,7 @@ input[type="checkbox"] {
   color: #ffffff;
 }
 
-.navigation-menu--text_white > ul > li:hover > a:after, .navigation-menu--text_white > ul > li.active > a:after {
+.navigation-menu--text_white > ul > li:hover > , .navigation-menu--text_white > ul > li.active  {
   color: #ffffff;
 }
 

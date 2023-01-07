@@ -58,7 +58,7 @@ const Header = () => {
                   </div>
 
                   {/* <!-- Header Top Info --> */}
-                  <div className="swiper-container header-top-info-slider-werap top-info-slider__container">
+                  {/* <div className="swiper-container header-top-info-slider-werap top-info-slider__container swiper-container-initialized swiper-container-horizontal swiper-container-android">
                     <div className="swiper-wrapper header-top-info-inner default-color">
                       <div className="swiper-slide">
                         <div className="info-item">
@@ -113,10 +113,10 @@ const Header = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* <!-- Header Social Networks --> */}
-                  <div className="header-social-networks style-icons">
+                  {/* <div className="header-social-networks style-icons">
                     <div className="inner">
                       <a
                         className=" social-link hint--black hint--bottom-left"
@@ -151,7 +151,7 @@ const Header = () => {
                         <i className="social-icon fab fa-linkedin"></i>
                       </a>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 {/* <!-- mobile menu --> */}
                 <div
@@ -794,11 +794,7 @@ const Header = () => {
                   {/* <!-- logo --> */}
                   <div className="logo">
                     <a href="index.html">
-                      <img
-                        src="assets/images/logo/logo-dark.webp"
-                        className="img-fluid"
-                        alt=""
-                      />
+                      <img src={logo} className="img-fluid" alt="" />
                     </a>
                   </div>
                 </div>

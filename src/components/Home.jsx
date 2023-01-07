@@ -50,7 +50,7 @@ import testimonial2 from "../assets/images/testimonial/mitech-testimonial-avata-
 import testimonial3 from "../assets/images/testimonial/mitech-testimonial-avata-04-90x90.webp";
 import testimonial4 from "../assets/images/testimonial/mitech-testimonial-avata-01-90x90.webp";
 
-import mail from "../assets/php/hero-mail.php";
+// import mail from "../assets/php/hero-mail.php";
 import services from "../assets/php/services-mail.php";
 
 export const Home = () => {
@@ -96,7 +96,7 @@ export const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-5 me-auto ms-auto col-md-6">
+            {/* <div className="col-lg-5 me-auto ms-auto col-md-6">
               <div className="business-solution-form-wrap me-auto ms-auto">
                 <div className="contact-title text-center section-space--mb_40">
                   <h5 className="mb-10">Book appointment</h5>
@@ -105,7 +105,7 @@ export const Home = () => {
                   </p>
                 </div>
                 <form id="contact-form" action={mail} method="post">
-                  {/* <!-- <form id="contact-form" action="https://whizthemes.com/mail-php/jowel/mitech/php/hero-mail.php" method="post"> --> */}
+                  <!-- <form id="contact-form" action="https://whizthemes.com/mail-php/jowel/mitech/php/hero-mail.php" method="post"> -->
                   <div className="contact-form__two">
                     <div className="contact-inner">
                       <input name="con_name" type="text" placeholder="Name *" />
@@ -115,8 +115,8 @@ export const Home = () => {
                         name="con_email"
                         type="email"
                         placeholder="Email *"
-                      />
-                    </div>
+                      /> */}
+            {/* </div>
                     <div className="contact-select">
                       <div className="form-item contact-inner">
                         <span className="inquiry">
@@ -140,7 +140,7 @@ export const Home = () => {
                   </div>
                 </form>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
