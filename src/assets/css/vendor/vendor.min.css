@@ -12339,9 +12339,9 @@ fieldset:disabled .btn {
 .fa-audio-description:before {
   content: "\f29e";
 }
-.fa-autoprefixer:before {
+/* .fa-autoprefixer:before {
   content: "\f41c";
-}
+} */
 .fa-avianex:before {
   content: "\f374";
 }
