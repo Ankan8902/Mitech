@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import "../assets/css/vendor/bootstrap.min.css";
 import "../assets/css/vendor/cerebrisans.css";
@@ -57,79 +58,79 @@ export const Footer = () => {
                 </ul>
               </div>
               <div className="col-lg-2 col-md-4 col-sm-6 footer-widget">
-                <h6 className="footer-widget__title mb-20">IT Services</h6>
+                <h6 className="footer-widget__title mb-20">Company</h6>
                 <ul className="footer-widget__list">
                   <li>
-                    <a href="/" className="hover-style-link">
-                      Managed IT
-                    </a>
+                    <NavLink to="/about" className="hover-style-link">
+                      About us
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="/" className="hover-style-link">
-                      IT Support
-                    </a>
+                    <NavLink to="/contact" className="hover-style-link">
+                      Contact us
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="/" className="hover-style-link">
-                      IT Consultancy
-                    </a>
+                    <NavLink to="/leader" className="hover-style-link">
+                      Leadership
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="/" className="hover-style-link">
-                      Cloud Computing
-                    </a>
+                    <NavLink to="/choose" className="hover-style-link">
+                      Why choose us
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="/" className="hover-style-link">
-                      Cyber Security
-                    </a>
+                    <NavLink to="/history" className="hover-style-link">
+                      Our history
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/faqs" className="hover-style-link">
+                      FAQs
+                    </NavLink>
                   </li>
                 </ul>
               </div>
               <div className="col-lg-2 col-md-4 col-sm-6 footer-widget">
-                <h6 className="footer-widget__title mb-20">Quick links</h6>
+                <h6 className="footer-widget__title mb-20">Our Services</h6>
                 <ul className="footer-widget__list">
                   <li>
-                    <a href="/" className="hover-style-link">
-                      Pick up locations
-                    </a>
+                    <NavLink to="/recruit" className="hover-style-link">
+                      Recruitment Services
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="/" className="hover-style-link">
-                      Terms of Payment
-                    </a>
+                    <NavLink to="/digital" className="hover-style-link">
+                      Digital Marketing
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="/" className="hover-style-link">
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/" className="hover-style-link">
-                      Where to Find Us
-                    </a>
+                    <NavLink to="/IT" className="hover-style-link">
+                      IT Services
+                    </NavLink>
                   </li>
                 </ul>
               </div>
               <div className="col-lg-2 col-md-4 col-sm-6 footer-widget">
                 <h6 className="footer-widget__title mb-20">Support</h6>
                 <ul className="footer-widget__list">
-                  <li>
+                  {/* <li>
                     <a href="/" className="hover-style-link">
                       Forum Support
                     </a>
-                  </li>
+                  </li> */}
                   <li>
-                    <a href="/" className="hover-style-link">
+                    <NavLink to="/faqs" className="hover-style-link">
                       Help & FAQ
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a href="/" className="hover-style-link">
+                    <NavLink to="/contact" className="hover-style-link">
                       Contact Us
-                    </a>
+                    </NavLink>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="/" className="hover-style-link">
                       Pricing and plans
                     </a>
@@ -138,7 +139,7 @@ export const Footer = () => {
                     <a href="/" className="hover-style-link">
                       Cookies Policy
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="col-lg-2 col-md-4 col-sm-6 footer-widget">

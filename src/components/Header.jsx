@@ -3,19 +3,20 @@ import { Link, NavLink } from "react-router-dom";
 
 import logo from "../assets/images/logo/logo-dark.webp";
 
-// function myFunction() {
-//   var element = document.getElementById("mobile-menu-trigger");
-//   element.classList.toggle("active");
-// }
-
 const Header = () => {
   const [btnState, setBtnState] = useState(false);
+  // const [btn, setBtn] = useState(false);
 
   function handleClick() {
     setBtnState((btnState) => !btnState);
   }
 
+  // function HandleClick() {
+  //   setBtn((btn) => !btn);
+  // }
+
   let toggleClassCheck = btnState ? " active" : "";
+  // let toggle = btn ? " active" : "";
 
   return (
     <>
@@ -183,53 +184,6 @@ const Header = () => {
                           <NavLink to="/">
                             <span>Home</span>
                           </NavLink>
-                          {/* <ul className="submenu">
-                            <li>
-                              <a href="index-infotechno.html">
-                                <span>Infotechno</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="index-processing.html">
-                                <span>Processing</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="index-appointment.html">
-                                <span>Appointment</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="index-services.html">
-                                <span>Services</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="index-resolutions.html">
-                                <span>Resolutions</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="index-cybersecurity.html">
-                                <span>Cybersecurity</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="index-modern-it-company.html">
-                                <span>Modern IT Company</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="index-machine-learning.html">
-                                <span>Machine Learning</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="index-software-innovation.html">
-                                <span>Software Innovation</span>
-                              </a>
-                            </li>
-                          </ul> */}
                         </li>
                         <li className="has-children has-children--multilevel-submenu">
                           <a href="/">
@@ -240,40 +194,6 @@ const Header = () => {
                               <NavLink to="/about">
                                 <span>About us</span>
                               </NavLink>
-                              {/* <ul className="submenu">
-                                <li>
-                                  <NavLink to="/about">
-                                    <span>About us 01</span>
-                                  </NavLink>
-                                </li>
-                                <li>
-                                  <NavLink to="/about">
-                                    <span>About us 02</span>
-                                  </NavLink>
-                                </li>
-                                <li className="has-children">
-                                  <a href="/">
-                                    <span>Submenu Level Two</span>
-                                  </a>
-                                  <ul className="submenu">
-                                    <li>
-                                      <a href="/">
-                                        <span>Submenu Level Three</span>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="/">
-                                        <span>Submenu Level Three</span>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="/">
-                                        <span>Submenu Level Three</span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul> */}
                             </li>
                             <li>
                               <NavLink to="/contact">
@@ -300,16 +220,6 @@ const Header = () => {
                                 <span>FAQs</span>
                               </NavLink>
                             </li>
-                            {/* <li>
-                              <a href="careers.html">
-                                <span>Careers</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="pricing-plans.html">
-                                <span>Pricing plans</span>
-                              </a>
-                            </li> */}
                           </ul>
                         </li>
                         <li className="has-children has-children--multilevel-submenu">
@@ -317,21 +227,11 @@ const Header = () => {
                             <span>Our Services</span>
                           </a>
                           <ul className="submenu">
-                            {/* <li>
-                              <a href="it-services.html">
-                                <span>IT Services</span>
-                              </a>
-                            </li> */}
                             <li>
                               <Link to="/recruit">
                                 <span>Recruitment Services</span>
                               </Link>
                             </li>
-                            {/* <li>
-                              <a href="industries.html">
-                                <span>Industries</span>
-                              </a>
-                            </li> */}
                             <li>
                               <Link to="/digital">
                                 <span>Digital Marketing</span>
@@ -344,254 +244,15 @@ const Header = () => {
                             </li>
                           </ul>
                         </li>
-                        {/* <li className="has-children">
-                          <a href="/">
-                            <span>Elements</span>
-                          </a>
-                          <!-- mega menu -->
-                          <ul className="megamenu megamenu--mega">
-                            <li>
-                              <h2 className="page-list-title">
-                                ELEMENT GROUP 01
-                              </h2>
-                              <ul>
-                                <li>
-                                  <a href="element-accordion.html">
-                                    <span>Accordions & Toggles</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-box-icon.html">
-                                    <span>Box Icon</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-box-image.html">
-                                    <span>Box Image</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-box-large-image.html">
-                                    <span>Box Large Image</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-buttons.html">
-                                    <span>Buttons</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-cta.html">
-                                    <span>Call to action</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-client-logo.html">
-                                    <span>Client Logo</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-countdown.html">
-                                    <span>Countdown</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <h2 className="page-list-title">
-                                ELEMENT GROUP 02
-                              </h2>
-                              <ul>
-                                <li>
-                                  <a href="element-counters.html">
-                                    <span>Counters</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-dividers.html">
-                                    <span>Dividers</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-flexible-image-slider.html">
-                                    <span>Flexible image slider</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-google-map.html">
-                                    <span>Google Map</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-gradation.html">
-                                    <span>Gradation</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-instagram.html">
-                                    <span>Instagram</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-lists.html">
-                                    <span>Lists</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-message-box.html">
-                                    <span>Message box</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <h2 className="page-list-title">
-                                ELEMENT GROUP 03
-                              </h2>
-                              <ul>
-                                <li>
-                                  <a href="element-popup-video.html">
-                                    <span>Popup Video</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-pricing-box.html">
-                                    <span>Pricing Box</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-progress-bar.html">
-                                    <span>Progress Bar</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-progress-circle.html">
-                                    <span>Progress Circle</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-rows-columns.html">
-                                    <span>Rows & Columns</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-social-networks.html">
-                                    <span>Social Networks</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-tabs.html">
-                                    <span>Tabs</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-team-member.html">
-                                    <span>Team member</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <h2 className="page-list-title">
-                                ELEMENT GROUP 04
-                              </h2>
-                              <ul>
-                                <li>
-                                  <a href="element-testimonials.html">
-                                    <span>Testimonials</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-timeline.html">
-                                    <span>Timeline</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-carousel-sliders.html">
-                                    <span>Carousel Sliders</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-typed-text.html">
-                                    <span>Typed Text</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li> */}
                         <li className="has-children has-children--multilevel-submenu">
                           <Link to="/casestudies">
                             <span>Case Studies</span>
                           </Link>
-                          {/* <!-- multilevel submenu --> */}
-                          {/* <ul className="submenu">
-                            <li>
-                              <a href="case-studies.html">
-                                <span>Case Studies 01</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="case-studies-02.html">
-                                <span>Case Studies 02</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="single-smart-vision.html">
-                                <span>Single Layout</span>
-                              </a>
-                            </li>
-                          </ul> */}
                         </li>
                         <li className="has-children has-children--multilevel-submenu">
                           <Link to="/blog">
                             <span>Blog</span>
                           </Link>
-                          {/* <!-- multilevel submenu --> */}
-                          {/* <ul className="submenu">
-                            <li>
-                              <a href="blog-list-large-image.html">
-                                <span>List Large Image</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="blog-list-left-large-image.html">
-                                <span>Left Large Image</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="blog-grid-classic.html">
-                                <span>Grid Classic</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="blog-grid-masonry.html">
-                                <span>Grid Masonry</span>
-                              </a>
-                            </li>
-                            <li className="has-children">
-                              <a href="blog-post-layout-one.html">
-                                <span>Single Layouts</span>
-                              </a>
-                              <ul className="submenu">
-                                <li>
-                                  <a href="blog-post-layout-one.html">
-                                    <span>Left Sidebar</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="blog-post-right-sidebar.html">
-                                    <span>Right Sidebar</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="blog-post-no-sidebar.html">
-                                    <span>No Sidebar</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul> */}
                         </li>
                       </ul>
                     </nav>
@@ -815,6 +476,9 @@ const Header = () => {
                   <NavLink to="/">Home</NavLink>
                 </li>
                 <li className="has-children">
+                  {/* <span className="menu-expand" onClick={HandleClick}>
+                    <i></i>
+                  </span> */}
                   <a href="/">Company</a>
                   <ul className="sub-menu">
                     <li className="has-children">
@@ -850,6 +514,9 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="has-children">
+                  {/* <span className="menu-expand" onClick={HandleClick}>
+                    <i></i>
+                  </span> */}
                   <a href="/">Our Services</a>
                   <ul className="sub-menu">
                     <li>
