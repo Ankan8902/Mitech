@@ -11,9 +11,7 @@ import "../assets/css/plugins/animate.min.css";
 import "../assets/css/plugins/lightgallery.min.css";
 import "../assets/css/style.css";
 
-import logo from "../assets/images/logo/dark-logo-160x48.webp";
-import google from "../assets/images/icons/aeroland-button-google-play.webp";
-import app from "../assets/images/icons/aeroland-button-app-store.webp";
+import logo from "../assets/images/logo/ninja.jpg";
 
 export const Footer = () => {
   return (
@@ -25,7 +23,7 @@ export const Footer = () => {
             <div className="row footer-widget-wrapper">
               <div className="col-lg-4 col-md-6 col-sm-6 footer-widget">
                 <div className="footer-widget__logo mb-30">
-                  <img src={logo} className="img-fluid" alt="" />
+                  <img src={logo} className="imgfluid" alt="" />
                   {/* assets/images/logo/dark-logo-160x48.webp */}
                   {/* width="160" height="48v */}
                 </div>
@@ -65,11 +63,11 @@ export const Footer = () => {
                       About us
                     </NavLink>
                   </li>
-                  <li>
+                  {/* <li>
                     <NavLink to="/contact" className="hover-style-link">
                       Contact us
                     </NavLink>
-                  </li>
+                  </li> */}
                   <li>
                     <NavLink to="/leader" className="hover-style-link">
                       Leadership
@@ -85,11 +83,11 @@ export const Footer = () => {
                       Our history
                     </NavLink>
                   </li>
-                  <li>
+                  {/* <li>
                     <NavLink to="/faqs" className="hover-style-link">
                       FAQs
                     </NavLink>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="col-lg-2 col-md-4 col-sm-6 footer-widget">
@@ -145,7 +143,7 @@ export const Footer = () => {
               <div className="col-lg-2 col-md-4 col-sm-6 footer-widget">
                 <div className="footer-widget__title section-space--mb_50"></div>
                 <ul className="footer-widget__list">
-                  <li>
+                  {/* <li>
                     <a href="/" className="image_btn">
                       <img className="img-fluid" src={google} alt="" />
                     </a>
@@ -154,7 +152,7 @@ export const Footer = () => {
                     <a href="/" className="image_btn">
                       <img className="img-fluid" src={app} alt="" />
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

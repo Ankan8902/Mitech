@@ -60,42 +60,42 @@ export const Home = () => {
         {/* <!--============ Appointment Hero Start ============--> */}
         <div className="appointment-hero-wrapper appointment-hero-bg section-space--ptb_120">
           <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-md-6">
-                <div className="appointment-hero-wrap wow move-up">
-                  <div className="appointment-hero-text">
-                    <h6 className="text-white">Secure & IT Services </h6>
-                    <h1 className="font-weight--reguler text-white mb-30">
-                      Excellent IT services for{" "}
-                      <span className="text-line">your success</span>
-                    </h1>
-                    <div className="hero-button">
-                      <div className="video-popup infotech-video-box">
-                        <a
-                          href="https://www.youtube.com/watch?v=9No-FiEInLAv"
-                          className="single-popup-wrap video-link"
-                        >
-                          <div className="video-content">
-                            <div className="ht-popup-video video-button">
-                              <div className="video-mark">
-                                <div className="wave-pulse wave-pulse-1"></div>
-                                <div className="wave-pulse wave-pulse-2"></div>
-                              </div>
-                              <div className="video-button__two">
-                                <div className="video-play">
-                                  <span className="video-play-icon"></span>
-                                </div>
+            {/* <div className="row align-items-center"> */}
+            <div className="col-lg-6 col-md-6">
+              <div className="appointment-hero-wrap wow move-up">
+                <div className="appointment-hero-text">
+                  <h6 className="text-white">Secure & IT Services </h6>
+                  <h1 className="font-weight--reguler text-white mb-30">
+                    Excellent IT services for{" "}
+                    <span className="text-line">your success</span>
+                  </h1>
+                  <div className="hero-button">
+                    <div className="video-popup infotech-video-box">
+                      <a
+                        href="https://www.youtube.com/watch?v=9No-FiEInLAv"
+                        className="single-popup-wrap video-link"
+                      >
+                        <div className="video-content">
+                          <div className="ht-popup-video video-button">
+                            <div className="video-mark">
+                              <div className="wave-pulse wave-pulse-1"></div>
+                              <div className="wave-pulse wave-pulse-2"></div>
+                            </div>
+                            <div className="video-button__two">
+                              <div className="video-play">
+                                <span className="video-play-icon"></span>
                               </div>
                             </div>
-                            <div className="video-text">How we work</div>
                           </div>
-                        </a>
-                      </div>
+                          <div className="video-text">How we work</div>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            {/* </div> */}
             {/* <div className="col-lg-5 me-auto ms-auto col-md-6">
               <div className="business-solution-form-wrap me-auto ms-auto">
                 <div className="contact-title text-center section-space--mb_40">

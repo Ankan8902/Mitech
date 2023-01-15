@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-import logo from "../assets/images/logo/logo-dark.webp";
+import logo from "../assets/images/logo/ninja.jpg";
 
 const Header = () => {
   const [btnState, setBtnState] = useState(false);
-  // const [btn, setBtn] = useState(false);
+  const [btn, setBtn] = useState(false);
 
   function handleClick() {
     setBtnState((btnState) => !btnState);
   }
 
-  // function HandleClick() {
-  //   setBtn((btn) => !btn);
-  // }
+  function handleclick() {
+    setBtn((btn) => !btn);
+  }
 
   let toggleClassCheck = btnState ? " active" : "";
-  // let toggle = btn ? " active" : "";
+  let toggleClass = btn ? " active" : "";
 
   return (
     <>
@@ -35,7 +35,10 @@ const Header = () => {
                 </div>
 
                 <div className="header-right flexible-image-slider-wrap">
-                  <div className="header-right-inner" id="hidden-icon-wrapper">
+                  <div
+                    className={`header-right-inner${toggleClass}`}
+                    id="hidden-icon-wrapper"
+                  >
                     {/* <!-- Header Search Form --> */}
                     <div className="header-search-form d-md-none d-block">
                       <form action="#" className="search-form-top">
@@ -52,9 +55,9 @@ const Header = () => {
                   </div>
 
                   {/* <!-- Header Top Info --> */}
-                  {/* <div className="swiper-container header-top-info-slider-werap top-info-slider__container swiper-container-initialized swiper-container-horizontal swiper-container-android">
+                  <div className="swiper-container header-top-info-slider-werap top-info-slider__container swiper-container-initialized swiper-container-horizontal swiper-container-android">
                     <div className="swiper-wrapper header-top-info-inner default-color">
-                      <div className="swiper-slide">
+                      <div className="swiper-slide YourClass">
                         <div className="info-item">
                           <div className="info-icon">
                             <span className="fa fa-phone"></span>
@@ -67,7 +70,7 @@ const Header = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="swiper-slide">
+                      <div className="swiper-slide YourClass">
                         <div className="info-item">
                           <div className="info-icon">
                             <span className="fa fa-map-marker-alt"></span>
@@ -82,7 +85,7 @@ const Header = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="swiper-slide">
+                      <div className="swiper-slide YourClass">
                         <div className="info-item">
                           <div className="info-icon">
                             <span className="fa fa-clock"></span>
@@ -95,7 +98,7 @@ const Header = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="swiper-slide">
+                      <div className="swiper-slide YourClass">
                         <div className="info-item">
                           <div className="info-icon">
                             <span className="fa fa-comment-alt-lines"></span>
@@ -107,11 +110,11 @@ const Header = () => {
                         </div>
                       </div>
                     </div>
-                  </div> */}
+                  </div>
 
                   {/* <!-- Header Social Networks --> */}
-                  {/* <div className="header-social-networks style-icons">
-                    <div className="inner">
+                  <div className="header-social-networks style-icons">
+                    <div className="inner YourClass">
                       <a
                         className=" social-link hint--black hint--bottom-left"
                         aria-label="Twitter"
@@ -145,7 +148,7 @@ const Header = () => {
                         <i className="social-icon fab fa-linkedin"></i>
                       </a>
                     </div>
-                  </div> */}
+                  </div>
                 </div>
                 {/* <!-- mobile menu --> */}
                 <div
@@ -160,9 +163,12 @@ const Header = () => {
                   className="hidden-icons-menu d-block d-md-none"
                   id="hidden-icon-trigger"
                 >
-                  <a href="/">
-                    <i className="far fa-ellipsis-h-alt"></i>
-                  </a>
+                  {/* <a href="/"> */}
+                  <i
+                    className="far fa-ellipsis-h-alt YourClass"
+                    onClick={handleclick}
+                  ></i>
+                  {/* </a> */}
                 </div>
               </div>
             </div>
@@ -180,7 +186,7 @@ const Header = () => {
                   <div className="header__navigation d-none d-xl-block">
                     <nav className="navigation-menu navigation-menu--text_white">
                       <ul>
-                        <li className="has-children has-children--multilevel-submenu">
+                        <li className="has-children">
                           <NavLink to="/">
                             <span>Home</span>
                           </NavLink>
@@ -228,8 +234,8 @@ const Header = () => {
                           </a>
                           <ul className="submenu">
                             <li>
-                              <Link to="/recruit">
-                                <span>Recruitment Services</span>
+                              <Link to="/IT">
+                                <span>IT Services</span>
                               </Link>
                             </li>
                             <li>
@@ -238,18 +244,18 @@ const Header = () => {
                               </Link>
                             </li>
                             <li>
-                              <Link to="/IT">
-                                <span>IT Services</span>
+                              <Link to="/recruit">
+                                <span>Recruitment Services</span>
                               </Link>
                             </li>
                           </ul>
                         </li>
-                        <li className="has-children has-children--multilevel-submenu">
+                        <li className="has-children">
                           <Link to="/casestudies">
                             <span>Case Studies</span>
                           </Link>
                         </li>
-                        <li className="has-children has-children--multilevel-submenu">
+                        <li className="has-children">
                           <Link to="/blog">
                             <span>Blog</span>
                           </Link>
@@ -288,7 +294,7 @@ const Header = () => {
       {/* <!-- Start Toolbar --> */}
       <div className="demo-option-container">
         {/* <!-- Start Toolbar --> */}
-        <div className="aeroland__toolbar">
+        {/* <div className="aeroland__toolbar">
           <div className="inner">
             <a
               className="quick-option hint--bounce hint--left hint--black primary-color-hover-important"
@@ -312,7 +318,7 @@ const Header = () => {
               <i className="fal fa-shopping-cart"></i>
             </a>
           </div>
-        </div>
+        </div> */}
         {/* <!-- End Toolbar --> */}
         {/* <!-- Start Quick Link --> */}
         <div className="demo-option-wrapper">

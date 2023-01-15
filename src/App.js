@@ -27,7 +27,9 @@ import "../src/assets/css/plugins/animate-text.css";
 import "../src/assets/css/plugins/animate.min.css";
 import "../src/assets/css/plugins/lightgallery.min.css";
 import "../src/assets/css/style.css";
+// import "../src/assets/css/style.min.css";
 import "../src/assets/css/plugins/plugins.min.css";
+// import "../src/assets/css/vendor/vendor.css";
 
 function App() {
   return (
