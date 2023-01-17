@@ -11,7 +11,7 @@ import "../assets/css/plugins/animate.min.css";
 import "../assets/css/plugins/lightgallery.min.css";
 import "../assets/css/style.css";
 
-import logo from "../assets/images/logo/04.jpg";
+import logo from "../assets/images/logo/ninja2.jpg";
 
 export const Footer = () => {
   return (
