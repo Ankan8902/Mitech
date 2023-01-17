@@ -2441,6 +2441,10 @@ input[type="checkbox"] {
 /*=============================================
 =              05. Header Css            =
 =============================================*/
+.MyClass{
+  text-align: -webkit-center;
+}
+
 .header-area {
   position: relative;
   z-index: 9;
@@ -2452,13 +2456,13 @@ input[type="checkbox"] {
   left: 0;
   width: 100%;
   -webkit-animation: .95s ease-in-out 0s normal none 1 running fadeInDown;
-          animation: .95s ease-in-out 0s normal none 1 running fadeInDown;
+  animation: .95s ease-in-out 0s normal none 1 running fadeInDown;
   z-index: 999;
   -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
 
@@ -2634,7 +2638,8 @@ input[type="checkbox"] {
 }
 
 .header__logo.top-logo {
-  padding: 25px 0;
+  /* padding: 25px 0; */
+  padding: 15px 0;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2657,7 +2662,8 @@ input[type="checkbox"] {
 }
 
 .header__logo > a img {
-  width: 160px;
+  /* width: 160px; */
+  width: 135px;
 }
 
 .header__logo .dark-logo {

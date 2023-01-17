@@ -11,7 +11,7 @@ import "../assets/css/plugins/animate.min.css";
 import "../assets/css/plugins/lightgallery.min.css";
 import "../assets/css/style.css";
 
-import logo from "../assets/images/logo/ninja.jpg";
+import logo from "../assets/images/logo/04.jpg";
 
 export const Footer = () => {
   return (
@@ -94,8 +94,8 @@ export const Footer = () => {
                 <h6 className="footer-widget__title mb-20">Our Services</h6>
                 <ul className="footer-widget__list">
                   <li>
-                    <NavLink to="/recruit" className="hover-style-link">
-                      Recruitment Services
+                    <NavLink to="/IT" className="hover-style-link">
+                      IT Services
                     </NavLink>
                   </li>
                   <li>
@@ -104,8 +104,8 @@ export const Footer = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/IT" className="hover-style-link">
-                      IT Services
+                    <NavLink to="/recruit" className="hover-style-link">
+                      Recruitment Services
                     </NavLink>
                   </li>
                 </ul>
