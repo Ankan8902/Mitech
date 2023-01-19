@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-import logo from "../assets/images/logo/Ninja.png";
+import logo from "../assets/images/logo/over.png";
 
 const Header = () => {
   const [btnState, setBtnState] = useState(false);
