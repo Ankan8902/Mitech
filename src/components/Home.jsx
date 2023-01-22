@@ -50,6 +50,10 @@ import testimonial2 from "../assets/images/testimonial/mitech-testimonial-avata-
 import testimonial3 from "../assets/images/testimonial/mitech-testimonial-avata-04-90x90.webp";
 import testimonial4 from "../assets/images/testimonial/mitech-testimonial-avata-01-90x90.webp";
 
+import behance from "../assets/images/logo/behance.png";
+import github from "../assets/images/logo/github.png";
+import dribble from "../assets/images/icons/mitech-pricing-box-icon-01-90x90.webp";
+
 // import mail from "../assets/php/hero-mail.php";
 import services from "../assets/php/services-mail.php";
 
@@ -977,147 +981,205 @@ export const Home = () => {
       </div>
       {/* <!-- ============ Team Member Wrapper End =============== --> */}
 
-      {/* <!--========== Call to Action Area Start ============--> */}
-      <div className="cta-image-area_one section-space--ptb_80 cta-bg-image_two">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-xl-8 col-lg-7">
-              <div className="cta-content md-text-center">
-                <h3 className="heading">
-                  We run all kinds of IT services that vow your{" "}
-                  <span className="text-color-primary"> success</span>
-                </h3>
+      {/* <!-- =========================Our Platforms========================= --> */}
+
+      <div id="main-wrapper">
+        <div class="site-wrapper-reveal">
+          {/* <!--========= Pricing Table Area Start ==========--> */}
+          <div class="pricing-table-area section-space--ptb_100 bg-gray">
+            <div class="pricing-table-title-area position-relative">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="section-title-wrapper text-center section-space--mb_60 wow move-up">
+                      <h6 class="section-sub-title mb-20">Other Platforms</h6>
+                      <h3 class="section-title">
+                        Our Work Proof Across a Variety of{" "}
+                        <span class="text-color-primary">Domains</span>{" "}
+                      </h3>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-5">
-              <div className="cta-button-group--two text-center">
-                <a href="/" className="btn btn--white btn-one">
-                  <span className="btn-icon me-2">
-                    <i className="far fa-comment-alt-dots"></i>
-                  </span>{" "}
-                  Let's talk
-                </a>
-                <a href="/" className="btn btn--secondary btn-two ">
-                  <span className="btn-icon me-2">
-                    <i className="far fa-info-circle"></i>
-                  </span>{" "}
-                  Get info
-                </a>
+            <div class="pricing-table-content-area">
+              <div class="container">
+                <div class="row pricing-table-one">
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-4 pricing-table wow move-up">
+                    <div class="pricing-table__inner">
+                      <div class="pricing-table__header">
+                        <h6 class="sub-title">DRIBBLE</h6>
+                        <div class="pricing-table__image">
+                          <img src={dribble} class="img-fluid" alt="" />
+                        </div>
+                      </div>
+                      <div class="pricing-table__body">
+                        <div class="pricing-table__footer">
+                          <a href="/" class="ht-btn ht-btn-md ht-btn--outline">
+                            Get started
+                          </a>
+                        </div>
+                        <ul class="pricing-table__list text-left">
+                          <li>03 projects</li>
+                          <li>Quality &amp; Customer Experience</li>
+                          <li>
+                            <span class="featured">Try for free, forever!</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-4 pricing-table pricing-table--popular wow move-up">
+                    <div class="pricing-table__inner">
+                      <div class="pricing-table__header">
+                        <h6 class="sub-title">BEHANCE</h6>
+                        <div class="pricing-table__image">
+                          <img src={behance} class="behance" alt="" />
+                        </div>
+                      </div>
+                      <div class="pricing-table__body">
+                        <div class="pricing-table__footer">
+                          <a href="/" class="ht-btn  ht-btn-md ">
+                            Get started
+                          </a>
+                        </div>
+                        <ul class="pricing-table__list text-left">
+                          <li>Unlimited project</li>
+                          <li>Power And Predictive Dialing</li>
+                          <li>Quality &amp; Customer Experience</li>
+                          <li>24/7 phone and email support</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-4 pricing-table wow move-up">
+                    <div class="pricing-table__inner">
+                      <div class="pricing-table__header">
+                        <h6 class="sub-title">GITHUB</h6>
+                        <div class="pricing-table__image">
+                          <img src={github} class="behance" alt="" />
+                        </div>
+                      </div>
+                      <div class="pricing-table__body">
+                        <div class="pricing-table__footer">
+                          <a href="/" class="ht-btn ht-btn-md ht-btn--outline">
+                            Get started
+                          </a>
+                        </div>
+                        <ul class="pricing-table__list text-left">
+                          <li>10 projects</li>
+                          <li>Power And Predictive Dialing </li>
+                          <li>Quality &amp; Customer Experience </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!--========= Pricing Table Area End ==========--> */}
+        </div>
+
+        {/* <!--========== Call to Action Area Start ============--> */}
+        <div className="cta-image-area_one section-space--ptb_80 cta-bg-image_two">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-xl-8 col-lg-7">
+                <div className="cta-content md-text-center">
+                  <h3 className="heading">
+                    We run all kinds of IT services that vow your{" "}
+                    <span className="text-color-primary"> success</span>
+                  </h3>
+                </div>
+              </div>
+              <div className="col-xl-4 col-lg-5">
+                <div className="cta-button-group--two text-center">
+                  <a href="/" className="btn btn--white btn-one">
+                    <span className="btn-icon me-2">
+                      <i className="far fa-comment-alt-dots"></i>
+                    </span>{" "}
+                    Let's talk
+                  </a>
+                  <a href="/" className="btn btn--secondary btn-two ">
+                    <span className="btn-icon me-2">
+                      <i className="far fa-info-circle"></i>
+                    </span>{" "}
+                    Get info
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      {/* <!--========== Call to Action Area End ============--> */}
+        {/* <!--========== Call to Action Area End ============--> */}
 
-      {/* <!--===========  Projects wrapper Start =============--> */}
-      <div className="projects-wrapper projectinfotechno-bg section-space--ptb_100">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              {/* <!-- section-title-wrap Start --> */}
-              <div className="section-title-wrap text-center section-space--mb_40">
-                <h6 className="section-sub-title mb-20">Case studies</h6>
-                <h3 className="heading">
-                  Proud projects{" "}
-                  <span className="text-color-primary"> make us excel</span>
-                </h3>
+        {/* <!--===========  Projects wrapper Start =============--> */}
+        <div className="projects-wrapper projectinfotechno-bg section-space--ptb_100">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                {/* <!-- section-title-wrap Start --> */}
+                <div className="section-title-wrap text-center section-space--mb_40">
+                  <h6 className="section-sub-title mb-20">Case studies</h6>
+                  <h3 className="heading">
+                    Proud projects{" "}
+                    <span className="text-color-primary"> make us excel</span>
+                  </h3>
+                </div>
+                {/* <!-- section-title-wrap Start --> */}
               </div>
-              {/* <!-- section-title-wrap Start --> */}
             </div>
-          </div>
 
-          <div className="row">
-            <div className="col-12">
-              <div className="projects-wrap swiper-container projects-slider__container">
-                <div className="swiper-wrapper">
-                  <div className="swiper-slide">
-                    {/* <!-- Projects Wrap Start --> */}
-                    <a href="/" className="projects-wrap style-01 wow move-up">
-                      <div className="projects-image-box">
-                        <div className="projects-image">
-                          <img className="img-fluid" src={study} alt="" />
-                        </div>
-                        <div className="content">
-                          <h6 className="heading">Mitech-Smart Vision</h6>
-                          <div className="post-categories">Cyber Security</div>
-                          <div className="text">
-                            At Mitech, we have a holistic and integrated
-                            approach towards core modernization to experience
-                            technological evolution.
-                          </div>
-                          <div className="box-projects-arrow">
-                            <span className="button-text">View case study</span>
-                            <i className="fa fa-long-arrow-right ml-1"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    {/* <!-- Projects Wrap End --> */}
-                  </div>
-
-                  <div className="swiper-slide">
-                    {/* <!-- Projects Wrap Start --> */}
-                    <a href="/" className="projects-wrap style-01 wow move-up">
-                      <div className="projects-image-box">
-                        <div className="projects-image">
-                          <img className="img-fluid" src={study2} alt="" />
-                        </div>
-                        <div className="content">
-                          <h6 className="heading">Arden-Internal Networking</h6>
-                          <div className="post-categories">Cyber Security</div>
-                          <div className="text">
-                            The prospects for a company operating in this new
-                            market are varied and exciting. The potential …
-                          </div>
-                          <div className="box-projects-arrow">
-                            <span className="button-text">View case study</span>
-                            <i className="fa fa-long-arrow-right ml-1"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    {/* <!-- Projects Wrap End --> */}
-                  </div>
-
-                  <div className="swiper-slide">
-                    {/* <!-- Projects Wrap Start --> */}
-                    <a href="/" className="projects-wrap style-01 wow move-up">
-                      <div className="projects-image-box">
-                        <div className="projects-image">
-                          <img className="img-fluid" src={study3} alt="" />
-                        </div>
-                        <div className="content">
-                          <h6 className="heading">A Freeserve case study</h6>
-                          <div className="post-categories">Cyber Security</div>
-                          <div className="text">
-                            The prospects for a company operating in this new
-                            market are varied and exciting. The potential …
-                          </div>
-                          <div className="box-projects-arrow">
-                            <span className="button-text">View case study</span>
-                            <i className="fa fa-long-arrow-right ml-1"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    {/* <!-- Projects Wrap End --> */}
-                  </div>
-
-                  <div className="swiper-slide">
-                    {/* <!-- Projects Wrap Start --> */}
-                    <div>
+            <div className="row">
+              <div className="col-12">
+                <div className="projects-wrap swiper-container projects-slider__container">
+                  <div className="swiper-wrapper">
+                    <div className="swiper-slide">
+                      {/* <!-- Projects Wrap Start --> */}
                       <a
                         href="/"
                         className="projects-wrap style-01 wow move-up"
                       >
                         <div className="projects-image-box">
                           <div className="projects-image">
-                            <img className="img-fluid" src={study4} alt="" />
+                            <img className="img-fluid" src={study} alt="" />
+                          </div>
+                          <div className="content">
+                            <h6 className="heading">Mitech-Smart Vision</h6>
+                            <div className="post-categories">
+                              Cyber Security
+                            </div>
+                            <div className="text">
+                              At Mitech, we have a holistic and integrated
+                              approach towards core modernization to experience
+                              technological evolution.
+                            </div>
+                            <div className="box-projects-arrow">
+                              <span className="button-text">
+                                View case study
+                              </span>
+                              <i className="fa fa-long-arrow-right ml-1"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      {/* <!-- Projects Wrap End --> */}
+                    </div>
+
+                    <div className="swiper-slide">
+                      {/* <!-- Projects Wrap Start --> */}
+                      <a
+                        href="/"
+                        className="projects-wrap style-01 wow move-up"
+                      >
+                        <div className="projects-image-box">
+                          <div className="projects-image">
+                            <img className="img-fluid" src={study2} alt="" />
                           </div>
                           <div className="content">
                             <h6 className="heading">
-                              Aqua - Research and Energy
+                              Arden-Internal Networking
                             </h6>
                             <div className="post-categories">
                               Cyber Security
@@ -1137,312 +1199,381 @@ export const Home = () => {
                       </a>
                       {/* <!-- Projects Wrap End --> */}
                     </div>
-                  </div>
-                  <div className="swiper-pagination swiper-pagination-project mt_20"></div>
-                </div>
 
-                <div className="section-under-heading text-center section-space--mt_40">
-                  Challenges are just opportunities in disguise.{" "}
-                  <a href="/">Take the challenge!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <!--===========  Projects wrapper End =============--> */}
-
-        {/* <!--====================  testimonial section ====================--> */}
-        <div className="testimonial-slider-area bg-gray section-space--ptb_100">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title-wrap text-center section-space--mb_40">
-                  <h6 className="section-sub-title mb-20">Testimonials</h6>
-                  <h3 className="heading">
-                    What do people praise about{" "}
-                    <span className="text-color-primary"> Mitech?</span>
-                  </h3>
-                </div>
-                <div className="testimonial-slider">
-                  <div className="swiper-container testimonial-slider__container">
-                    <div className="swiper-wrapper testimonial-slider__wrapper">
-                      <div className="swiper-slide">
-                        <div className="testimonial-slider__one wow move-up">
-                          <div className="testimonial-slider--info">
-                            <div className="testimonial-slider__media">
-                              <img
-                                src={testimonial}
-                                className="img-fluid"
-                                alt=""
-                              />
-                            </div>
-
-                            <div className="testimonial-slider__author">
-                              <div className="testimonial-rating">
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                              </div>
-                              <div className="author-info">
-                                <h6 className="name">Abbie Ferguson</h6>
-                                <span className="designation">Marketing</span>
-                              </div>
-                            </div>
+                    <div className="swiper-slide">
+                      {/* <!-- Projects Wrap Start --> */}
+                      <a
+                        href="/"
+                        className="projects-wrap style-01 wow move-up"
+                      >
+                        <div className="projects-image-box">
+                          <div className="projects-image">
+                            <img className="img-fluid" src={study3} alt="" />
                           </div>
-
-                          <div className="testimonial-slider__text">
-                            I've been working with over 35 IT companies on more
-                            than 200 projects of our company, but @Mitech is one
-                            of the most impressive to me.
+                          <div className="content">
+                            <h6 className="heading">A Freeserve case study</h6>
+                            <div className="post-categories">
+                              Cyber Security
+                            </div>
+                            <div className="text">
+                              The prospects for a company operating in this new
+                              market are varied and exciting. The potential …
+                            </div>
+                            <div className="box-projects-arrow">
+                              <span className="button-text">
+                                View case study
+                              </span>
+                              <i className="fa fa-long-arrow-right ml-1"></i>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="swiper-slide">
-                        <div className="testimonial-slider__one wow move-up">
-                          <div className="testimonial-slider--info">
-                            <div className="testimonial-slider__media">
-                              <img
-                                src={testimonial2}
-                                className="img-fluid"
-                                alt=""
-                              />
-                            </div>
-
-                            <div className="testimonial-slider__author">
-                              <div className="testimonial-rating">
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                              </div>
-                              <div className="author-info">
-                                <h6 className="name">Monica Blews</h6>
-                                <span className="designation">
-                                  Web designer
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="testimonial-slider__text">
-                            I've been working with over 35 IT companies on more
-                            than 200 projects of our company, but @Mitech is one
-                            of the most impressive to me.
-                          </div>
-                        </div>
-                      </div>
-                      <div className="swiper-slide">
-                        <div className="testimonial-slider__one wow move-up">
-                          <div className="testimonial-slider--info">
-                            <div className="testimonial-slider__media">
-                              <img
-                                src={testimonial3}
-                                className="img-fluid"
-                                alt=""
-                              />
-                            </div>
-
-                            <div className="testimonial-slider__author">
-                              <div className="testimonial-rating">
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                              </div>
-                              <div className="author-info">
-                                <h6 className="name">Abbie Ferguson</h6>
-                                <span className="designation">
-                                  WEB DESIGNER
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="testimonial-slider__text">
-                            I've been working with over 35 IT companies on more
-                            than 200 projects of our company, but @Mitech is one
-                            of the most impressive to me.
-                          </div>
-                        </div>
-                      </div>
-                      <div className="swiper-slide">
-                        <div className="testimonial-slider__one wow move-up">
-                          <div className="testimonial-slider--info">
-                            <div className="testimonial-slider__media">
-                              <img
-                                src={testimonial4}
-                                className="img-fluid"
-                                alt=""
-                              />
-                            </div>
-
-                            <div className="testimonial-slider__author">
-                              <div className="testimonial-rating">
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                                <span className="fa fa-star"></span>
-                              </div>
-                              <div className="author-info">
-                                <h6 className="name">Abbie Ferguson</h6>
-                                <span className="designation">
-                                  WEB DESIGNER
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="testimonial-slider__text">
-                            I've been working with over 35 IT companies on more
-                            than 200 projects of our company, but @Mitech is one
-                            of the most impressive to me.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="swiper-pagination swiper-pagination-t01 section-space--mt_30"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <!--====================  End of testimonial section  ====================--> */}
-
-        {/* <!--=========== fun fact Wrapper Start ==========--> */}
-        <div className="fun-fact-wrapper bg-theme-default section-space--pb_30 section-space--pt_60">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-3 col-sm-6 wow move-up">
-                <div className="fun-fact--two text-center">
-                  <div className="fun-fact__count counter">120</div>
-                  <h6 className="fun-fact__text">Happy clients</h6>
-                </div>
-              </div>
-              <div className="col-md-3 col-sm-6 wow move-up">
-                <div className="fun-fact--two text-center">
-                  <div className="fun-fact__count counter">32</div>
-                  <h6 className="fun-fact__text">Finished projects</h6>
-                </div>
-              </div>
-              <div className="col-md-3 col-sm-6 wow move-up">
-                <div className="fun-fact--two text-center">
-                  <div className="fun-fact__count counter">73</div>
-                  <h6 className="fun-fact__text">Skilled Experts</h6>
-                </div>
-              </div>
-              <div className="col-md-3 col-sm-6 wow move-up">
-                <div className="fun-fact--two text-center">
-                  <div className="fun-fact__count counter">318</div>
-                  <h6 className="fun-fact__text">Media Posts</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <!--=========== fun fact Wrapper End ==========--> */}
-
-        {/* <!--============ Contact Us Area Start =================--> */}
-        <div className="contact-us-area appointment-contact-bg section-space--ptb_100">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="contact-title section-space--mb_50">
-                  <h3 className="mb-20">Need a hand?</h3>
-                  <p className="sub-title">
-                    Reach out to the world's most reliable IT services.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-6">
-                <div className="contact-form-wrap">
-                  {/* <!-- <forv className="contact-form" id="contact-form-2" action="https://whizthemes.com/mail-php/jowel/mitech/php/services-mail.php" method="post"> --> */}
-                  <form
-                    className="contact-form"
-                    id="contact-form-2"
-                    action={services}
-                    method="post"
-                  >
-                    <div className="contact-form__two">
-                      <div className="contact-input">
-                        <div className="contact-inner">
-                          <input
-                            name="con_name"
-                            type="text"
-                            placeholder="Name *"
-                          />
-                        </div>
-                        <div className="contact-inner">
-                          <input
-                            name="con_email"
-                            type="email"
-                            placeholder="Email *"
-                          />
-                        </div>
-                      </div>
-                      <div className="contact-select">
-                        <div className="form-item contact-inner">
-                          <span className="inquiry">
-                            <select id="Visiting" name="Visiting">
-                              <option defaultValue="Select Department to email"></option>
-                              <option defaultValue="Your inquiry about"></option>
-                              <option defaultValue="General Information Request"></option>
-                              <option defaultValue="Partner Relations"></option>
-                              <option defaultValue="Careers">Careers</option>
-                              <option defaultValue="Software Licencing"></option>
-                            </select>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="contact-inner contact-message">
-                        <textarea
-                          name="con_message"
-                          placeholder="Please describe what you need."
-                        ></textarea>
-                      </div>
-                      <div className="comment-submit-btn">
-                        <button className="ht-btn ht-btn-md" type="submit">
-                          Get a free consultation
-                        </button>
-                        <p className="form-messege-2"></p>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div className="col-lg-5 ms-auto">
-                <div className="contact-info-three text-left">
-                  <h6 className="heading font-weight--reguler">
-                    Reach out now!
-                  </h6>
-                  <h3 className="call-us">
-                    <a href="/">(+00) 123 567990</a>
-                  </h3>
-                  <div className="text">
-                    Start the collaboration with us while figuring out the best
-                    solution based on your needs.
-                  </div>
-                  <div className="location-button mt-20">
-                    <div>
-                      <a href="/" className="location-text-button">
-                        <span className="button-icon"></span>{" "}
-                        <span className="button-text">View on Google map</span>
                       </a>
+                      {/* <!-- Projects Wrap End --> */}
+                    </div>
+
+                    <div className="swiper-slide">
+                      {/* <!-- Projects Wrap Start --> */}
+                      <div>
+                        <a
+                          href="/"
+                          className="projects-wrap style-01 wow move-up"
+                        >
+                          <div className="projects-image-box">
+                            <div className="projects-image">
+                              <img className="img-fluid" src={study4} alt="" />
+                            </div>
+                            <div className="content">
+                              <h6 className="heading">
+                                Aqua - Research and Energy
+                              </h6>
+                              <div className="post-categories">
+                                Cyber Security
+                              </div>
+                              <div className="text">
+                                The prospects for a company operating in this
+                                new market are varied and exciting. The
+                                potential …
+                              </div>
+                              <div className="box-projects-arrow">
+                                <span className="button-text">
+                                  View case study
+                                </span>
+                                <i className="fa fa-long-arrow-right ml-1"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        {/* <!-- Projects Wrap End --> */}
+                      </div>
+                    </div>
+                    <div className="swiper-pagination swiper-pagination-project mt_20"></div>
+                  </div>
+
+                  <div className="section-under-heading text-center section-space--mt_40">
+                    Challenges are just opportunities in disguise.{" "}
+                    <a href="/">Take the challenge!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!--===========  Projects wrapper End =============--> */}
+
+          {/* <!--====================  testimonial section ====================--> */}
+          <div className="testimonial-slider-area bg-gray section-space--ptb_100">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="section-title-wrap text-center section-space--mb_40">
+                    <h6 className="section-sub-title mb-20">Testimonials</h6>
+                    <h3 className="heading">
+                      What do people praise about{" "}
+                      <span className="text-color-primary"> Mitech?</span>
+                    </h3>
+                  </div>
+                  <div className="testimonial-slider">
+                    <div className="swiper-container testimonial-slider__container">
+                      <div className="swiper-wrapper testimonial-slider__wrapper">
+                        <div className="swiper-slide">
+                          <div className="testimonial-slider__one wow move-up">
+                            <div className="testimonial-slider--info">
+                              <div className="testimonial-slider__media">
+                                <img
+                                  src={testimonial}
+                                  className="img-fluid"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div className="testimonial-slider__author">
+                                <div className="testimonial-rating">
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                </div>
+                                <div className="author-info">
+                                  <h6 className="name">Abbie Ferguson</h6>
+                                  <span className="designation">Marketing</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="testimonial-slider__text">
+                              I've been working with over 35 IT companies on
+                              more than 200 projects of our company, but @Mitech
+                              is one of the most impressive to me.
+                            </div>
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="testimonial-slider__one wow move-up">
+                            <div className="testimonial-slider--info">
+                              <div className="testimonial-slider__media">
+                                <img
+                                  src={testimonial2}
+                                  className="img-fluid"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div className="testimonial-slider__author">
+                                <div className="testimonial-rating">
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                </div>
+                                <div className="author-info">
+                                  <h6 className="name">Monica Blews</h6>
+                                  <span className="designation">
+                                    Web designer
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="testimonial-slider__text">
+                              I've been working with over 35 IT companies on
+                              more than 200 projects of our company, but @Mitech
+                              is one of the most impressive to me.
+                            </div>
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="testimonial-slider__one wow move-up">
+                            <div className="testimonial-slider--info">
+                              <div className="testimonial-slider__media">
+                                <img
+                                  src={testimonial3}
+                                  className="img-fluid"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div className="testimonial-slider__author">
+                                <div className="testimonial-rating">
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                </div>
+                                <div className="author-info">
+                                  <h6 className="name">Abbie Ferguson</h6>
+                                  <span className="designation">
+                                    WEB DESIGNER
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="testimonial-slider__text">
+                              I've been working with over 35 IT companies on
+                              more than 200 projects of our company, but @Mitech
+                              is one of the most impressive to me.
+                            </div>
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <div className="testimonial-slider__one wow move-up">
+                            <div className="testimonial-slider--info">
+                              <div className="testimonial-slider__media">
+                                <img
+                                  src={testimonial4}
+                                  className="img-fluid"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div className="testimonial-slider__author">
+                                <div className="testimonial-rating">
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                  <span className="fa fa-star"></span>
+                                </div>
+                                <div className="author-info">
+                                  <h6 className="name">Abbie Ferguson</h6>
+                                  <span className="designation">
+                                    WEB DESIGNER
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="testimonial-slider__text">
+                              I've been working with over 35 IT companies on
+                              more than 200 projects of our company, but @Mitech
+                              is one of the most impressive to me.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="swiper-pagination swiper-pagination-t01 section-space--mt_30"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          {/* <!--====================  End of testimonial section  ====================--> */}
+
+          {/* <!--=========== fun fact Wrapper Start ==========--> */}
+          <div className="fun-fact-wrapper bg-theme-default section-space--pb_30 section-space--pt_60">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-3 col-sm-6 wow move-up">
+                  <div className="fun-fact--two text-center">
+                    <div className="fun-fact__count counter">120</div>
+                    <h6 className="fun-fact__text">Happy clients</h6>
+                  </div>
+                </div>
+                <div className="col-md-3 col-sm-6 wow move-up">
+                  <div className="fun-fact--two text-center">
+                    <div className="fun-fact__count counter">32</div>
+                    <h6 className="fun-fact__text">Finished projects</h6>
+                  </div>
+                </div>
+                <div className="col-md-3 col-sm-6 wow move-up">
+                  <div className="fun-fact--two text-center">
+                    <div className="fun-fact__count counter">73</div>
+                    <h6 className="fun-fact__text">Skilled Experts</h6>
+                  </div>
+                </div>
+                <div className="col-md-3 col-sm-6 wow move-up">
+                  <div className="fun-fact--two text-center">
+                    <div className="fun-fact__count counter">318</div>
+                    <h6 className="fun-fact__text">Media Posts</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!--=========== fun fact Wrapper End ==========--> */}
+
+          {/* <!--============ Contact Us Area Start =================--> */}
+          <div className="contact-us-area appointment-contact-bg section-space--ptb_100">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="contact-title section-space--mb_50">
+                    <h3 className="mb-20">Need a hand?</h3>
+                    <p className="sub-title">
+                      Reach out to the world's most reliable IT services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-lg-6">
+                  <div className="contact-form-wrap">
+                    {/* <!-- <forv className="contact-form" id="contact-form-2" action="https://whizthemes.com/mail-php/jowel/mitech/php/services-mail.php" method="post"> --> */}
+                    <form
+                      className="contact-form"
+                      id="contact-form-2"
+                      action={services}
+                      method="post"
+                    >
+                      <div className="contact-form__two">
+                        <div className="contact-input">
+                          <div className="contact-inner">
+                            <input
+                              name="con_name"
+                              type="text"
+                              placeholder="Name *"
+                            />
+                          </div>
+                          <div className="contact-inner">
+                            <input
+                              name="con_email"
+                              type="email"
+                              placeholder="Email *"
+                            />
+                          </div>
+                        </div>
+                        <div className="contact-select">
+                          <div className="form-item contact-inner">
+                            <span className="inquiry">
+                              <select id="Visiting" name="Visiting">
+                                <option defaultValue="Select Department to email"></option>
+                                <option defaultValue="Your inquiry about"></option>
+                                <option defaultValue="General Information Request"></option>
+                                <option defaultValue="Partner Relations"></option>
+                                <option defaultValue="Careers">Careers</option>
+                                <option defaultValue="Software Licencing"></option>
+                              </select>
+                            </span>
+                          </div>
+                        </div>
+                        <div className="contact-inner contact-message">
+                          <textarea
+                            name="con_message"
+                            placeholder="Please describe what you need."
+                          ></textarea>
+                        </div>
+                        <div className="comment-submit-btn">
+                          <button className="ht-btn ht-btn-md" type="submit">
+                            Get a free consultation
+                          </button>
+                          <p className="form-messege-2"></p>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div className="col-lg-5 ms-auto">
+                  <div className="contact-info-three text-left">
+                    <h6 className="heading font-weight--reguler">
+                      Reach out now!
+                    </h6>
+                    <h3 className="call-us">
+                      <a href="/">(+00) 123 567990</a>
+                    </h3>
+                    <div className="text">
+                      Start the collaboration with us while figuring out the
+                      best solution based on your needs.
+                    </div>
+                    <div className="location-button mt-20">
+                      <div>
+                        <a href="/" className="location-text-button">
+                          <span className="button-icon"></span>{" "}
+                          <span className="button-text">
+                            View on Google map
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!--============ Contact Us Area End =================--> */}
         </div>
-        {/* <!--============ Contact Us Area End =================--> */}
       </div>
     </div>
   );

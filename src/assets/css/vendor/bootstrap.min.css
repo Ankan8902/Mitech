@@ -538,11 +538,17 @@ progress {
   height: auto;
 }
 
-.imgfluid{
+.imgfluid {
   /* max-width: 59%; */
   /* height: auto; */
   width: 45%;
 }
+
+.behance {
+  max-width: 80%;
+  height: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
