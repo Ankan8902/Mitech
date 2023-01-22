@@ -549,6 +549,11 @@ progress {
   height: auto;
 }
 
+.dribble {
+  max-width: 170%;
+  height: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;

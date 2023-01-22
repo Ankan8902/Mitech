@@ -52,7 +52,7 @@ import testimonial4 from "../assets/images/testimonial/mitech-testimonial-avata-
 
 import behance from "../assets/images/logo/behance.png";
 import github from "../assets/images/logo/github.png";
-import dribble from "../assets/images/icons/mitech-pricing-box-icon-01-90x90.webp";
+import dribble from "../assets/images/logo/dribble.png";
 
 // import mail from "../assets/php/hero-mail.php";
 import services from "../assets/php/services-mail.php";
@@ -1010,7 +1010,7 @@ export const Home = () => {
                       <div class="pricing-table__header">
                         <h6 class="sub-title">DRIBBLE</h6>
                         <div class="pricing-table__image">
-                          <img src={dribble} class="img-fluid" alt="" />
+                          <img src={dribble} class="dribble" alt="" />
                         </div>
                       </div>
                       <div class="pricing-table__body">
