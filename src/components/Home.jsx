@@ -1269,15 +1269,60 @@ export const Home = () => {
                     <div className="swiper-pagination swiper-pagination-project mt_20"></div>
                   </div>
 
-                  <div className="section-under-heading text-center section-space--mt_40">
+                  {/* <div className="section-under-heading text-center section-space--mt_40">
                     Challenges are just opportunities in disguise.{" "}
                     <a href="/">Take the challenge!</a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
           {/* <!--===========  Projects wrapper End =============--> */}
+
+          {/* <!--=================== Hire Developers===============--> */}
+          {/* <!--====================  Contact us Section Start ====================--> */}
+          <div class="contact-us-section-wrappaer infotechno-contact-us-bg section-space--ptb_120">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 col-lg-6">
+                  <div class="conact-us-wrap-one">
+                    <h3 class="heading">
+                      Hire Dedicated{" "}
+                      <span class="text-color-primary">Developers</span>{" "}
+                      {/* with our experienced IT staffs.{" "} */}
+                    </h3>
+
+                    <div class="sub-heading">
+                      We're the web/app development and design team that walks
+                      the talk!
+                      {/* <br /> */}
+                      We take your Vision, Solve the challenges. From technology
+                      query to solution, delivering you value for your money
+                      with a quality product that is worthy of your reputation.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-lg-6">
+                  <div class="contact-info-one text-center">
+                    {/* <div class="icon">
+                      <span class="fal fa-phone"></span>
+                    </div>
+                    <h6 class="heading font-weight--reguler">Reach out now!</h6>
+                    <h2 class="call-us">
+                      <a href="tel:190068668">1900 68668</a>
+                    </h2> */}
+                    <div class="contact-us-button mt-20">
+                      <a href="/" class="btn btn--secondary">
+                        Hire Developers Now!
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!--====================  Conact us Section End  ====================--> */}
 
           {/* <!--====================  testimonial section ====================--> */}
           <div className="testimonial-slider-area bg-gray section-space--ptb_100">
