@@ -3452,6 +3452,7 @@ input[type="checkbox"] {
 }
 
 
+
 .navigation-menu > ul > li.has-children--multilevel-submenu {
   position: relative;
 }
@@ -11251,11 +11252,11 @@ ol {
 /*===================================
 =          32. Project Css           =
 ====================================*/
-.projectinfotechno-bg {
+/* .projectinfotechno-bg {
   background-image: url(../images/patterns/mitech-home-infotechno-case-study-section-bg.webp);
   background-repeat: no-repeat;
   background-position: bottom left;
-}
+} */
 
 .projects-slider__container .projects-wrap.style-01 {
   display: block;

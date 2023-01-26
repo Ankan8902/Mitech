@@ -186,12 +186,12 @@ const Header = () => {
                   <div className="header__navigation d-none d-xl-block">
                     <nav className="navigation-menu navigation-menu--text_white">
                       <ul>
-                        <li className="has-children">
+                        {/* <li className="has-children">
                           <NavLink to="/">
                             <span>Home</span>
                           </NavLink>
-                        </li>
-                        <li className="has-children has-children--multilevel-submenu">
+                        </li> */}
+                        <li className="has-children">
                           <a href="/">
                             <span>Company</span>
                           </a>
@@ -228,7 +228,7 @@ const Header = () => {
                             </li>
                           </ul>
                         </li>
-                        <li className="has-children has-children--multilevel-submenu">
+                        {/* <li className="has-children has-children--multilevel-submenu">
                           <a href="/">
                             <span>Our Services</span>
                           </a>
@@ -247,6 +247,375 @@ const Header = () => {
                               <Link to="/recruit">
                                 <span>Recruitment Services</span>
                               </Link>
+                            </li>
+                          </ul>
+                        </li> */}
+                        <li class="has-children">
+                          <a href="/">
+                            <span>Our Services</span>
+                          </a>
+                          {/* <!-- mega menu --> */}
+                          <ul class="megamenu megamenu--mega">
+                            <li>
+                              <h2 class="page-list-title">
+                                Mobile App Design & Development
+                              </h2>
+                              <ul>
+                                <li>
+                                  <a href="element-accordion.html">
+                                    <span>iOS App Development</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-box-icon.html">
+                                    <span>Android App Development</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-box-image.html">
+                                    <span>Flutter App Development</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-box-large-image.html">
+                                    <span>React-Native Development</span>
+                                  </a>
+                                </li>
+                                {/* <li>
+                                  <a href="element-buttons.html">
+                                    <span>Buttons</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-cta.html">
+                                    <span>Call to action</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-client-logo.html">
+                                    <span>Client Logo</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-countdown.html">
+                                    <span>Countdown</span>
+                                  </a>
+                                </li> */}
+                              </ul>
+                            </li>
+                            <li>
+                              <h2 class="page-list-title">
+                                Website Design & Development
+                              </h2>
+                              <ul>
+                                <li>
+                                  <a href="element-counters.html">
+                                    <span>AngularJS Development</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-dividers.html">
+                                    <span>ReactJS Development</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-flexible-image-slider.html">
+                                    <span>VueJS Development</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-google-map.html">
+                                    <span>NodeJS Development</span>
+                                  </a>
+                                </li>
+                                {/* <li>
+                                  <a href="element-gradation.html">
+                                    <span>Gradation</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-instagram.html">
+                                    <span>Instagram</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-lists.html">
+                                    <span>Lists</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-message-box.html">
+                                    <span>Message box</span>
+                                  </a>
+                                </li> */}
+                              </ul>
+                            </li>
+                            <li>
+                              <h2 class="page-list-title">
+                                Game Design & Development
+                              </h2>
+                              <ul>
+                                <li>
+                                  <a href="element-popup-video.html">
+                                    <span>Golang Development</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-pricing-box.html">
+                                    <span>Laravel Development</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-progress-bar.html">
+                                    <span>PHP Development</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-progress-circle.html">
+                                    <span>Wordpress Development</span>
+                                  </a>
+                                </li>
+                                {/* <li>
+                                  <a href="element-rows-columns.html">
+                                    <span>Rows & Columns</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-social-networks.html">
+                                    <span>Social Networks</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-tabs.html">
+                                    <span>Tabs</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-team-member.html">
+                                    <span>Team member</span>
+                                  </a>
+                                </li> */}
+                              </ul>
+                            </li>
+                            <li>
+                              <h2 class="page-list-title">ELEMENT GROUP 04</h2>
+                              <ul>
+                                <li>
+                                  <a href="element-testimonials.html">
+                                    <span>SEO</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-timeline.html">
+                                    <span>SMM</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-carousel-sliders.html">
+                                    <span>PPC</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-typed-text.html">
+                                    <span>Maintenance</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-typed-text.html">
+                                    <span>CRM</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-typed-text.html">
+                                    <span>POS</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="has-children">
+                          <a href="/">
+                            <span>Hire Developers</span>
+                          </a>
+                          {/* <!-- mega menu --> */}
+                          <ul class="megamenu megamenu--mega">
+                            <li>
+                              <h2 class="page-list-title">
+                                Mobile App Developers
+                              </h2>
+                              <ul>
+                                <li>
+                                  <a href="element-accordion.html">
+                                    <span>iOS App Developers</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-box-icon.html">
+                                    <span>Android App Developers</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-box-image.html">
+                                    <span>React-Native Developers</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-box-large-image.html">
+                                    <span>Flutter App Developers</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-buttons.html">
+                                    <span>Hybrid Mobile App Developers</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-buttons.html">
+                                    <span>Cross Platform App Developers</span>
+                                  </a>
+                                </li>
+                                {/* <li>
+                                  <a href="element-cta.html">
+                                    <span>Call to action</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-client-logo.html">
+                                    <span>Client Logo</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-countdown.html">
+                                    <span>Countdown</span>
+                                  </a>
+                                </li> */}
+                              </ul>
+                            </li>
+                            <li>
+                              <h2 class="page-list-title">Web Developers</h2>
+                              <ul>
+                                <li>
+                                  <a href="element-counters.html">
+                                    <span>AngularJS Developers</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-dividers.html">
+                                    <span>ReactJS Developers</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-flexible-image-slider.html">
+                                    <span>VueJS Developers</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-google-map.html">
+                                    <span>NodeJS Developers</span>
+                                  </a>
+                                </li>
+                                {/* <li>
+                                  <a href="element-gradation.html">
+                                    <span>Gradation</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-instagram.html">
+                                    <span>Instagram</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-lists.html">
+                                    <span>Lists</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-message-box.html">
+                                    <span>Message box</span>
+                                  </a>
+                                </li> */}
+                              </ul>
+                            </li>
+                            <li>
+                              <h2 class="page-list-title">Game Developers</h2>
+                              <ul>
+                                <li>
+                                  <a href="element-popup-video.html">
+                                    <span>GoLang Developers</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-pricing-box.html">
+                                    <span>Laravel Developers</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-progress-bar.html">
+                                    <span>PHP Developers</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-progress-circle.html">
+                                    <span>Wordpress Developers</span>
+                                  </a>
+                                </li>
+                                {/* <li>
+                                  <a href="element-rows-columns.html">
+                                    <span>Rows & Columns</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-social-networks.html">
+                                    <span>Social Networks</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-tabs.html">
+                                    <span>Tabs</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-team-member.html">
+                                    <span>Team member</span>
+                                  </a>
+                                </li> */}
+                              </ul>
+                            </li>
+                            <li>
+                              <h2 class="page-list-title">ELEMENT GROUP 04</h2>
+                              <ul>
+                                <li>
+                                  <a href="element-testimonials.html">
+                                    <span>SEO</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-timeline.html">
+                                    <span>SMM</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-carousel-sliders.html">
+                                    <span>PPC</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-typed-text.html">
+                                    <span>Maintenance</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-typed-text.html">
+                                    <span>CRM</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-typed-text.html">
+                                    <span>POS</span>
+                                  </a>
+                                </li>
+                              </ul>
                             </li>
                           </ul>
                         </li>
