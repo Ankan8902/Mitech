@@ -6,6 +6,7 @@ import logo from "../assets/images/logo/over.png";
 const Header = () => {
   const [btnState, setBtnState] = useState(false);
   const [btn, setBtn] = useState(false);
+  const [bn, setBn] = useState(false);
 
   function handleClick() {
     setBtnState((btnState) => !btnState);
@@ -15,8 +16,13 @@ const Header = () => {
     setBtn((btn) => !btn);
   }
 
+  function handlEClick() {
+    setBn((bn) => !bn);
+  }
+
   let toggleClassCheck = btnState ? " active" : "";
   let toggleClass = btn ? " active" : "";
+  let toggleclass = bn ? " active" : "";
 
   return (
     <>
@@ -850,10 +856,10 @@ const Header = () => {
                 <li className="has-children">
                   <NavLink to="/">Home</NavLink>
                 </li>
-                <li className="has-children">
-                  {/* <span className="menu-expand" onClick={HandleClick}>
+                <li className={`has-children${toggleclass}`}>
+                  <span className="menu-expand" onClick={handlEClick}>
                     <i></i>
-                  </span> */}
+                  </span>
                   <a href="/">Company</a>
                   <ul className="sub-menu">
                     <li className="has-children">
@@ -888,10 +894,10 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="has-children">
-                  {/* <span className="menu-expand" onClick={HandleClick}>
-                    <i></i>
-                  </span> */}
+                <li className={`has-children${toggleclass}`}>
+                  <span className="menu-expand">
+                    <i onClick={handlEClick}></i>
+                  </span>
                   <a href="/">Our Services</a>
                   <ul className="sub-menu">
                     <li>

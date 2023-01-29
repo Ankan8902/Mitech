@@ -9,32 +9,32 @@ import text from "../assets/images/svg/linea-basic-spread-text-bookmark.svg";
 
 import home from "../assets/images/hero/home.webp";
 import home2 from "../assets/images/hero/home-2.jpg";
-// import box from "../assets/images/box-image/blog-01-480x298.webp";
-// import info from "../assets/images/box-image/mitech-home-infotechno-box-large-image-03-480x298.webp";
-// import info2 from "../assets/images/box-image/mitech-home-infotechno-box-large-image-02-480x298.webp";
-// import logo from "../assets/images/brand/mitech-client-logo-01.webp";
-// import logo2 from "../assets/images/brand/mitech-client-logo-01-hover.webp";
-// import logo3 from "../assets/images/brand/mitech-client-logo-02.webp";
-// import logo4 from "../assets/images/brand/mitech-client-logo-02-hover.webp";
-// import logo5 from "../assets/images/brand/mitech-client-logo-03.webp";
-// import logo6 from "../assets/images/brand/mitech-client-logo-03-hover.webp";
-// import logo7 from "../assets/images/brand/mitech-client-logo-04.webp";
-// import logo8 from "../assets/images/brand/mitech-client-logo-04-hover.webp";
-// import logo9 from "../assets/images/brand/mitech-client-logo-05.webp";
-// import logo10 from "../assets/images/brand/mitech-client-logo-05-hover.webp";
-// import logo11 from "../assets/images/brand/mitech-client-logo-06.webp";
-// import logo12 from "../assets/images/brand/mitech-client-logo-06-hover.webp";
-// import logo13 from "../assets/images/brand/mitech-client-logo-07.webp";
-// import logo14 from "../assets/images/brand/mitech-client-logo-07.webp";
-// import logo15 from "../assets/images/brand/mitech-client-logo-08.webp";
-// import logo16 from "../assets/images/brand/mitech-client-logo-08-hover.webp";
-// import logo17 from "../assets/images/brand/mitech-client-logo-09.webp";
-// import logo18 from "../assets/images/brand/mitech-client-logo-09-hover.webp";
+import box from "../assets/images/box-image/blog-01-480x298.webp";
+import info from "../assets/images/box-image/mitech-home-infotechno-box-large-image-03-480x298.webp";
+import info2 from "../assets/images/box-image/mitech-home-infotechno-box-large-image-02-480x298.webp";
+import logo from "../assets/images/brand/mitech-client-logo-01.webp";
+import logo2 from "../assets/images/brand/mitech-client-logo-01-hover.webp";
+import logo3 from "../assets/images/brand/mitech-client-logo-02.webp";
+import logo4 from "../assets/images/brand/mitech-client-logo-02-hover.webp";
+import logo5 from "../assets/images/brand/mitech-client-logo-03.webp";
+import logo6 from "../assets/images/brand/mitech-client-logo-03-hover.webp";
+import logo7 from "../assets/images/brand/mitech-client-logo-04.webp";
+import logo8 from "../assets/images/brand/mitech-client-logo-04-hover.webp";
+import logo9 from "../assets/images/brand/mitech-client-logo-05.webp";
+import logo10 from "../assets/images/brand/mitech-client-logo-05-hover.webp";
+import logo11 from "../assets/images/brand/mitech-client-logo-06.webp";
+import logo12 from "../assets/images/brand/mitech-client-logo-06-hover.webp";
+import logo13 from "../assets/images/brand/mitech-client-logo-07.webp";
+import logo14 from "../assets/images/brand/mitech-client-logo-07.webp";
+import logo15 from "../assets/images/brand/mitech-client-logo-08.webp";
+import logo16 from "../assets/images/brand/mitech-client-logo-08-hover.webp";
+import logo17 from "../assets/images/brand/mitech-client-logo-09.webp";
+import logo18 from "../assets/images/brand/mitech-client-logo-09-hover.webp";
 
-// import award from "../assets/images/award/mitech-company-award-01-161x110.webp";
-// import award2 from "../assets/images/award/mitech-company-award-02-161x116.webp";
-// import award3 from "../assets/images/award/mitech-company-award-03-161x112.webp";
-// import award4 from "../assets/images/award/mitech-company-award-04-161x109.webp";
+import award from "../assets/images/award/mitech-company-award-01-161x110.webp";
+import award2 from "../assets/images/award/mitech-company-award-02-161x116.webp";
+import award3 from "../assets/images/award/mitech-company-award-03-161x112.webp";
+import award4 from "../assets/images/award/mitech-company-award-04-161x109.webp";
 
 import member from "../assets/images/hero/home-3.jpg";
 import member2 from "../assets/images/hero/home-4.jpg";
@@ -61,8 +61,15 @@ import mobile from "../assets/images/hero/mobile.jpg";
 
 // import mail from "../assets/php/hero-mail.php";
 import services from "../assets/php/services-mail.php";
+import { useState } from "react";
 
 export const Home = () => {
+  const [toggleState, setToggleState] = useState(1);
+
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
+
   return (
     <div id="main-wrapper">
       <div className="site-wrapper-reveal">
@@ -354,50 +361,70 @@ export const Home = () => {
                     className="nav justify-content-center ht-tab-menu ht-tab-menu_two"
                     role="tablist"
                   >
-                    <li className="tab__item nav-item active">
+                    <li
+                      className="tab__item nav-item active"
+                      onClick={() => toggleTab(1)}
+                    >
                       <a
-                        className="nav-link active"
+                        className={
+                          toggleState === 1 ? "nav-link active" : "nav-link"
+                        }
                         id="nav-tab1"
                         data-bs-toggle="tab"
                         href="#tab_list_06"
                         role="tab"
-                        aria-selected="true"
+                        aria-selected={toggleState === 1 ? "true" : "false"}
                       >
                         Our mission
                       </a>
                     </li>
-                    <li className="tab__item nav-item">
+                    <li
+                      className="tab__item nav-item"
+                      onClick={() => toggleTab(2)}
+                    >
                       <a
-                        className="nav-link"
+                        className={
+                          toggleState === 2 ? "nav-link active" : "nav-link"
+                        }
                         id="nav-tab2"
                         data-bs-toggle="tab"
                         href="#tab_list_07"
                         role="tab"
-                        aria-selected="false"
+                        aria-selected={toggleState === 2 ? "true" : "false"}
                       >
                         Our services
                       </a>
                     </li>
-                    <li className="tab__item nav-item ">
+                    <li
+                      className="tab__item nav-item "
+                      onClick={() => toggleTab(3)}
+                    >
                       <a
-                        className="nav-link"
+                        className={
+                          toggleState === 3 ? "nav-link active" : "nav-link"
+                        }
                         id="nav-tab3"
                         data-bs-toggle="tab"
                         href="#tab_list_08"
                         role="tab"
-                        aria-selected="false"
+                        aria-selected={toggleState === 3 ? "true" : "false"}
                       >
                         Technology partners
                       </a>
                     </li>
-                    <li className="tab__item nav-item ">
+                    <li
+                      className="tab__item nav-item "
+                      onClick={() => toggleTab(4)}
+                    >
                       <a
-                        className="nav-link"
+                        className={
+                          toggleState === 4 ? "nav-link active" : "nav-link"
+                        }
                         id="nav-tab5"
                         data-bs-toggle="tab"
                         href="#tab_list_09"
                         role="tab"
-                        aria-selected="false"
+                        aria-selected={toggleState === 4 ? "true" : "false"}
                       >
                         Our awards
                       </a>
@@ -407,7 +434,11 @@ export const Home = () => {
 
                 <div className="tab-content ht-tab__content">
                   <div
-                    className="tab-pane fade show active"
+                    className={
+                      toggleState === 1
+                        ? "tab-pane fade show active"
+                        : "tab-pane fade"
+                    }
                     id="tab_list_06"
                     role="tabpanel"
                   >
@@ -466,271 +497,318 @@ export const Home = () => {
                     </div>
                   </div>
 
-                  {/* <div className="tab-pane fade" id="tab_list_07" role="tabpanel">
-                  <div className="tab-history-wrap section-space--mt_60">
-                    <div className="row">
-                      <div className="col-lg-4 col-md-6">
-                        <!-- ht-box-icon Start -->
-                        <a href="/" className="ht-large-box-images style-04">
-                          <div className="large-image-box">
-                            <div className="box-image">
-                              <div className="default-image">
-                                <img className="img-fluid" src={box} alt="" />
+                  <div
+                    className={
+                      toggleState === 2
+                        ? "tab-pane fade show active"
+                        : "tab-pane fade"
+                    }
+                    id="tab_list_07"
+                    role="tabpanel"
+                  >
+                    <div className="tab-history-wrap section-space--mt_60">
+                      <div className="row">
+                        <div className="col-lg-4 col-md-6">
+                          {/* <!-- ht-box-icon Start --> */}
+                          <a href="/" className="ht-large-box-images style-04">
+                            <div className="large-image-box">
+                              <div className="box-image">
+                                <div className="default-image">
+                                  <img className="img-fluid" src={box} alt="" />
+                                </div>
+                              </div>
+                              <div className="content">
+                                <h5 className="heading">
+                                  Quality Assurance System
+                                </h5>
+                                <div className="text">
+                                  At Mitech, we have a holistic and integrated
+                                  approach towards core modernization to
+                                  experience technological evolution.
+                                </div>
+
+                                <div className="box-images-arrow">
+                                  <span className="button-text">
+                                    Discover now
+                                  </span>
+                                  <i className="far fa-long-arrow-right"></i>
+                                </div>
                               </div>
                             </div>
-                            <div className="content">
-                              <h5 className="heading">
-                                Quality Assurance System
-                              </h5>
-                              <div className="text">
-                                At Mitech, we have a holistic and integrated
-                                approach towards core modernization to
-                                experience technological evolution.
+                          </a>
+                        </div>
+                        <div className="col-lg-4 col-md-6">
+                          {/* <!-- ht-box-icon Start --> */}
+                          <a href="/" className="ht-large-box-images style-04">
+                            <div className="large-image-box">
+                              <div className="box-image">
+                                <div className="default-image">
+                                  <img
+                                    className="img-fluid"
+                                    src={info}
+                                    alt=""
+                                  />
+                                </div>
                               </div>
+                              <div className="content">
+                                <h5 className="heading">
+                                  Highly Professional Staffs
+                                </h5>
+                                <div className="text">
+                                  Having obtained the official & formal training
+                                  in IT technology and technical fields, our
+                                  staffs know best.
+                                </div>
+                                <div className="box-images-arrow">
+                                  <span className="button-text">
+                                    Discover now
+                                  </span>
+                                  <i className="far fa-long-arrow-right"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          {/* <!-- ht-box-icon End --> */}
+                        </div>
+                        <div className="col-lg-4 col-md-6">
+                          {/* <!-- ht-box-icon Start --> */}
+                          <a href="/" className="ht-large-box-images style-04">
+                            <div className="large-image-box">
+                              <div className="box-image">
+                                <div className="default-image">
+                                  <img
+                                    className="img-fluid"
+                                    src={info2}
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div className="content">
+                                <h5 className="heading">
+                                  Info Security Management
+                                </h5>
+                                <div className="text">
+                                  At Mitech, we have a holistic and integrated
+                                  approach towards core modernization to
+                                  experience technological evolution.
+                                </div>
+                                <div className="box-images-arrow">
+                                  <span className="button-text">
+                                    Discover now
+                                  </span>
+                                  <i className="far fa-long-arrow-right"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          {/* <!-- ht-box-icon End --> */}
+                        </div>
+                      </div>
+                    </div>
+                    {/* <!-- ht-box-icon End --> */}
+                  </div>
+                  <div
+                    className={
+                      toggleState === 3
+                        ? "tab-pane fade show active"
+                        : "tab-pane fade"
+                    }
+                    id="tab_list_08"
+                    role="tabpanel"
+                  >
+                    <div className="tab-history-wrap section-space--mt_60 brand-logo-slider__one">
+                      <div className="modern-grid--6">
+                        <div className="brand-logo brand-logo--slider">
+                          <a href="/">
+                            <div className="brand-logo__image">
+                              <img src={logo} className="img-fluid" alt="" />
+                            </div>
+                            <div className="brand-logo__image-hover">
+                              <img src={logo2} className="img-fluid" alt="" />
+                            </div>
+                          </a>
+                        </div>
+                        <div className="brand-logo brand-logo--slider">
+                          <a href="/">
+                            <div className="brand-logo__image">
+                              <img src={logo3} className="img-fluid" alt="" />
+                            </div>
+                            <div className="brand-logo__image-hover">
+                              <img src={logo4} className="img-fluid" alt="" />
+                            </div>
+                          </a>
+                        </div>
+                        <div className="brand-logo brand-logo--slider">
+                          <a href="/">
+                            <div className="brand-logo__image">
+                              <img src={logo5} className="img-fluid" alt="" />
+                            </div>
+                            <div className="brand-logo__image-hover">
+                              <img src={logo6} className="img-fluid" alt="" />
+                            </div>
+                          </a>
+                        </div>
+                        <div className="brand-logo brand-logo--slider">
+                          <a href="/">
+                            <div className="brand-logo__image">
+                              <img src={logo7} className="img-fluid" alt="" />
+                            </div>
+                            <div className="brand-logo__image-hover">
+                              <img src={logo8} className="img-fluid" alt="" />
+                            </div>
+                          </a>
+                        </div>
+                        <div className="brand-logo brand-logo--slider">
+                          <a href="/">
+                            <div className="brand-logo__image">
+                              <img src={logo9} className="img-fluid" alt="" />
+                            </div>
+                            <div className="brand-logo__image-hover">
+                              <img src={logo10} className="img-fluid" alt="" />
+                            </div>
+                          </a>
+                        </div>
+                        <div className="brand-logo brand-logo--slider">
+                          <a href="/">
+                            <div className="brand-logo__image">
+                              <img src={logo11} className="img-fluid" alt="" />
+                            </div>
+                            <div className="brand-logo__image-hover">
+                              <img src={logo12} className="img-fluid" alt="" />
+                            </div>
+                          </a>
+                        </div>
+                        <div className="brand-logo brand-logo--slider">
+                          <a href="/">
+                            <div className="brand-logo__image">
+                              <img src={logo13} className="img-fluid" alt="" />
+                            </div>
+                            <div className="brand-logo__image-hover">
+                              <img src={logo14} className="img-fluid" alt="" />
+                            </div>
+                          </a>
+                        </div>
+                        <div className="brand-logo brand-logo--slider">
+                          <a href="/">
+                            <div className="brand-logo__image">
+                              <img src={logo15} className="img-fluid" alt="" />
+                            </div>
+                            <div className="brand-logo__image-hover">
+                              <img src={logo16} className="img-fluid" alt="" />
+                            </div>
+                          </a>
+                        </div>
+                        <div className="brand-logo brand-logo--slider">
+                          <a href="/">
+                            <div className="brand-logo__image">
+                              <img src={logo17} className="img-fluid" alt="" />
+                            </div>
+                            <div className="brand-logo__image-hover">
+                              <img src={logo18} className="img-fluid" alt="" />
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-                              <div className="box-images-arrow">
-                                <span className="button-text">
-                                  Discover now
-                                </span>
-                                <i className="far fa-long-arrow-right"></i>
+                  <div
+                    className={
+                      toggleState === 4
+                        ? "tab-pane fade show active"
+                        : "tab-pane fade"
+                    }
+                    id="tab_list_09"
+                    role="tabpanel"
+                  >
+                    <div className="tab-history-wrap section-space--mt_20">
+                      <div className="row">
+                        <div className="col-lg-6">
+                          <div className="ht-box-images style-08 move-up animate">
+                            <div className="image-box-wrap">
+                              <div className="box-image">
+                                <div className="image">
+                                  <img src={award} alt="" />
+                                </div>
+                              </div>
+                              <div className="content">
+                                <h6 className="heading">
+                                  {" "}
+                                  Top Training Companies 2016{" "}
+                                </h6>
+                                <div className="text">
+                                  More than 40 years ago, our company's
+                                  namesake, LineThemes, pioneered a
+                                  revolutionary sales training program for
+                                  businesses of every size.
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- ht-box-icon End -->
-                </div> */}
-                  {/* <div className="col-lg-4 col-md-6">
-                  <!-- ht-box-icon Start -->
-                  <a href="/" className="ht-large-box-images style-04">
-                    <div className="large-image-box">
-                      <div className="box-image">
-                        <div className="default-image">
-                          <img className="img-fluid" src={info} alt="" />
                         </div>
-                      </div>
-                      <div className="content">
-                        <h5 className="heading">Highly Professional Staffs</h5>
-                        <div className="text">
-                          Having obtained the official & formal training in IT
-                          technology and technical fields, our staffs know best.
+                        <div className="col-lg-6">
+                          <div className="ht-box-images style-08 move-up animate">
+                            <div className="image-box-wrap">
+                              <div className="box-image">
+                                <div className="image">
+                                  <img src={award2} alt="" />
+                                </div>
+                              </div>
+                              <div className="content">
+                                <h6 className="heading">CIO Big Data 100 </h6>
+                                <div className="text">
+                                  More than 40 years ago, our company's
+                                  namesake, LineThemes, pioneered a
+                                  revolutionary sales training program for
+                                  businesses of every size.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div className="box-images-arrow">
-                          <span className="button-text">Discover now</span>
-                          <i className="far fa-long-arrow-right"></i>
+                        <div className="col-lg-6">
+                          <div className="ht-box-images style-08 move-up animate">
+                            <div className="image-box-wrap">
+                              <div className="box-image">
+                                <div className="image">
+                                  <img src={award3} alt="" />
+                                </div>
+                              </div>
+                              <div className="content">
+                                <h6 className="heading">
+                                  Top 20 Sales Training Companies 2015{" "}
+                                </h6>
+                                <div className="text">
+                                  More than 40 years ago, our company's
+                                  namesake, LineThemes, pioneered a
+                                  revolutionary sales training program for
+                                  businesses of every size.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </a>
-                  <!-- ht-box-icon End -->
-                </div>
-                <div className="col-lg-4 col-md-6">
-                  <!-- ht-box-icon Start -->
-                  <a href="/" className="ht-large-box-images">
-                    <div className="large-image-box">
-                      <div className="box-image">
-                        <div className="default-image">
-                          <img className="img-fluid" src={info2} alt="" />
-                        </div>
-                      </div>
-                      <div className="content">
-                        <h5 className="heading">Info Security Management</h5>
-                        <div className="text">
-                          At Mitech, we have a holistic and integrated approach
-                          towards core modernization to experience technological
-                          evolution.
-                        </div>
-                        <div className="box-images-arrow">
-                          <span className="button-text">Discover now</span>
-                          <i className="far fa-long-arrow-right"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <!-- ht-box-icon End -->
-                </div> */}
-                </div>
-              </div>
-            </div>
-
-            {/* <div className="tab-pane fade" id="tab_list_08" role="tabpanel">
-            <div className="tab-history-wrap section-space--mt_60 brand-logo-slider__one">
-              <div className="modern-grid--6">
-                <div className="brand-logo brand-logo--slider">
-                  <a href="/">
-                    <div className="brand-logo__image">
-                      <img src={logo} className="img-fluid" alt="" />
-                    </div>
-                    <div className="brand-logo__image-hover">
-                      <img src={logo2} className="img-fluid" alt="" />
-                    </div>
-                  </a>
-                </div>
-                <div className="brand-logo brand-logo--slider">
-                  <a href="/">
-                    <div className="brand-logo__image">
-                      <img src={logo3} className="img-fluid" alt="" />
-                    </div>
-                    <div className="brand-logo__image-hover">
-                      <img src={logo4} className="img-fluid" alt="" />
-                    </div>
-                  </a>
-                </div>
-                <div className="brand-logo brand-logo--slider">
-                  <a href="/">
-                    <div className="brand-logo__image">
-                      <img src={logo5} className="img-fluid" alt="" />
-                    </div>
-                    <div className="brand-logo__image-hover">
-                      <img src={logo6} className="img-fluid" alt="" />
-                    </div>
-                  </a>
-                </div>
-                <div className="brand-logo brand-logo--slider">
-                  <a href="/">
-                    <div className="brand-logo__image">
-                      <img src={logo7} className="img-fluid" alt="" />
-                    </div>
-                    <div className="brand-logo__image-hover">
-                      <img src={logo8} className="img-fluid" alt="" />
-                    </div>
-                  </a>
-                </div>
-                <div className="brand-logo brand-logo--slider">
-                  <a href="/">
-                    <div className="brand-logo__image">
-                      <img src={logo9} className="img-fluid" alt="" />
-                    </div>
-                    <div className="brand-logo__image-hover">
-                      <img src={logo10} className="img-fluid" alt="" />
-                    </div>
-                  </a>
-                </div>
-                <div className="brand-logo brand-logo--slider">
-                  <a href="/">
-                    <div className="brand-logo__image">
-                      <img src={logo11} className="img-fluid" alt="" />
-                    </div>
-                    <div className="brand-logo__image-hover">
-                      <img src={logo12} className="img-fluid" alt="" />
-                    </div>
-                  </a>
-                </div>
-                <div className="brand-logo brand-logo--slider">
-                  <a href="/">
-                    <div className="brand-logo__image">
-                      <img src={logo13} className="img-fluid" alt="" />
-                    </div>
-                    <div className="brand-logo__image-hover">
-                      <img src={logo14} className="img-fluid" alt="" />
-                    </div>
-                  </a>
-                </div>
-                <div className="brand-logo brand-logo--slider">
-                  <a href="/">
-                    <div className="brand-logo__image">
-                      <img src={logo15} className="img-fluid" alt="" />
-                    </div>
-                    <div className="brand-logo__image-hover">
-                      <img src={logo16} className="img-fluid" alt="" />
-                    </div>
-                  </a>
-                </div>
-                <div className="brand-logo brand-logo--slider">
-                  <a href="/">
-                    <div className="brand-logo__image">
-                      <img src={logo17} className="img-fluid" alt="" />
-                    </div>
-                    <div className="brand-logo__image-hover">
-                      <img src={logo18} className="img-fluid" alt="" />
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
-            {/* <div className="tab-pane fade" id="tab_list_09" role="tabpanel">
-            <div className="tab-history-wrap section-space--mt_20">
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="ht-box-images style-08 move-up animate">
-                    <div className="image-box-wrap">
-                      <div className="box-image">
-                        <div className="image">
-                          <img src={award} alt="" />
-                        </div>
-                      </div>
-                      <div className="content">
-                        <h6 className="heading">
-                          {" "}
-                          Top Training Companies 2016{" "}
-                        </h6>
-                        <div className="text">
-                          More than 40 years ago, our company's namesake,
-                          LineThemes, pioneered a revolutionary sales training
-                          program for businesses of every size.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="ht-box-images style-08 move-up animate">
-                    <div className="image-box-wrap">
-                      <div className="box-image">
-                        <div className="image">
-                          <img src={award2} alt="" />
-                        </div>
-                      </div>
-                      <div className="content">
-                        <h6 className="heading">CIO Big Data 100 </h6>
-                        <div className="text">
-                          More than 40 years ago, our company's namesake,
-                          LineThemes, pioneered a revolutionary sales training
-                          program for businesses of every size.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="ht-box-images style-08 move-up animate">
-                    <div className="image-box-wrap">
-                      <div className="box-image">
-                        <div className="image">
-                          <img src={award3} alt="" />
-                        </div>
-                      </div>
-                      <div className="content">
-                        <h6 className="heading">
-                          Top 20 Sales Training Companies 2015{" "}
-                        </h6>
-                        <div className="text">
-                          More than 40 years ago, our company's namesake,
-                          LineThemes, pioneered a revolutionary sales training
-                          program for businesses of every size.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="ht-box-images style-08 move-up animate">
-                    <div className="image-box-wrap">
-                      <div className="box-image">
-                        <div className="image">
-                          <img src={award4} alt="" />
-                        </div>
-                      </div>
-                      <div className="content">
-                        <h6 className="heading">Pharma Tech Outlook </h6>
-                        <div className="text">
-                          More than 40 years ago, our company's namesake,
-                          LineThemes, pioneered a revolutionary sales training
-                          program for businesses of every size.
+                        <div className="col-lg-6">
+                          <div className="ht-box-images style-08 move-up animate">
+                            <div className="image-box-wrap">
+                              <div className="box-image">
+                                <div className="image">
+                                  <img src={award4} alt="" />
+                                </div>
+                              </div>
+                              <div className="content">
+                                <h6 className="heading">
+                                  Pharma Tech Outlook{" "}
+                                </h6>
+                                <div className="text">
+                                  More than 40 years ago, our company's
+                                  namesake, LineThemes, pioneered a
+                                  revolutionary sales training program for
+                                  businesses of every size.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -738,7 +816,6 @@ export const Home = () => {
                 </div>
               </div>
             </div>
-          </div> */}
           </div>
         </div>
         {/* <!--======== Tabs Wrapper End ======== --> */}
