@@ -264,7 +264,7 @@ const Header = () => {
                           <ul class="megamenu megamenu--mega">
                             <li>
                               <h2 class="page-list-title">
-                                Mobile App Design & Development
+                                Mobile App & Development
                               </h2>
                               <ul>
                                 <li>
@@ -285,6 +285,11 @@ const Header = () => {
                                 <li>
                                   <a href="element-box-large-image.html">
                                     <span>React-Native Development</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-box-large-image.html">
+                                    <span>Mobile App Maintenance</span>
                                   </a>
                                 </li>
                                 {/* <li>
@@ -334,6 +339,11 @@ const Header = () => {
                                     <span>NodeJS Development</span>
                                   </a>
                                 </li>
+                                <li>
+                                  <a href="element-google-map.html">
+                                    <span>Website Maintenance</span>
+                                  </a>
+                                </li>
                                 {/* <li>
                                   <a href="element-gradation.html">
                                     <span>Gradation</span>
@@ -381,6 +391,11 @@ const Header = () => {
                                     <span>Wordpress Development</span>
                                   </a>
                                 </li>
+                                <li>
+                                  <a href="element-progress-circle.html">
+                                    <span>Game Maintenance</span>
+                                  </a>
+                                </li>
                                 {/* <li>
                                   <a href="element-rows-columns.html">
                                     <span>Rows & Columns</span>
@@ -404,7 +419,7 @@ const Header = () => {
                               </ul>
                             </li>
                             <li>
-                              <h2 class="page-list-title">ELEMENT GROUP 04</h2>
+                              <h2 class="page-list-title">Other Services</h2>
                               <ul>
                                 <li>
                                   <a href="element-testimonials.html">
@@ -421,11 +436,11 @@ const Header = () => {
                                     <span>PPC</span>
                                   </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                   <a href="element-typed-text.html">
                                     <span>Maintenance</span>
                                   </a>
-                                </li>
+                                </li> */}
                                 <li>
                                   <a href="element-typed-text.html">
                                     <span>CRM</span>
@@ -499,26 +514,33 @@ const Header = () => {
                               </ul>
                             </li>
                             <li>
-                              <h2 class="page-list-title">Web Developers</h2>
+                              <h2 class="page-list-title">
+                                Backend Developers
+                              </h2>
                               <ul>
                                 <li>
                                   <a href="element-counters.html">
-                                    <span>AngularJS Developers</span>
+                                    <span>Full Stack Developers</span>
                                   </a>
                                 </li>
                                 <li>
                                   <a href="element-dividers.html">
-                                    <span>ReactJS Developers</span>
+                                    <span>NodeJS Developers</span>
                                   </a>
                                 </li>
                                 <li>
                                   <a href="element-flexible-image-slider.html">
-                                    <span>VueJS Developers</span>
+                                    <span>Laravel Developers</span>
                                   </a>
                                 </li>
                                 <li>
                                   <a href="element-google-map.html">
-                                    <span>NodeJS Developers</span>
+                                    <span>Golang Developers</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="element-google-map.html">
+                                    <span>PHP Developers</span>
                                   </a>
                                 </li>
                                 {/* <li>
@@ -544,84 +566,47 @@ const Header = () => {
                               </ul>
                             </li>
                             <li>
-                              <h2 class="page-list-title">Game Developers</h2>
+                              <h2 class="page-list-title">
+                                Frontend Developers
+                              </h2>
                               <ul>
                                 <li>
                                   <a href="element-popup-video.html">
-                                    <span>GoLang Developers</span>
+                                    <span>ReactJS Developers</span>
                                   </a>
                                 </li>
                                 <li>
                                   <a href="element-pricing-box.html">
-                                    <span>Laravel Developers</span>
+                                    <span>AngularJS Developers</span>
                                   </a>
                                 </li>
                                 <li>
                                   <a href="element-progress-bar.html">
-                                    <span>PHP Developers</span>
+                                    <span>VueJS Developers</span>
                                   </a>
                                 </li>
                                 <li>
                                   <a href="element-progress-circle.html">
-                                    <span>Wordpress Developers</span>
+                                    <span>Web Developers</span>
                                   </a>
                                 </li>
-                                {/* <li>
-                                  <a href="element-rows-columns.html">
-                                    <span>Rows & Columns</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-social-networks.html">
-                                    <span>Social Networks</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-tabs.html">
-                                    <span>Tabs</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-team-member.html">
-                                    <span>Team member</span>
-                                  </a>
-                                </li> */}
                               </ul>
                             </li>
                             <li>
-                              <h2 class="page-list-title">ELEMENT GROUP 04</h2>
-                              <ul>
-                                <li>
-                                  <a href="element-testimonials.html">
-                                    <span>SEO</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-timeline.html">
-                                    <span>SMM</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-carousel-sliders.html">
-                                    <span>PPC</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-typed-text.html">
-                                    <span>Maintenance</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-typed-text.html">
-                                    <span>CRM</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-typed-text.html">
-                                    <span>POS</span>
-                                  </a>
-                                </li>
-                              </ul>
+                              <a href="/">
+                                <h2 class="page-list-title">
+                                  WordPress Developers
+                                </h2>
+                              </a>
+                              <a href="/">
+                                <h2 class="page-list-title">CMS Developers</h2>
+                              </a>
+                              <a href="/">
+                                <h2 class="page-list-title">UI/UX Designers</h2>
+                              </a>
+                              <a href="/">
+                                <h2 class="page-list-title">Game Developers</h2>
+                              </a>
                             </li>
                           </ul>
                         </li>
