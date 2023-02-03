@@ -1,8 +1,40 @@
 import React from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import image from "../assets/images/hero/faq.jpg";
 
 const Faqs = () => {
+  const [toggle, setToggle] = useState(false);
+  const [Toggle, SetToggle] = useState(false);
+  const [ToggleBtn, SetToggleBtn] = useState(false);
+  const [Togglebtn, SetTogglebtn] = useState(false);
+  const [togg, setTogg] = useState(false);
+  const [tog, setTog] = useState(false);
+
+  const toggleState = () => {
+    setToggle(!toggle);
+  };
+
+  const togglestate = () => {
+    SetToggle(!Toggle);
+  };
+
+  const togglestatebtn = () => {
+    SetToggleBtn(!ToggleBtn);
+  };
+
+  const togglestateBtn = () => {
+    SetTogglebtn(!Togglebtn);
+  };
+
+  const ToggleState = () => {
+    setTogg(!togg);
+  };
+
+  const Togglebn = () => {
+    setTog(!tog);
+  };
+
   return (
     <>
       {/* <!-- breadcrumb-area start --> */}
@@ -52,10 +84,14 @@ const Faqs = () => {
                           <h5 class="mb-0">
                             <button
                               class="btn-link collapsed"
+                              className={
+                                toggle ? "btn-link" : "btn-link collapsed"
+                              }
                               data-bs-toggle="collapse"
                               data-bs-target="#collapseTwo"
-                              aria-expanded="false"
+                              aria-expanded={toggle ? "true" : "false"}
                               aria-controls="collapseTwo"
+                              onClick={toggleState}
                             >
                               How can we help your business?
                               <span>
@@ -69,6 +105,7 @@ const Faqs = () => {
                         <div
                           id="collapseTwo"
                           class="collapse"
+                          className={toggle ? "collapse show" : "collapse"}
                           aria-labelledby="headingTwo"
                           data-bs-parent="#accordion"
                         >
@@ -89,10 +126,14 @@ const Faqs = () => {
                           <h5 class="mb-0">
                             <button
                               class="btn-link collapsed"
+                              className={
+                                Toggle ? "btn-link" : "btn-link collapsed"
+                              }
                               data-bs-toggle="collapse"
                               data-bs-target="#collapseThree"
-                              aria-expanded="false"
+                              aria-expanded={Toggle ? "true" : "false"}
                               aria-controls="collapseThree"
+                              onClick={togglestate}
                             >
                               What are the advantages of Mitech?{" "}
                               <span>
@@ -106,6 +147,7 @@ const Faqs = () => {
                         <div
                           id="collapseThree"
                           class="collapse"
+                          className={Toggle ? "collapse show" : "collapse"}
                           aria-labelledby="headingThree"
                           data-bs-parent="#accordion"
                         >
@@ -124,11 +166,15 @@ const Faqs = () => {
                         <div class="card-header" id="headingFour">
                           <h5 class="mb-0">
                             <button
-                              class="collapsed"
+                              class="btn-link collapsed"
+                              className={
+                                ToggleBtn ? "btn-link" : "btn-link collapsed"
+                              }
                               data-bs-toggle="collapse"
                               data-bs-target="#collapseFour"
-                              aria-expanded="false"
+                              aria-expanded={ToggleBtn ? "true" : "false"}
                               aria-controls="collapseFour"
+                              onClick={togglestatebtn}
                             >
                               How working process is simplified?
                               <span>
@@ -142,6 +188,7 @@ const Faqs = () => {
                         <div
                           id="collapseFour"
                           class="collapse"
+                          className={ToggleBtn ? "collapse show" : "collapse"}
                           aria-labelledby="headingFour"
                           data-bs-parent="#accordion"
                         >
@@ -169,10 +216,14 @@ const Faqs = () => {
                             <h5 class="mb-0">
                               <button
                                 class="btn-link collapsed"
+                                className={
+                                  Togglebtn ? "btn-link" : "btn-link collapsed"
+                                }
                                 data-bs-toggle="collapse"
                                 data-bs-target="#faq_two"
-                                aria-expanded="false"
+                                aria-expanded={Togglebtn ? "true" : "false"}
                                 aria-controls="faq_two"
+                                onClick={togglestateBtn}
                               >
                                 What are the advantages of Mitech?
                                 <span>
@@ -186,6 +237,7 @@ const Faqs = () => {
                           <div
                             id="faq_two"
                             class="collapse"
+                            className={Togglebtn ? "collapse show" : "collapse"}
                             aria-labelledby="faq_2"
                           >
                             <div class="card-body">
@@ -205,10 +257,14 @@ const Faqs = () => {
                             <h5 class="mb-0">
                               <button
                                 class="btn-link collapsed"
+                                className={
+                                  togg ? "btn-link" : "btn-link collapsed"
+                                }
                                 data-bs-toggle="collapse"
                                 data-bs-target="#faq_three"
-                                aria-expanded="false"
+                                aria-expanded={togg ? "true" : "false"}
                                 aria-controls="faq_three"
+                                onClick={ToggleState}
                               >
                                 How working process is simplified?{" "}
                                 <span>
@@ -222,6 +278,7 @@ const Faqs = () => {
                           <div
                             id="faq_three"
                             class="collapse"
+                            className={togg ? "collapse show" : "collapse"}
                             aria-labelledby="faq_3"
                           >
                             <div class="card-body">
@@ -239,11 +296,15 @@ const Faqs = () => {
                           <div class="card-header" id="faq_4">
                             <h5 class="mb-0">
                               <button
-                                class="collapsed"
+                                class="btn-link collapsed"
+                                className={
+                                  tog ? "btn-link" : "btn-link collapsed"
+                                }
                                 data-bs-toggle="collapse"
                                 data-bs-target="#faq_four"
-                                aria-expanded="false"
+                                aria-expanded={tog ? "true" : "false"}
                                 aria-controls="faq_four"
+                                onClick={Togglebn}
                               >
                                 Product Engineering & Services{" "}
                                 <span>
@@ -257,6 +318,7 @@ const Faqs = () => {
                           <div
                             id="faq_four"
                             class="collapse"
+                            className={tog ? "collapse show" : "collapse"}
                             aria-labelledby="faq_4"
                             data-bs-parent="#faq-toggles"
                           >

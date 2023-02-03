@@ -15,6 +15,7 @@ import Arm from "./components/Arm";
 import Blog from "./components/Blog";
 import Blog2 from "./components/Blog2";
 import Leadership from "./components/Leadership";
+import Ios from "./components/Ios";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "../src/assets/css/vendor/bootstrap.min.css";
@@ -51,6 +52,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blogs" element={<Blog2 />} />
           <Route path="/leader" element={<Leadership />} />
+          <Route path="/ios" element={<Ios />} />
         </Routes>
         <Footer />
       </Router>

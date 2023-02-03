@@ -268,9 +268,9 @@ const Header = () => {
                               </h2>
                               <ul>
                                 <li>
-                                  <a href="element-accordion.html">
+                                  <NavLink to="/ios">
                                     <span>iOS App Development</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
                                   <a href="element-box-icon.html">
@@ -467,9 +467,9 @@ const Header = () => {
                               </h2>
                               <ul>
                                 <li>
-                                  <a href="element-accordion.html">
+                                  <NavLink to="/ios">
                                     <span>iOS App Developers</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
                                   <a href="element-box-icon.html">
