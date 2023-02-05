@@ -1,9 +1,11 @@
 import React from "react";
-import ioshero from "../assets/images/hero/ios.webp";
+import phphero from "../assets/images/hero/php.webp";
 import ios2 from "../assets/images/icons/mitech-box-image-style-05-image-01-60x60.webp";
 import ios3 from "../assets/images/icons/mitech-box-image-style-05-image-02-60x60.webp";
 import ios4 from "../assets/images/icons/mitech-box-image-style-05-image-03-60x60.webp";
 import ios5 from "../assets/images/icons/mitech-box-image-style-05-image-04-60x60.webp";
+import ios6 from "../assets/images/icons/mitech-box-image-style-05-image-05-60x60.webp";
+import ios7 from "../assets/images/icons/mitech-box-image-style-05-image-06-60x60.webp";
 import snark from "../assets/images/hero/mrsnark.webp";
 import polished from "../assets/images/hero/polished.webp";
 import Gameday from "../assets/images/hero/gameday.webp";
@@ -14,9 +16,10 @@ import Hire from "../assets/images/icons/mitech-processing-service-image-01-80x8
 import cost from "../assets/images/icons/mitech-processing-service-image-02-80x83.webp";
 import diverse from "../assets/images/icons/mitech-processing-service-image-03-80x83.webp";
 import best from "../assets/images/icons/mitech-processing-service-image-04-80x83.webp";
+
 import { useState } from "react";
 
-const Ios = () => {
+const Php = () => {
   const [toggle, setToggle] = useState(false);
   const [Toggle, SetToggle] = useState(false);
   const [ToggleBtn, SetToggleBtn] = useState(false);
@@ -47,7 +50,6 @@ const Ios = () => {
   const Togglebn = () => {
     setTog(!tog);
   };
-
   return (
     <>
       <div id="main-wrapper">
@@ -61,14 +63,16 @@ const Ios = () => {
                   <div class="infotechno-hero-text  wow move-up">
                     {/* <h6>IT Design & Consulting </h6> */}
                     <h1 class="font-weight--reguler mb-15">
-                      IOS App <br /> Development Company{" "}
+                      PHP <br /> Development Company{" "}
                     </h1>
                     <p>
-                      Let your business embrace innovations with a sophisticated
-                      iPhone or iPad app built by expert iOS app developers.
-                      Having more than a decade long experience and several
-                      successful iOS apps to its credit, OverNinja stands as one
-                      of the leading iOS app development services.
+                      Utilize the power of popular PHP language for building
+                      high performance websites and web app solutions that
+                      stands apart from the competition. At OverNinja, we boast
+                      of an expert PHP web development team having years of
+                      frontline experience and proven expertise in most
+                      demanding PHP web development projects across multiple
+                      niches.
                     </p>
                     <div class="hero-button  mt-30">
                       <a href="/" class="ht-btn ht-btn-md">
@@ -87,7 +91,7 @@ const Ios = () => {
                       />
                     </div>
                     <div class="infotechno-inner-two  wow move-up">
-                      <img class="img-fluid" src={ioshero} alt="" />
+                      <img class="img-fluid android-img" src={phphero} alt="" />
                     </div>
                   </div>
                 </div>
@@ -103,9 +107,8 @@ const Ios = () => {
                   {/* <!-- section-title-wrap Start --> */}
                   <div class="section-title-wrap text-center section-space--mb_30">
                     <h3 class="heading">
-                      Exceptional IPhone App Development Services Keeps The
-                      Competition
-                      <span class="text-color-primary"> Healthy</span>
+                      Accelerate Your Business Growth With PHP Development
+                      <span class="text-color-primary"> Services</span>
                     </h3>
                   </div>
                   {/* <!-- section-title-wrap Start --> */}
@@ -122,12 +125,11 @@ const Ios = () => {
                           <img class="img-fulid" src={ios2} alt="" />
                         </div>
                         <div class="content">
-                          <h5 class="heading">UI/UX Design</h5>
+                          <h5 class="heading">PHP Web App Development</h5>
                           <div class="text">
-                            We boast of an expert user experience (UX) design
-                            team having extensive knowledge of building visually
-                            appealing prototypes, sophisticated user interfaces
-                            and custom user experience for your apps.
+                            Our Golang development team is known for delivering
+                            awesome enterprise applications that are secure and
+                            reliable.
                           </div>
                         </div>
                       </div>
@@ -142,13 +144,11 @@ const Ios = () => {
                           <img class="img-fulid" src={ios3} alt="" />
                         </div>
                         <div class="content">
-                          <h5 class="heading">iPhone App Development </h5>
+                          <h5 class="heading">Synchronized App Development </h5>
                           <div class="text">
-                            We have one of the industry's most experienced team
-                            of iOS developers who can handle complex enterprise
-                            projects, iOS app projects for multiple devices
-                            including iPhones, iPad, Apple Watch and Apple TV,
-                            app and iOS game apps.
+                            Golang possesses the inbuilt concurrency feature to
+                            create multi-threading easy and simple with Golang
+                            codes.
                           </div>
                         </div>
                       </div>
@@ -163,14 +163,12 @@ const Ios = () => {
                           <img class="img-fulid" src={ios4} alt="" />
                         </div>
                         <div class="content">
-                          <h5 class="heading">Quality Assurance and Testing</h5>
+                          <h5 class="heading">
+                            PHP Micro-services Development
+                          </h5>
                           <div class="text">
-                            We boast of an experienced in-house QA team well
-                            equipped and skilled with a multitude of manual
-                            testing and automation testing tools including XCode
-                            testing framework and knowledgeable with the
-                            industry-benchmark best practices to ensure optimum
-                            quality.
+                            We have huge expertise in cloud technologies to
+                            create micro-services with Golang.
                           </div>
                         </div>
                       </div>
@@ -185,63 +183,57 @@ const Ios = () => {
                           <img class="img-fulid" src={ios5} alt="" />
                         </div>
                         <div class="content">
-                          <h5 class="heading">Updates and Maintenance</h5>
+                          <h5 class="heading">
+                            Multi-faceted Cloud App Development
+                          </h5>
                           <div class="text">
-                            We ensure taking care of each and every iOS app to
-                            go through the ups and downs and providing
-                            comprehensive post-development support, maintenance
-                            and app updates on a regular basis to keep the app
-                            user experience and security up to date.
+                            You can get complex cloud applications for
+                            multi-cloud and hybrid cloud solutions using the
+                            latest tools and techniques.
                           </div>
                         </div>
                       </div>
                     </a>
                     {/* <!-- ht-box-icon End --> */}
                   </div>
-                  {/* <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
-                    <!-- ht-box-icon Start -->
+                  <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                    {/* <!-- ht-box-icon Start --> */}
                     <a href="/" class="ht-box-images style-04">
                       <div class="image-box-wrap">
                         <div class="box-image">
-                          <img
-                            class="img-fulid"
-                            src="assets/images/icons/mitech-box-image-style-05-image-05-60x60.webp"
-                            alt=""
-                          />
+                          <img class="img-fulid" src={ios6} alt="" />
                         </div>
                         <div class="content">
-                          <h5 class="heading">Business Reform</h5>
+                          <h5 class="heading">PHP Support and Maintenance</h5>
                           <div class="text">
-                            We provide the most responsive and functional IT
-                            design for companies and businesses worldwide.
+                            We are there to help you with Golang support and
+                            maintenance services to make sure that your web or
+                            mobile app works well all the time.
                           </div>
                         </div>
                       </div>
                     </a>
-                    <!-- ht-box-icon End -->
-                  </div> */}
-                  {/* <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
-                    <!-- ht-box-icon Start -->
+                    {/* <!-- ht-box-icon End --> */}
+                  </div>
+                  <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                    {/* <!-- ht-box-icon Start --> */}
                     <a href="/" class="ht-box-images style-04">
                       <div class="image-box-wrap">
                         <div class="box-image">
-                          <img
-                            class="img-fulid"
-                            src="assets/images/icons/mitech-box-image-style-05-image-06-60x60.webp"
-                            alt=""
-                          />
+                          <img class="img-fulid" src={ios7} alt="" />
                         </div>
                         <div class="content">
-                          <h5 class="heading">Infrastructure Plan</h5>
+                          <h5 class="heading">PHP Consulting Services</h5>
                           <div class="text">
-                            Mitech takes into account all conditions and budgets
-                            needed for building infrastructure plan..
+                            Our team of expert Golang developers offer the best
+                            consulting services to help you stay ahead in the
+                            competition.
                           </div>
                         </div>
                       </div>
                     </a>
-                    <!-- ht-box-icon End -->
-                  </div> */}
+                    {/* <!-- ht-box-icon End --> */}
+                  </div>
                 </div>
               </div>
             </div>
@@ -431,11 +423,13 @@ const Ios = () => {
                             <img class="img-fulid" src={Hire} alt="" />
                           </div>
                           <div class="content">
-                            <h5 class="heading">Flexible Hiring Models </h5>
+                            <h5 class="heading">100% Client Satisfaction </h5>
                             <div class="text">
-                              We offer very flexible hiring models for diverse
-                              iOS app projects according to your budget and
-                              need.
+                              We have made our presence known in 35+ countries
+                              and have one of the highest client satisfaction
+                              rate. We are widely trusted in the global
+                              environment for our superior app quality and
+                              services.
                             </div>
                           </div>
                         </div>
@@ -451,10 +445,14 @@ const Ios = () => {
                             <img class="img-fulid" src={cost} alt="" />
                           </div>
                           <div class="content">
-                            <h5 class="heading">Effective Cost</h5>
+                            <h5 class="heading">
+                              Expert Android App Developers
+                            </h5>
                             <div class="text">
-                              We offer one of the most competitive pricing for
-                              offshore development and remote hiring.
+                              We have one of the finest developer’s pools in the
+                              world. We have efficient developers and designers
+                              with the advanced skill set for developing modern
+                              and feature-rich applications for higher ROI.
                             </div>
                           </div>
                         </div>
@@ -470,12 +468,15 @@ const Ios = () => {
                             <img class="img-fulid" src={diverse} alt="" />
                           </div>
                           <div class="content">
-                            <h5 class="heading">Diverse Technologies</h5>
+                            <h5 class="heading">
+                              Advanced Tools and Technologies{" "}
+                            </h5>
                             <div class="text">
-                              You can hire iOS app developers for any niche app
-                              project requiring key coding skills on programming
-                              languages such as Objective-C, swift, JSON, xCode,
-                              Cocoa Framework, Cocos2d, etc.
+                              We use Agile development practices and advanced
+                              tools and technologies that bring more flare to
+                              our android app development tactics; our efforts
+                              are to reduce the cost and time of the
+                              development.
                             </div>
                           </div>
                         </div>
@@ -491,12 +492,12 @@ const Ios = () => {
                             <img class="img-fulid" src={best} alt="" />
                           </div>
                           <div class="content">
-                            <h5 class="heading">Best Talent</h5>
+                            <h5 class="heading">24 X 7 Assistance </h5>
                             <div class="text">
-                              We boast of a team of most experienced iOS app
-                              developers skilled with all advanced SDKs from
-                              Apple, Internet of Things (IoT) platforms such as
-                              Wearables, iBeacon, NFC, etc.
+                              We have 24*7*365 days support and assistance to
+                              ensure maximum uptime for your application. We
+                              keep your application bug-free and up and running
+                              all throughout the year for improved retention.
                             </div>
                           </div>
                         </div>
@@ -896,4 +897,4 @@ const Ios = () => {
   );
 };
 
-export default Ios;
+export default Php;

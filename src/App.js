@@ -16,6 +16,25 @@ import Blog from "./components/Blog";
 import Blog2 from "./components/Blog2";
 import Leadership from "./components/Leadership";
 import Ios from "./components/Ios";
+import Android from "./components/Android";
+import Flutter from "./components/Flutter";
+import Native from "./components/Native";
+import Angular from "./components/Angular";
+import Reactjs from "./components/Reactjs";
+import Vue from "./components/Vue";
+import Node from "./components/Node";
+import Golang from "./components/Golang";
+import Laravel from "./components/Laravel";
+import Php from "./components/Php";
+import Wordpress from "./components/Wordpress";
+import Seo from "./components/Seo";
+import Smm from "./components/Smm";
+import Ppc from "./components/Ppc";
+import Crm from "./components/Crm";
+import Pos from "./components/Pos";
+import Mobile from "./components/Mobile";
+import Website from "./components/Website";
+import Game from "./components/Game";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "../src/assets/css/vendor/bootstrap.min.css";
@@ -53,6 +72,25 @@ function App() {
           <Route path="/blogs" element={<Blog2 />} />
           <Route path="/leader" element={<Leadership />} />
           <Route path="/ios" element={<Ios />} />
+          <Route path="/android" element={<Android />} />
+          <Route path="/flutter" element={<Flutter />} />
+          <Route path="/react-native" element={<Native />} />
+          <Route path="/angularjs" element={<Angular />} />
+          <Route path="/reactjs" element={<Reactjs />} />
+          <Route path="/vuejs" element={<Vue />} />
+          <Route path="/nodejs" element={<Node />} />
+          <Route path="/golang" element={<Golang />} />
+          <Route path="/laravel" element={<Laravel />} />
+          <Route path="/php" element={<Php />} />
+          <Route path="/wordpress" element={<Wordpress />} />
+          <Route path="/seo" element={<Seo />} />
+          <Route path="/smm" element={<Smm />} />
+          <Route path="/ppc" element={<Ppc />} />
+          <Route path="/crm" element={<Crm />} />
+          <Route path="/pos" element={<Pos />} />
+          <Route path="/mobile" element={<Mobile />} />
+          <Route path="/website" element={<Website />} />
+          <Route path="/game" element={<Game />} />
         </Routes>
         <Footer />
       </Router>

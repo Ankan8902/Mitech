@@ -6,7 +6,18 @@ import logo from "../assets/images/logo/over.png";
 const Header = () => {
   const [btnState, setBtnState] = useState(false);
   const [btn, setBtn] = useState(false);
-  const [bn, setBn] = useState(false);
+
+  const [toggle, setToggle] = useState(false);
+  const [Toggle, settoggle] = useState(false);
+  const [Togglebtn, settogglebtn] = useState(false);
+  const [Togglebn, settogglebn] = useState(false);
+  const [togglebn, Settogglebn] = useState(false);
+  const [toggleb, Settoggleb] = useState(false);
+  const [toggleB, SettoggleB] = useState(false);
+  const [ToggleB, settoggleB] = useState(false);
+  const [Toggleb, settoggleb] = useState(false);
+  const [Togglen, settogglen] = useState(false);
+  const [ToggleN, settoggleN] = useState(false);
 
   function handleClick() {
     setBtnState((btnState) => !btnState);
@@ -16,13 +27,52 @@ const Header = () => {
     setBtn((btn) => !btn);
   }
 
-  function handlEClick() {
-    setBn((bn) => !bn);
-  }
+  const toggleState = () => {
+    setToggle(!toggle);
+  };
+
+  const togglestate = () => {
+    settoggle(!Toggle);
+  };
+
+  const Togglestate = () => {
+    settogglebtn(!Togglebtn);
+  };
+
+  const Togglestatebtn = () => {
+    settogglebn(!Togglebn);
+  };
+
+  const togglestatebtn = () => {
+    Settogglebn(!togglebn);
+  };
+
+  const togglestatebn = () => {
+    Settoggleb(!toggleb);
+  };
+
+  const togglestateb = () => {
+    SettoggleB(!toggleB);
+  };
+
+  const togglestateB = () => {
+    settoggleB(!ToggleB);
+  };
+
+  const TogglestateB = () => {
+    settoggleb(!Toggleb);
+  };
+
+  const Togglestaten = () => {
+    settogglen(!Togglen);
+  };
+
+  const TogglestateN = () => {
+    settoggleN(!ToggleN);
+  };
 
   let toggleClassCheck = btnState ? " active" : "";
   let toggleClass = btn ? " active" : "";
-  let toggleclass = bn ? " active" : "";
 
   return (
     <>
@@ -273,24 +323,24 @@ const Header = () => {
                                   </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-box-icon.html">
+                                  <NavLink to="/android">
                                     <span>Android App Development</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-box-image.html">
+                                  <NavLink to="/flutter">
                                     <span>Flutter App Development</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-box-large-image.html">
+                                  <NavLink to="/react-native">
                                     <span>React-Native Development</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-box-large-image.html">
+                                  <NavLink to="/mobile">
                                     <span>Mobile App Maintenance</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 {/* <li>
                                   <a href="element-buttons.html">
@@ -320,29 +370,29 @@ const Header = () => {
                               </h2>
                               <ul>
                                 <li>
-                                  <a href="element-counters.html">
+                                  <NavLink to="/angularjs">
                                     <span>AngularJS Development</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-dividers.html">
+                                  <NavLink to="/reactjs">
                                     <span>ReactJS Development</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-flexible-image-slider.html">
+                                  <NavLink to="/vuejs">
                                     <span>VueJS Development</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-google-map.html">
+                                  <NavLink to="/nodejs">
                                     <span>NodeJS Development</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-google-map.html">
+                                  <NavLink to="/website">
                                     <span>Website Maintenance</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 {/* <li>
                                   <a href="element-gradation.html">
@@ -372,29 +422,29 @@ const Header = () => {
                               </h2>
                               <ul>
                                 <li>
-                                  <a href="element-popup-video.html">
+                                  <NavLink to="/golang">
                                     <span>Golang Development</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-pricing-box.html">
+                                  <NavLink to="/laravel">
                                     <span>Laravel Development</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-progress-bar.html">
+                                  <NavLink to="/php">
                                     <span>PHP Development</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-progress-circle.html">
+                                  <NavLink to="/wordpress">
                                     <span>Wordpress Development</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-progress-circle.html">
+                                  <NavLink to="/game">
                                     <span>Game Maintenance</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 {/* <li>
                                   <a href="element-rows-columns.html">
@@ -422,19 +472,19 @@ const Header = () => {
                               <h2 class="page-list-title">Other Services</h2>
                               <ul>
                                 <li>
-                                  <a href="element-testimonials.html">
+                                  <NavLink to="/seo">
                                     <span>SEO</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-timeline.html">
+                                  <NavLink to="/smm">
                                     <span>SMM</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-carousel-sliders.html">
+                                  <NavLink to="/ppc">
                                     <span>PPC</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 {/* <li>
                                   <a href="element-typed-text.html">
@@ -442,14 +492,14 @@ const Header = () => {
                                   </a>
                                 </li> */}
                                 <li>
-                                  <a href="element-typed-text.html">
+                                  <NavLink to="/crm">
                                     <span>CRM</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-typed-text.html">
+                                  <NavLink to="/pos">
                                     <span>POS</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                               </ul>
                             </li>
@@ -838,15 +888,19 @@ const Header = () => {
           <div className="mobile-menu-overlay__body">
             <nav className="offcanvas-navigation">
               <ul>
-                <li className="has-children">
+                <li className={toggle ? "has-children active" : "has-children"}>
                   <NavLink to="/">Home</NavLink>
                 </li>
-                <li className={`has-children${toggleclass}`}>
-                  <span className="menu-expand" onClick={handlEClick}>
+                <li className="has-children">
+                  <span className="menu-expand" onClick={toggleState}>
                     <i></i>
                   </span>
                   <a href="/">Company</a>
-                  <ul className="sub-menu">
+                  <ul
+                    className={
+                      toggle ? "collapse show sub-menu" : "collapse sub-menu"
+                    }
+                  >
                     <li className="has-children">
                       <NavLink to="/about">
                         <span>About us</span>
@@ -879,26 +933,374 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-                <li className={`has-children${toggleclass}`}>
-                  <span className="menu-expand">
-                    <i onClick={handlEClick}></i>
+                <li className={Toggle ? "has-children active" : "has-children"}>
+                  <span className="menu-expand" onClick={togglestate}>
+                    <i></i>
                   </span>
                   <a href="/">Our Services</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <NavLink to="/recruit">
-                        <span>Recruitment Services</span>
-                      </NavLink>
+                  <ul
+                    className={
+                      Toggle ? "collapse show sub-menu" : "collapse sub-menu"
+                    }
+                  >
+                    <li
+                      className={
+                        Togglebtn ? "has-children active" : "has-children"
+                      }
+                    >
+                      <span className="menu-expand" onClick={Togglestate}>
+                        <i></i>
+                      </span>
+                      <a href="/">Mobile Development</a>
+                      <ul
+                        className={
+                          Togglebtn
+                            ? "collapse show sub-menu"
+                            : "collapse sub-menu"
+                        }
+                      >
+                        <li>
+                          <NavLink to="/ios">
+                            <span>iOS App Development</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/android">
+                            <span>Android App Development</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/flutter">
+                            <span>Flutter App Development</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/react-native">
+                            <span>React-Native Development</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/mobile">
+                            <span>Mobile App Maintenance</span>
+                          </NavLink>
+                        </li>
+                      </ul>
                     </li>
-                    <li>
-                      <NavLink to="/digital">
-                        <span>Digital Marketing</span>
-                      </NavLink>
+                    <li
+                      className={
+                        Togglebn ? "has-children active" : "has-children"
+                      }
+                    >
+                      <span className="menu-expand" onClick={Togglestatebtn}>
+                        <i></i>
+                      </span>
+                      <a href="/">Web Development</a>
+                      <ul
+                        className={
+                          Togglebn
+                            ? "collapse show sub-menu"
+                            : "collapse sub-menu"
+                        }
+                      >
+                        <li>
+                          <NavLink to="/angularjs">
+                            <span>AngularJS Development</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/reactjs">
+                            <span>ReactJS Development</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/vuejs">
+                            <span>VueJS Development</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/nodejs">
+                            <span>NodeJS Development</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/website">
+                            <span>Website Maintenance</span>
+                          </NavLink>
+                        </li>
+                      </ul>
                     </li>
-                    <li>
-                      <NavLink to="/IT">
-                        <span>IT Services</span>
-                      </NavLink>
+
+                    <li
+                      className={
+                        togglebn ? "has-children active" : "has-children"
+                      }
+                    >
+                      <span className="menu-expand" onClick={togglestatebtn}>
+                        <i></i>
+                      </span>
+                      <a href="/">Game Development</a>
+                      <ul
+                        className={
+                          togglebn
+                            ? "collapse show sub-menu"
+                            : "collapse sub-menu"
+                        }
+                      >
+                        <li>
+                          <NavLink to="/golang">
+                            <span>Golang Development</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/laravel">
+                            <span>Laravel Development</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/php">
+                            <span>PHP Development</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/wordpress">
+                            <span>Wordpress Development</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/game">
+                            <span>Game Maintenance</span>
+                          </NavLink>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li
+                      className={
+                        toggleb ? "has-children active" : "has-children"
+                      }
+                    >
+                      <span className="menu-expand" onClick={togglestatebn}>
+                        <i></i>
+                      </span>
+                      <a href="/">Other Services</a>
+                      <ul
+                        className={
+                          toggleb
+                            ? "collapse show sub-menu"
+                            : "collapse sub-menu"
+                        }
+                      >
+                        <li>
+                          <NavLink to="/seo">
+                            <span>SEO</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/smm">
+                            <span>SMM</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/ppc">
+                            <span>PPC</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/crm">
+                            <span>CRM</span>
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/pos">
+                            <span>POS</span>
+                          </NavLink>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li
+                  className={toggleB ? "has-children active" : "has-children"}
+                >
+                  <span className="menu-expand" onClick={togglestateb}>
+                    <i></i>
+                  </span>
+                  <a href="/">Hire Developers</a>
+                  <ul
+                    className={
+                      toggleB ? "collapse show sub-menu" : "collapse sub-menu"
+                    }
+                  >
+                    <li
+                      className={
+                        ToggleB ? "has-children active" : "has-children"
+                      }
+                    >
+                      <span className="menu-expand" onClick={togglestateB}>
+                        <i></i>
+                      </span>
+                      <a href="/">Mobile App Developers</a>
+                      <ul
+                        className={
+                          ToggleB
+                            ? "collapse show sub-menu"
+                            : "collapse sub-menu"
+                        }
+                      >
+                        <li>
+                          <a href="element-accordion.html">
+                            <span>iOS App Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-box-icon.html">
+                            <span>Android App Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-box-image.html">
+                            <span>React-Native Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-box-large-image.html">
+                            <span>Flutter App Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-buttons.html">
+                            <span>Hybrid Mobile App Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-cta.html">
+                            <span>Cross Platform App Developers</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li
+                      className={
+                        Toggleb ? "has-children active" : "has-children"
+                      }
+                    >
+                      <span className="menu-expand" onClick={TogglestateB}>
+                        <i></i>
+                      </span>
+                      <a href="/">Backend Developers</a>
+                      <ul
+                        className={
+                          Toggleb
+                            ? "collapse show sub-menu"
+                            : "collapse sub-menu"
+                        }
+                      >
+                        <li>
+                          <a href="element-counters.html">
+                            <span>Full Stack Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-dividers.html">
+                            <span>NodeJS Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-flexible-image-slider.html">
+                            <span>Laravel Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-google-map.html">
+                            <span>Golang Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-gradation.html">
+                            <span>PHP Developers</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li
+                      className={
+                        Togglen ? "has-children active" : "has-children"
+                      }
+                    >
+                      <span className="menu-expand" onClick={Togglestaten}>
+                        <i></i>
+                      </span>
+                      <a href="/">Frontend Developers</a>
+                      <ul
+                        className={
+                          Togglen
+                            ? "collapse show sub-menu"
+                            : "collapse sub-menu"
+                        }
+                      >
+                        <li>
+                          <a href="element-popup-video.html">
+                            <span>ReactJS Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-pricing-box.html">
+                            <span>AngularJS Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-progress-bar.html">
+                            <span>VueJS Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-progress-circle.html">
+                            <span>Web Developers</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li
+                      className={
+                        ToggleN ? "has-children active" : "has-children"
+                      }
+                    >
+                      <span className="menu-expand" onClick={TogglestateN}>
+                        <i></i>
+                      </span>
+                      <a href="/">Other Services</a>
+                      <ul
+                        className={
+                          ToggleN
+                            ? "collapse show sub-menu"
+                            : "collapse sub-menu"
+                        }
+                      >
+                        <li>
+                          <a href="element-testimonials.html">
+                            <span>Wordpress Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-timeline.html">
+                            <span>CMS Developers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-carousel-sliders.html">
+                            <span>UI/UX Designers</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="element-typed-text.html">
+                            <span>Game Developers</span>
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </li>

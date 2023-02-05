@@ -543,6 +543,10 @@ progress {
   /* height: auto; */
   width: 45%;
 }
+ .android-img{
+  max-width: 90%;
+  height: auto;
+ }
 
 .behance {
   max-width: 80%;
