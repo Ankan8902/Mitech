@@ -517,7 +517,7 @@ const Header = () => {
                               </h2>
                               <ul>
                                 <li>
-                                  <NavLink to="/ios">
+                                  <NavLink to="/iosdev">
                                     <span>iOS App Developers</span>
                                   </NavLink>
                                 </li>

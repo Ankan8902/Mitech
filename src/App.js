@@ -35,6 +35,7 @@ import Pos from "./components/Pos";
 import Mobile from "./components/Mobile";
 import Website from "./components/Website";
 import Game from "./components/Game";
+import Iosdev from "./components/Iosdev";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "../src/assets/css/vendor/bootstrap.min.css";
@@ -91,6 +92,7 @@ function App() {
           <Route path="/mobile" element={<Mobile />} />
           <Route path="/website" element={<Website />} />
           <Route path="/game" element={<Game />} />
+          <Route path="/iosdev" element={<Iosdev />} />
         </Routes>
         <Footer />
       </Router>
