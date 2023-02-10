@@ -4,16 +4,24 @@ import ios2 from "../assets/images/icons/mitech-box-image-style-05-image-01-60x6
 import ios3 from "../assets/images/icons/mitech-box-image-style-05-image-02-60x60.webp";
 import ios4 from "../assets/images/icons/mitech-box-image-style-05-image-03-60x60.webp";
 import ios5 from "../assets/images/icons/mitech-box-image-style-05-image-04-60x60.webp";
+
+import backup from "../assets/images/icons/mitech-processing-service-image-01-80x83.webp";
+import cloud from "../assets/images/icons/mitech-processing-service-image-02-80x83.webp";
+import IT from "../assets/images/icons/mitech-processing-service-image-03-80x83.webp";
+import soft from "../assets/images/icons/mitech-processing-service-image-04-80x83.webp";
+import manage from "../assets/images/icons/mitech-processing-service-image-05-80x83.webp";
+import consult from "../assets/images/icons/mitech-processing-service-image-06-80x83.webp";
+
 import snark from "../assets/images/hero/mrsnark.webp";
 import polished from "../assets/images/hero/polished.webp";
 import Gameday from "../assets/images/hero/gameday.webp";
 import Queso from "../assets/images/hero/queso.webp";
 import irpg from "../assets/images/hero/irpg.webp";
 import ics from "../assets/images/hero/virtualics.webp";
-import Hire from "../assets/images/icons/mitech-processing-service-image-01-80x83.webp";
-import cost from "../assets/images/icons/mitech-processing-service-image-02-80x83.webp";
-import diverse from "../assets/images/icons/mitech-processing-service-image-03-80x83.webp";
-import best from "../assets/images/icons/mitech-processing-service-image-04-80x83.webp";
+// import Hire from "../assets/images/icons/mitech-processing-service-image-01-80x83.webp";
+// import cost from "../assets/images/icons/mitech-processing-service-image-02-80x83.webp";
+// import diverse from "../assets/images/icons/mitech-processing-service-image-03-80x83.webp";
+// import best from "../assets/images/icons/mitech-processing-service-image-04-80x83.webp";
 import { useState } from "react";
 
 const Iosdev = () => {
@@ -60,7 +68,7 @@ const Iosdev = () => {
                   <div class="infotechno-hero-text  wow move-up">
                     {/* <h6>IT Design & Consulting </h6> */}
                     <h1 class="font-weight--reguler mb-15">
-                      Hire IOS Developers{" "}
+                      Hire iOS Developers{" "}
                     </h1>
                     <p>
                       iOS app development services by a leading mobile app
@@ -219,152 +227,243 @@ const Iosdev = () => {
               <div class="row">
                 <div class="col-lg-12">
                   {/* <!-- section-title-wrap Start --> */}
-                  <div class="section-title-wrap text-center section-space--mb_30">
+                  <div class="section-title-wrap text-center section-space--mb_0">
+                    {/* <h6 class="section-sub-title mb-20">Our services</h6> */}
                     <h3 class="heading">
-                      Exceptional IPhone App Development Services Keeps The
-                      Competition
-                      <span class="text-color-primary"> Healthy</span>
+                      Our iOS App Development{" "}
+                      <span class="text-color-primary"> Services</span>
                     </h3>
                   </div>
                   {/* <!-- section-title-wrap Start --> */}
                 </div>
               </div>
 
-              <div class="feature-images__four">
-                <div class=" row">
-                  <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
-                    {/* <!-- ht-box-icon Start --> */}
-                    <a href="/" class="ht-box-images style-04">
-                      <div class="image-box-wrap">
-                        <div class="box-image">
-                          <img class="img-fulid" src={ios2} alt="" />
-                        </div>
-                        <div class="content">
-                          <h5 class="heading">UI/UX Design</h5>
-                          <div class="text">
-                            We boast of an expert user experience (UX) design
-                            team having extensive knowledge of building visually
-                            appealing prototypes, sophisticated user interfaces
-                            and custom user experience for your apps.
+              <div class="row">
+                <div class="col-12">
+                  <div class="feature-images__two small-mt__10">
+                    <div class="modern-grid-image-box row row--30">
+                      <div class="single-item wow move-up col-lg-4 col-md-6 section-space--mt_60  small-mt__40">
+                        {/* <!-- ht-box-icon Start --> */}
+                        <a href="/" class="ht-box-images style-02">
+                          <div class="image-box-wrap">
+                            <div class="box-image">
+                              <img class="img-fulid" src={backup} alt="" />
+                            </div>
+                            <div class="content">
+                              <h6 class="heading">Custom app development </h6>
+                            </div>
                           </div>
-                        </div>
+                        </a>
+                        {/* <!-- ht-box-icon End --> */}
                       </div>
-                    </a>
-                    {/* <!-- ht-box-icon End --> */}
+
+                      <div class="single-item wow move-up col-lg-4 col-md-6 section-space--mt_60">
+                        {/* <!-- ht-box-icon Start --> */}
+                        <a href="/" class="ht-box-images style-02">
+                          <div class="image-box-wrap">
+                            <div class="box-image">
+                              <img class="img-fulid" src={cloud} alt="" />
+                            </div>
+                            <div class="content">
+                              <h6 class="heading">App technology consulting</h6>
+                            </div>
+                          </div>
+                        </a>
+                        {/* <!-- ht-box-icon End --> */}
+                      </div>
+
+                      <div class="single-item wow move-up col-lg-4 col-md-6 section-space--mt_60">
+                        {/* <!-- ht-box-icon Start --> */}
+                        <a href="/" class="ht-box-images style-02">
+                          <div class="image-box-wrap">
+                            <div class="box-image">
+                              <img class="img-fulid" src={IT} alt="" />
+                            </div>
+                            <div class="content">
+                              <h6 class="heading">Hybrid app development</h6>
+                            </div>
+                          </div>
+                        </a>
+                        {/* <!-- ht-box-icon End --> */}
+                      </div>
+
+                      <div class="single-item wow move-up col-lg-4 col-md-6 section-space--mt_60">
+                        {/* <!-- ht-box-icon Start --> */}
+                        <a href="/" class="ht-box-images style-02">
+                          <div class="image-box-wrap">
+                            <div class="box-image">
+                              <img class="img-fulid" src={soft} alt="" />
+                            </div>
+                            <div class="content">
+                              <h6 class="heading">Native app development</h6>
+                            </div>
+                          </div>
+                        </a>
+                        {/* <!-- ht-box-icon End --> */}
+                      </div>
+
+                      <div class="single-item wow move-up col-lg-4 col-md-6 section-space--mt_60">
+                        {/* <!-- ht-box-icon Start --> */}
+                        <a href="/" class="ht-box-images style-02">
+                          <div class="image-box-wrap">
+                            <div class="box-image">
+                              <img class="img-fulid" src={manage} alt="" />
+                            </div>
+                            <div class="content">
+                              <h6 class="heading">Wearable app development</h6>
+                            </div>
+                          </div>
+                        </a>
+                        {/* <!-- ht-box-icon End --> */}
+                      </div>
+
+                      <div class="single-item wow move-up col-lg-4 col-md-6 section-space--mt_60">
+                        {/* <!-- ht-box-icon Start --> */}
+                        <a href="/" class="ht-box-images style-02">
+                          <div class="image-box-wrap">
+                            <div class="box-image">
+                              <img class="img-fulid" src={consult} alt="" />
+                            </div>
+                            <div class="content">
+                              <h6 class="heading">Digital transformation</h6>
+                            </div>
+                          </div>
+                        </a>
+                        {/* <!-- ht-box-icon End --> */}
+                      </div>
+                    </div>
                   </div>
-                  <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
-                    {/* <!-- ht-box-icon Start --> */}
-                    <a href="/" class="ht-box-images style-04">
-                      <div class="image-box-wrap">
-                        <div class="box-image">
-                          <img class="img-fulid" src={ios3} alt="" />
-                        </div>
-                        <div class="content">
-                          <h5 class="heading">iPhone App Development </h5>
-                          <div class="text">
-                            We have one of the industry's most experienced team
-                            of iOS developers who can handle complex enterprise
-                            projects, iOS app projects for multiple devices
-                            including iPhones, iPad, Apple Watch and Apple TV,
-                            app and iOS game apps.
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    {/* <!-- ht-box-icon End --> */}
-                  </div>
-                  <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
-                    {/* <!-- ht-box-icon Start --> */}
-                    <a href="/" class="ht-box-images style-04">
-                      <div class="image-box-wrap">
-                        <div class="box-image">
-                          <img class="img-fulid" src={ios4} alt="" />
-                        </div>
-                        <div class="content">
-                          <h5 class="heading">Quality Assurance and Testing</h5>
-                          <div class="text">
-                            We boast of an experienced in-house QA team well
-                            equipped and skilled with a multitude of manual
-                            testing and automation testing tools including XCode
-                            testing framework and knowledgeable with the
-                            industry-benchmark best practices to ensure optimum
-                            quality.
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    {/* <!-- ht-box-icon End --> */}
-                  </div>
-                  <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
-                    {/* <!-- ht-box-icon Start --> */}
-                    <a href="/" class="ht-box-images style-04">
-                      <div class="image-box-wrap">
-                        <div class="box-image">
-                          <img class="img-fulid" src={ios5} alt="" />
-                        </div>
-                        <div class="content">
-                          <h5 class="heading">Updates and Maintenance</h5>
-                          <div class="text">
-                            We ensure taking care of each and every iOS app to
-                            go through the ups and downs and providing
-                            comprehensive post-development support, maintenance
-                            and app updates on a regular basis to keep the app
-                            user experience and security up to date.
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    {/* <!-- ht-box-icon End --> */}
-                  </div>
-                  {/* <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
-                    <!-- ht-box-icon Start -->
-                    <a href="/" class="ht-box-images style-04">
-                      <div class="image-box-wrap">
-                        <div class="box-image">
-                          <img
-                            class="img-fulid"
-                            src="assets/images/icons/mitech-box-image-style-05-image-05-60x60.webp"
-                            alt=""
-                          />
-                        </div>
-                        <div class="content">
-                          <h5 class="heading">Business Reform</h5>
-                          <div class="text">
-                            We provide the most responsive and functional IT
-                            design for companies and businesses worldwide.
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <!-- ht-box-icon End -->
-                  </div> */}
-                  {/* <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
-                    <!-- ht-box-icon Start -->
-                    <a href="/" class="ht-box-images style-04">
-                      <div class="image-box-wrap">
-                        <div class="box-image">
-                          <img
-                            class="img-fulid"
-                            src="assets/images/icons/mitech-box-image-style-05-image-06-60x60.webp"
-                            alt=""
-                          />
-                        </div>
-                        <div class="content">
-                          <h5 class="heading">Infrastructure Plan</h5>
-                          <div class="text">
-                            Mitech takes into account all conditions and budgets
-                            needed for building infrastructure plan..
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <!-- ht-box-icon End -->
-                  </div> */}
                 </div>
               </div>
             </div>
           </div>
           {/* <!--===========  feature-images-wrapper  End =============--> */}
+          {/* <!--========= Pricing Table Area Start ==========--> */}
+          <div class="pricing-table-area section-space--ptb_100 bg-gray">
+            <div class="pricing-table-title-area position-relative">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="section-title-wrapper text-center section-space--mb_60 wow move-up">
+                      {/* <h6 class="section-sub-title mb-20">Pricing and plan</h6> */}
+                      <h3 class="section-title">
+                        Our <span class="text-color-primary">Hiring</span>{" "}
+                        Models
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pricing-table-content-area">
+              <div class="container">
+                <div class="row pricing-table-one">
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-4 pricing-table wow move-up">
+                    <div class="pricing-table__inner">
+                      <div class="pricing-table__header">
+                        <h6 class="sub-title">Full Time Hiring</h6>
+                        {/* <div class="pricing-table__image">
+                          <img
+                            src="assets/images/icons/mitech-pricing-box-icon-01-90x90.webp"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div> */}
+                        <div class="pricing-table__price-wrap">
+                          {/* <h6 class="currency">$</h6> */}
+                          <h6 class="price">9 Hours</h6>
+                          <h6 class="period">/day</h6>
+                        </div>
+                      </div>
+                      <div class="pricing-table__body">
+                        {/* <div class="pricing-table__footer">
+                          <a href="/" class="ht-btn ht-btn-md ht-btn--outline">
+                            Get started
+                          </a>
+                        </div> */}
+                        <ul class="pricing-table__list text-left">
+                          <li>03 projects</li>
+                          <li>Quality &amp; Customer Experience</li>
+                          <li>Minimum Days: 2 Weeks</li>
+                          {/* <li>
+                            <span class="featured">Minimum Days: 2 Weeks</span>
+                          </li> */}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-4 pricing-table pricing-table--popular wow move-up">
+                    <div class="pricing-table__inner">
+                      {/* <div class="pricing-table__feature-mark">
+                        <span>Popular Choice</span>
+                      </div> */}
+                      <div class="pricing-table__header">
+                        <h6 class="sub-title">Part Time Hiring</h6>
+                        {/* <div class="pricing-table__image">
+                          <img
+                            src="assets/images/icons/mitech-pricing-box-icon-02-88x88.webp"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div> */}
+                        <div class="pricing-table__price-wrap">
+                          {/* <h6 class="currency">$</h6> */}
+                          <h6 class="price">4 Hours</h6>
+                          <h6 class="period">/day</h6>
+                        </div>
+                      </div>
+                      <div class="pricing-table__body">
+                        {/* <div class="pricing-table__footer">
+                          <a href="/" class="ht-btn  ht-btn-md ">
+                            Get started
+                          </a>
+                        </div> */}
+                        <ul class="pricing-table__list text-left">
+                          <li>Unlimited project</li>
+                          <li>Power And Predictive Dialing</li>
+                          {/* <li>Quality &amp; Customer Experience</li> */}
+                          <li>Minimum Days: 2 Weeks</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-4 pricing-table wow move-up">
+                    <div class="pricing-table__inner">
+                      <div class="pricing-table__header">
+                        <h6 class="sub-title">Hourly Time Hiring</h6>
+                        {/* <div class="pricing-table__image">
+                          <img
+                            src="assets/images/icons/mitech-pricing-box-icon-03-90x90.webp"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div> */}
+                        <div class="pricing-table__price-wrap">
+                          {/* <h6 class="currency">$</h6> */}
+                          <h6 class="price">Flexible Hours</h6>
+                          {/* <h6 class="period">/mo</h6> */}
+                        </div>
+                      </div>
+                      <div class="pricing-table__body">
+                        {/* <div class="pricing-table__footer">
+                          <a href="/" class="ht-btn ht-btn-md ht-btn--outline">
+                            Get started
+                          </a>
+                        </div> */}
+                        <ul class="pricing-table__list text-left">
+                          <li>10 projects</li>
+                          <li>Power And Predictive Dialing </li>
+                          <li>Minimum Days: 50 Hours</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!--========= Pricing Table Area End ==========--> */}
+
           {/* <!--===========  feature-large-images-wrapper  Start =============--> */}
           <div class="feature-large-images-wrapper section-space--ptb_100">
             <div class="container">
@@ -522,105 +621,143 @@ const Iosdev = () => {
               </div>
             </div>
           </div>
-          {/* <!--===========  feature-large-images-wrapper  End =============--> */}
-          <div class="row">
-            <div class="col-lg-12">
-              {/* <!-- section-title-wrap Start --> */}
-              <div class="section-title-wrap text-center section-space--mb_60">
-                <h3 class="heading">
-                  Why choose<span class="text-color-primary"> OverNinja</span>{" "}
-                  for Development?
-                </h3>
-              </div>
-              {/* <!-- section-title-wrap Start --> */}
-            </div>
-          </div>
           {/* <!--===========  feature-images-wrapper  Start =============--> */}
-          <div class="feature-images-wrapper">
-            <div class="container-fluid ps-0 pe-0">
-              <div class="row no-gutters">
-                <div class="col-12">
-                  <div class="feature-images__three modern-grid-image-4 row no-gutters">
-                    <div class="col-lg-3  col-md-6">
-                      {/* <!-- ht-box-icon Start --> */}
-                      <a href="/" class="ht-box-images style-03 wow move-up">
-                        <div class="image-box-wrap">
-                          <div class="box-image">
-                            <img class="img-fulid" src={Hire} alt="" />
-                          </div>
-                          <div class="content">
-                            <h5 class="heading">Flexible Hiring Models </h5>
-                            <div class="text">
-                              We offer very flexible hiring models for diverse
-                              iOS app projects according to your budget and
-                              need.
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      {/* <!-- ht-box-icon End --> */}
-                    </div>
+          <div class="feature-images-wrapper bg-gray section-space--ptb_100">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  {/* <!-- section-title-wrap Start --> */}
+                  <div class="section-title-wrap text-center section-space--mb_30">
+                    <h3 class="heading">
+                      Why hire iPhone Application Developers From
+                      <span class="text-color-primary"> OverNinja?</span>
+                    </h3>
+                  </div>
+                  {/* <!-- section-title-wrap Start --> */}
+                </div>
+              </div>
 
-                    <div class="col-lg-3  col-md-6">
-                      {/* <!-- ht-box-icon Start --> */}
-                      <a href="/" class="ht-box-images style-03 wow move-up">
-                        <div class="image-box-wrap">
-                          <div class="box-image">
-                            <img class="img-fulid" src={cost} alt="" />
-                          </div>
-                          <div class="content">
-                            <h5 class="heading">Effective Cost</h5>
-                            <div class="text">
-                              We offer one of the most competitive pricing for
-                              offshore development and remote hiring.
-                            </div>
+              <div class="feature-images__four">
+                <div class=" row">
+                  <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                    {/* <!-- ht-box-icon Start --> */}
+                    <a href="/" class="ht-box-images style-04">
+                      <div class="image-box-wrap">
+                        <div class="box-image">
+                          <img class="img-fulid" src={ios2} alt="" />
+                        </div>
+                        <div class="content">
+                          <h5 class="heading">Enhanced Efficiency</h5>
+                          <div class="text">
+                            We use modern technology that gives us an
+                            opportunity to develop and test applications with
+                            superior efficiency.
                           </div>
                         </div>
-                      </a>
-                      {/* <!-- ht-box-icon End --> */}
-                    </div>
-
-                    <div class="col-lg-3  col-md-6">
-                      {/* <!-- ht-box-icon Start --> */}
-                      <a href="/" class="ht-box-images style-03 wow move-up">
-                        <div class="image-box-wrap">
-                          <div class="box-image">
-                            <img class="img-fulid" src={diverse} alt="" />
-                          </div>
-                          <div class="content">
-                            <h5 class="heading">Diverse Technologies</h5>
-                            <div class="text">
-                              You can hire iOS app developers for any niche app
-                              project requiring key coding skills on programming
-                              languages such as Objective-C, swift, JSON, xCode,
-                              Cocoa Framework, Cocos2d, etc.
-                            </div>
+                      </div>
+                    </a>
+                    {/* <!-- ht-box-icon End --> */}
+                  </div>
+                  <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                    {/* <!-- ht-box-icon Start --> */}
+                    <a href="/" class="ht-box-images style-04">
+                      <div class="image-box-wrap">
+                        <div class="box-image">
+                          <img class="img-fulid" src={ios3} alt="" />
+                        </div>
+                        <div class="content">
+                          <h5 class="heading">Future-proof Applications </h5>
+                          <div class="text">
+                            iPhone app programmers for hire that offer you
+                            innovative solutions such as AI, ML, AR, VR,
+                            Chatbots, etc.
                           </div>
                         </div>
-                      </a>
-                      {/* <!-- ht-box-icon End --> */}
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                      {/* <!-- ht-box-icon Start --> */}
-                      <a href="/" class="ht-box-images style-03 wow move-up">
-                        <div class="image-box-wrap">
-                          <div class="box-image">
-                            <img class="img-fulid" src={best} alt="" />
-                          </div>
-                          <div class="content">
-                            <h5 class="heading">Best Talent</h5>
-                            <div class="text">
-                              We boast of a team of most experienced iOS app
-                              developers skilled with all advanced SDKs from
-                              Apple, Internet of Things (IoT) platforms such as
-                              Wearables, iBeacon, NFC, etc.
-                            </div>
+                      </div>
+                    </a>
+                    {/* <!-- ht-box-icon End --> */}
+                  </div>
+                  <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                    {/* <!-- ht-box-icon Start --> */}
+                    <a href="/" class="ht-box-images style-04">
+                      <div class="image-box-wrap">
+                        <div class="box-image">
+                          <img class="img-fulid" src={ios4} alt="" />
+                        </div>
+                        <div class="content">
+                          <h5 class="heading">Hassle-free procedure</h5>
+                          <div class="text">
+                            We help you in removing the obstacles as much as
+                            possible by offering you a hassle-free process.
                           </div>
                         </div>
-                      </a>
-                      {/* <!-- ht-box-icon End --> */}
-                    </div>
+                      </div>
+                    </a>
+                    {/* <!-- ht-box-icon End --> */}
+                  </div>
+                  <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                    {/* <!-- ht-box-icon Start --> */}
+                    <a href="/" class="ht-box-images style-04">
+                      <div class="image-box-wrap">
+                        <div class="box-image">
+                          <img class="img-fulid" src={ios5} alt="" />
+                        </div>
+                        <div class="content">
+                          <h5 class="heading">Deployment Services</h5>
+                          <div class="text">
+                            Apart from the development, designing, testing, and
+                            maintenance services, we also offer you to deploy it
+                            on AppStore.
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    {/* <!-- ht-box-icon End --> */}
+                  </div>
+                  <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                    {/* <!-- ht-box-icon Start --> */}
+                    <a href="/" class="ht-box-images style-04">
+                      <div class="image-box-wrap">
+                        <div class="box-image">
+                          <img
+                            class="img-fulid"
+                            src="assets/images/icons/mitech-box-image-style-05-image-05-60x60.webp"
+                            alt=""
+                          />
+                        </div>
+                        <div class="content">
+                          <h5 class="heading">Cost-effective Maintenance</h5>
+                          <div class="text">
+                            Contact our customer executive team anytime for the
+                            maintenance of the applications built by us.
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    {/* <!-- ht-box-icon End --> */}
+                  </div>
+                  <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                    {/* <!-- ht-box-icon Start --> */}
+                    <a href="/" class="ht-box-images style-04">
+                      <div class="image-box-wrap">
+                        <div class="box-image">
+                          <img
+                            class="img-fulid"
+                            src="assets/images/icons/mitech-box-image-style-05-image-06-60x60.webp"
+                            alt=""
+                          />
+                        </div>
+                        <div class="content">
+                          <h5 class="heading">Innovate & Compete</h5>
+                          <div class="text">
+                            Our in-depth research and understanding of the
+                            industry give us a sharper edge in building
+                            innovative solutions.
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    {/* <!-- ht-box-icon End --> */}
                   </div>
                 </div>
               </div>
