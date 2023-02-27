@@ -1,5 +1,5 @@
 import React from "react";
-import ioshero from "../assets/images/hero/ios.webp";
+import golanghero from "../assets/images/hero/ghh.png";
 import ios2 from "../assets/images/icons/mitech-box-image-style-05-image-01-60x60.webp";
 import ios3 from "../assets/images/icons/mitech-box-image-style-05-image-02-60x60.webp";
 import ios4 from "../assets/images/icons/mitech-box-image-style-05-image-03-60x60.webp";
@@ -26,7 +26,7 @@ import ics from "../assets/images/hero/virtualics.webp";
 // import best from "../assets/images/icons/mitech-processing-service-image-04-80x83.webp";
 import { useState } from "react";
 
-const Iosdev = () => {
+const Golangdev = () => {
   const [toggle, setToggle] = useState(false);
   const [Toggle, SetToggle] = useState(false);
   const [ToggleBtn, SetToggleBtn] = useState(false);
@@ -70,13 +70,14 @@ const Iosdev = () => {
                   <div class="infotechno-hero-text  wow move-up">
                     {/* <h6>IT Design & Consulting </h6> */}
                     <h1 class="font-weight--reguler mb-15">
-                      Hire iOS Developers{" "}
+                      Hire Golang Developers{" "}
                     </h1>
                     <p>
-                      iOS app development services by a leading mobile app
-                      development company, at OverNinja, you can find answers to
-                      your app development needs by hiring iPhone app developers
-                      with 5+ years of experience.
+                      Hire dedicated team of Golang developers that offer you
+                      robust development of cross-platform applications. We
+                      offer you our comprehensive knowledge, cross-platform
+                      support, and end-to-end Golang development services to
+                      meet your business needs.
                     </p>
                     <div class="hero-button  mt-30">
                       <a href="/" class="ht-btn ht-btn-md">
@@ -95,7 +96,7 @@ const Iosdev = () => {
                       />
                     </div>
                     <div class="infotechno-inner-two  wow move-up">
-                      <img class="img-fluid" src={ioshero} alt="" />
+                      <img class="img-fluid" src={golanghero} alt="" />
                     </div>
                   </div>
                 </div>
@@ -109,21 +110,20 @@ const Iosdev = () => {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="text-center">
-                    <h2>Hire Dedicated iOS App Developers</h2>
+                    <h2>Hire Dedicated Golang Web Developers</h2>
                     <div className="section-under-iosdev text-center mt-30">
-                      With more than 10+ years of experience in developing iOS
-                      applications for devices such as iPhone, iPad, and now
-                      venturing into the wearable and Apple TV market, we are
-                      industry's one of the most innovative iOS application
-                      development company. We have years of experience in
-                      building feature-rich applications that are
-                      high-performing and meet the needs of the Apple app
-                      standards. Leverage our end-to-end iOS development
-                      services and hire iPhone app developer that can help you
-                      achieve your business goals. You can hire iOS app
-                      developers based on your project needs; our flexible
-                      hiring model allows you to hire them on an hourly,
-                      part-time and full-time basis.
+                      Hire Golang developers from the best web and mobile app
+                      development company that offers you the best cloud-native
+                      solutions. Our applications are highly scalable, robust,
+                      and reliable in the global market. We offer you a flexible
+                      engagement model that allows you to hire dedicated Golang
+                      developers based on the need of the project. Our ultimate
+                      focus is to provide you a positive experience by
+                      outsourcing your projects to us. We offer you end-to-end
+                      full-stack Golang development services. Given our
+                      knowledge and expertise, we give you the best product
+                      development services that help you in gaining a sharper
+                      edge in the market through flexibility and scalability.
                     </div>
                   </div>
                 </div>
@@ -138,8 +138,8 @@ const Iosdev = () => {
                 <div className="col-lg-12">
                   <div className="section-title-wrap text-center section-space--mb_20">
                     <h3 className="heading">
-                      How Hiring iOS App Developers Will Help to Build a
-                      Result-Oriented App?
+                      How Hiring Golang Developers Will Help to Build Modern
+                      Enterprise Application?
                     </h3>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ const Iosdev = () => {
                   <div class="section-title-wrap text-center section-space--mb_0">
                     {/* <h6 class="section-sub-title mb-20">Our services</h6> */}
                     <h3 class="heading">
-                      Our iOS App Development{" "}
+                      Our Golang Development{" "}
                       <span class="text-color-primary"> Services</span>
                     </h3>
                   </div>
@@ -631,7 +631,7 @@ const Iosdev = () => {
                   {/* <!-- section-title-wrap Start --> */}
                   <div class="section-title-wrap text-center section-space--mb_30">
                     <h3 class="heading">
-                      Why hire iPhone Application Developers From
+                      Why Hire Golang Web Developers From
                       <span class="text-color-primary"> OverNinja?</span>
                     </h3>
                   </div>
@@ -1144,4 +1144,4 @@ const Iosdev = () => {
   );
 };
 
-export default Iosdev;
+export default Golangdev;

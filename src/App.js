@@ -36,6 +36,16 @@ import Mobile from "./components/Mobile";
 import Website from "./components/Website";
 import Game from "./components/Game";
 import Iosdev from "./components/Iosdev";
+import Androiddev from "./components/Androiddev";
+import Nativedev from "./components/Nativedev";
+import Flutterdev from "./components/Flutterdev";
+import Hybriddev from "./components/Hybriddev";
+import Crossdev from "./components/Crossdev";
+import Fullstackdev from "./components/Fullstackdev";
+import Nodedev from "./components/Nodedev";
+import Laraveldev from "./components/Laraveldev";
+import Golangdev from "./components/Golangdev";
+import Phpdev from "./components/Phpdev";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "../src/assets/css/vendor/bootstrap.min.css";
@@ -93,6 +103,16 @@ function App() {
           <Route path="/website" element={<Website />} />
           <Route path="/game" element={<Game />} />
           <Route path="/iosdev" element={<Iosdev />} />
+          <Route path="/androiddev" element={<Androiddev />} />
+          <Route path="/nativedev" element={<Nativedev />} />
+          <Route path="/flutterdev" element={<Flutterdev />} />
+          <Route path="/hybriddev" element={<Hybriddev />} />
+          <Route path="/crossdev" element={<Crossdev />} />
+          <Route path="/fullstackdev" element={<Fullstackdev />} />
+          <Route path="/nodedev" element={<Nodedev />} />
+          <Route path="/laraveldev" element={<Laraveldev />} />
+          <Route path="/golangdev" element={<Golangdev />} />
+          <Route path="/phpdev" element={<Phpdev />} />
         </Routes>
         <Footer />
       </Router>

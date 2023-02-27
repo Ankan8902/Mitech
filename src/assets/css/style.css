@@ -2803,7 +2803,8 @@ input[type="checkbox"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -12px;
+  /* margin: 0 -12px; */
+  margin: 0 20px;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -8983,6 +8984,7 @@ ol {
   position: relative;
   display: block;
   padding: 7px 0 7px 31px;
+  text-align: left;
 }
 
 .pricing-table-one .pricing-table__list li::before {

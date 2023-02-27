@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import logo from "../assets/images/logo/over.png";
 
 const Header = () => {
   const [btnState, setBtnState] = useState(false);
-  const [btn, setBtn] = useState(false);
+  // const [btn, setBtn] = useState(false);
 
   const [toggle, setToggle] = useState(false);
   const [Toggle, settoggle] = useState(false);
@@ -23,9 +24,9 @@ const Header = () => {
     setBtnState((btnState) => !btnState);
   }
 
-  function handleclick() {
-    setBtn((btn) => !btn);
-  }
+  // function handleclick() {
+  //   setBtn((btn) => !btn);
+  // }
 
   const toggleState = () => {
     setToggle(!toggle);
@@ -72,21 +73,21 @@ const Header = () => {
   };
 
   let toggleClassCheck = btnState ? " active" : "";
-  let toggleClass = btn ? " active" : "";
+  // let toggleClass = btn ? " active" : "";
 
   return (
     <>
       {/* <!--====================  header area ====================--> */}
-      <div className="header-area header-sticky only-mobile-sticky">
+      {/* <div className="header-area header-sticky only-mobile-sticky">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="header position-relative">
-                {/* <!-- brand logo --> */}
+                <!-- brand logo -->
                 <div className="header__logo top-logo">
                   <NavLink to="/">
                     <img src={logo} className="img-fluid" alt="" />
-                    {/* // width="160" height="48v" */}
+                    // width="160" height="48v"
                   </NavLink>
                 </div>
 
@@ -95,7 +96,7 @@ const Header = () => {
                     className={`header-right-inner${toggleClass}`}
                     id="hidden-icon-wrapper"
                   >
-                    {/* <!-- Header Search Form --> */}
+                    <!-- Header Search Form -->
                     <div className="header-search-form d-md-none d-block">
                       <form action="#" className="search-form-top">
                         <input
@@ -110,7 +111,7 @@ const Header = () => {
                     </div>
                   </div>
 
-                  {/* <!-- Header Top Info --> */}
+                  <!-- Header Top Info -->
                   <div className="swiper-container header-top-info-slider-werap top-info-slider__container swiper-container-initialized swiper-container-horizontal swiper-container-android">
                     <div className="swiper-wrapper header-top-info-inner default-color">
                       <div className="swiper-slide YourClass">
@@ -168,7 +169,7 @@ const Header = () => {
                     </div>
                   </div>
 
-                  {/* <!-- Header Social Networks --> */}
+                  <!-- Header Social Networks -->
                   <div className="header-social-networks style-icons">
                     <div className="inner YourClass">
                       <a
@@ -206,7 +207,7 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-                {/* <!-- mobile menu --> */}
+                <!-- mobile menu -->
                 <div
                   className="mobile-navigation-icon d-block d-xl-none"
                   id="mobile-menu"
@@ -214,39 +215,34 @@ const Header = () => {
                 >
                   <i></i>
                 </div>
-                {/* <!-- hidden icons menu --> */}
+                <!-- hidden icons menu -->
                 <div
                   className="hidden-icons-menu d-block d-md-none"
                   id="hidden-icon-trigger"
                 >
-                  {/* <a href="/"> */}
+                  <a href="/">
                   <i
                     className="far fa-ellipsis-h-alt YourClass"
                     onClick={handleclick}
                   ></i>
-                  {/* </a> */}
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="header-bottom-wrap bg-theme-default d-md-block d-none header-sticky">
+      {/* <div className="header-bottom-wrap bg-theme-default d-md-block d-none header-sticky">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="header-bottom-inner position-relative">
                 <div className="header-bottom-left-wrap">
-                  {/* <!-- navigation menu --> */}
+                  <!-- navigation menu -->
                   <div className="header__navigation d-none d-xl-block">
                     <nav className="navigation-menu navigation-menu--text_white">
                       <ul>
-                        {/* <li className="has-children">
-                          <NavLink to="/">
-                            <span>Home</span>
-                          </NavLink>
-                        </li> */}
                         <li className="has-children">
                           <a href="/">
                             <span>Company</span>
@@ -284,33 +280,11 @@ const Header = () => {
                             </li>
                           </ul>
                         </li>
-                        {/* <li className="has-children has-children--multilevel-submenu">
-                          <a href="/">
-                            <span>Our Services</span>
-                          </a>
-                          <ul className="submenu">
-                            <li>
-                              <Link to="/IT">
-                                <span>IT Services</span>
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to="/digital">
-                                <span>Digital Marketing</span>
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to="/recruit">
-                                <span>Recruitment Services</span>
-                              </Link>
-                            </li>
-                          </ul>
-                        </li> */}
                         <li class="has-children">
                           <a href="/">
                             <span>Our Services</span>
                           </a>
-                          {/* <!-- mega menu --> */}
+                          <!-- mega menu -->
                           <ul class="megamenu megamenu--mega">
                             <li>
                               <h2 class="page-list-title">
@@ -342,26 +316,6 @@ const Header = () => {
                                     <span>Mobile App Maintenance</span>
                                   </NavLink>
                                 </li>
-                                {/* <li>
-                                  <a href="element-buttons.html">
-                                    <span>Buttons</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-cta.html">
-                                    <span>Call to action</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-client-logo.html">
-                                    <span>Client Logo</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-countdown.html">
-                                    <span>Countdown</span>
-                                  </a>
-                                </li> */}
                               </ul>
                             </li>
                             <li>
@@ -394,26 +348,6 @@ const Header = () => {
                                     <span>Website Maintenance</span>
                                   </NavLink>
                                 </li>
-                                {/* <li>
-                                  <a href="element-gradation.html">
-                                    <span>Gradation</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-instagram.html">
-                                    <span>Instagram</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-lists.html">
-                                    <span>Lists</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-message-box.html">
-                                    <span>Message box</span>
-                                  </a>
-                                </li> */}
                               </ul>
                             </li>
                             <li>
@@ -446,26 +380,6 @@ const Header = () => {
                                     <span>Game Maintenance</span>
                                   </NavLink>
                                 </li>
-                                {/* <li>
-                                  <a href="element-rows-columns.html">
-                                    <span>Rows & Columns</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-social-networks.html">
-                                    <span>Social Networks</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-tabs.html">
-                                    <span>Tabs</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-team-member.html">
-                                    <span>Team member</span>
-                                  </a>
-                                </li> */}
                               </ul>
                             </li>
                             <li>
@@ -486,11 +400,6 @@ const Header = () => {
                                     <span>PPC</span>
                                   </NavLink>
                                 </li>
-                                {/* <li>
-                                  <a href="element-typed-text.html">
-                                    <span>Maintenance</span>
-                                  </a>
-                                </li> */}
                                 <li>
                                   <NavLink to="/crm">
                                     <span>CRM</span>
@@ -509,7 +418,7 @@ const Header = () => {
                           <a href="/">
                             <span>Hire Developers</span>
                           </a>
-                          {/* <!-- mega menu --> */}
+                          <!-- mega menu -->
                           <ul class="megamenu megamenu--mega">
                             <li>
                               <h2 class="page-list-title">
@@ -522,45 +431,30 @@ const Header = () => {
                                   </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-box-icon.html">
+                                  <NavLink to="/androiddev">
                                     <span>Android App Developers</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-box-image.html">
+                                  <NavLink to="/nativedev">
                                     <span>React-Native Developers</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-box-large-image.html">
+                                  <NavLink to="/flutterdev">
                                     <span>Flutter App Developers</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-buttons.html">
+                                  <NavLink to="/hybriddev">
                                     <span>Hybrid Mobile App Developers</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-buttons.html">
+                                  <NavLink to="/crossdev">
                                     <span>Cross Platform App Developers</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
-                                {/* <li>
-                                  <a href="element-cta.html">
-                                    <span>Call to action</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-client-logo.html">
-                                    <span>Client Logo</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-countdown.html">
-                                    <span>Countdown</span>
-                                  </a>
-                                </li> */}
                               </ul>
                             </li>
                             <li>
@@ -569,50 +463,30 @@ const Header = () => {
                               </h2>
                               <ul>
                                 <li>
-                                  <a href="element-counters.html">
+                                  <NavLink to="/fullstackdev">
                                     <span>Full Stack Developers</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-dividers.html">
+                                  <NavLink to="/nodedev">
                                     <span>NodeJS Developers</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-flexible-image-slider.html">
+                                  <NavLink to="/laraveldev">
                                     <span>Laravel Developers</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-google-map.html">
+                                  <NavLink to="/golangdev">
                                     <span>Golang Developers</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
                                 <li>
-                                  <a href="element-google-map.html">
+                                  <NavLink to="/phpdev">
                                     <span>PHP Developers</span>
-                                  </a>
+                                  </NavLink>
                                 </li>
-                                {/* <li>
-                                  <a href="element-gradation.html">
-                                    <span>Gradation</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-instagram.html">
-                                    <span>Instagram</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-lists.html">
-                                    <span>Lists</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="element-message-box.html">
-                                    <span>Message box</span>
-                                  </a>
-                                </li> */}
                               </ul>
                             </li>
                             <li>
@@ -691,6 +565,444 @@ const Header = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      {/* <!--====================  End of header area  ====================--> */}
+
+      {/* <!--====================  header area ====================--> */}
+      <div class="header-area header-area--default">
+        {/* <!-- Header Bottom Wrap Start --> */}
+        <div class="header-bottom-wrap header-sticky">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="header default-menu-style position-relative">
+                  {/* <!-- brand logo --> */}
+                  <div class="header__logo">
+                    <NavLink to="/">
+                      <img src={logo} className="img-fluid" alt="" />
+                      {/* // width="160" height="48v" */}
+                    </NavLink>
+                  </div>
+
+                  {/* <!-- header midle box  --> */}
+                  <div class="header-midle-box">
+                    <div class="header-bottom-wrap d-md-block d-none">
+                      <div class="header-bottom-inner">
+                        <div class="header-bottom-left-wrap">
+                          {/* <!-- navigation menu --> */}
+                          <div class="header__navigation d-none d-xl-block">
+                            <nav class="navigation-menu primary--menu">
+                              <ul>
+                                <li className="has-children">
+                                  <NavLink to="/">
+                                    <span>Home</span>
+                                  </NavLink>
+                                </li>
+                                <li className="has-children has-children--multilevel-submenu">
+                                  <a href="/">
+                                    <span>Company</span>
+                                  </a>
+                                  <ul className="submenu">
+                                    <li className="has-children">
+                                      <NavLink to="/about">
+                                        <span>About us</span>
+                                      </NavLink>
+                                    </li>
+                                    <li>
+                                      <NavLink to="/contact">
+                                        <span>Contact us</span>
+                                      </NavLink>
+                                    </li>
+                                    <li>
+                                      <Link to="/leader">
+                                        <span>Leadership</span>
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <NavLink to="/choose">
+                                        <span>Why choose us</span>
+                                      </NavLink>
+                                    </li>
+                                    <li>
+                                      <NavLink to="/history">
+                                        <span>Our history</span>
+                                      </NavLink>
+                                    </li>
+                                    <li>
+                                      <NavLink to="/faqs">
+                                        <span>FAQs</span>
+                                      </NavLink>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="has-children">
+                                  <a href="/">
+                                    <span>Our Services</span>
+                                  </a>
+                                  {/* <!-- mega menu --> */}
+                                  <ul class="megamenu megamenu--mega">
+                                    <li>
+                                      <h2 class="page-list-title">
+                                        Mobile App & Development
+                                      </h2>
+                                      <ul>
+                                        <li>
+                                          <NavLink to="/ios">
+                                            <span>iOS App Development</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/android">
+                                            <span>Android App Development</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/flutter">
+                                            <span>Flutter App Development</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/react-native">
+                                            <span>
+                                              React-Native Development
+                                            </span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/mobile">
+                                            <span>Mobile App Maintenance</span>
+                                          </NavLink>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <h2 class="page-list-title">
+                                        Website Design & Development
+                                      </h2>
+                                      <ul>
+                                        <li>
+                                          <NavLink to="/angularjs">
+                                            <span>AngularJS Development</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/reactjs">
+                                            <span>ReactJS Development</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/vuejs">
+                                            <span>VueJS Development</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/nodejs">
+                                            <span>NodeJS Development</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/website">
+                                            <span>Website Maintenance</span>
+                                          </NavLink>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <h2 class="page-list-title">
+                                        Game Design & Development
+                                      </h2>
+                                      <ul>
+                                        <li>
+                                          <NavLink to="/golang">
+                                            <span>Golang Development</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/laravel">
+                                            <span>Laravel Development</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/php">
+                                            <span>PHP Development</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/wordpress">
+                                            <span>Wordpress Development</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/game">
+                                            <span>Game Maintenance</span>
+                                          </NavLink>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <h2 class="page-list-title">
+                                        Other Services
+                                      </h2>
+                                      <ul>
+                                        <li>
+                                          <NavLink to="/seo">
+                                            <span>SEO</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/smm">
+                                            <span>SMM</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/ppc">
+                                            <span>PPC</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/crm">
+                                            <span>CRM</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/pos">
+                                            <span>POS</span>
+                                          </NavLink>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="has-children">
+                                  <a href="/">
+                                    <span>Hire Developers</span>
+                                  </a>
+                                  {/* <!-- mega menu --> */}
+                                  <ul class="megamenu megamenu--mega">
+                                    <li>
+                                      <h2 class="page-list-title">
+                                        Mobile App Developers
+                                      </h2>
+                                      <ul>
+                                        <li>
+                                          <NavLink to="/iosdev">
+                                            <span>iOS App Developers</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/androiddev">
+                                            <span>Android App Developers</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/nativedev">
+                                            <span>React-Native Developers</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/flutterdev">
+                                            <span>Flutter App Developers</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/hybriddev">
+                                            <span>
+                                              Hybrid Mobile App Developers
+                                            </span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/crossdev">
+                                            <span>
+                                              Cross Platform App Developers
+                                            </span>
+                                          </NavLink>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <h2 class="page-list-title">
+                                        Backend Developers
+                                      </h2>
+                                      <ul>
+                                        <li>
+                                          <NavLink to="/fullstackdev">
+                                            <span>Full Stack Developers</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/nodedev">
+                                            <span>NodeJS Developers</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/laraveldev">
+                                            <span>Laravel Developers</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/golangdev">
+                                            <span>Golang Developers</span>
+                                          </NavLink>
+                                        </li>
+                                        <li>
+                                          <NavLink to="/phpdev">
+                                            <span>PHP Developers</span>
+                                          </NavLink>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <h2 class="page-list-title">
+                                        Frontend Developers
+                                      </h2>
+                                      <ul>
+                                        <li>
+                                          <a href="element-popup-video.html">
+                                            <span>ReactJS Developers</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="element-pricing-box.html">
+                                            <span>AngularJS Developers</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="element-progress-bar.html">
+                                            <span>VueJS Developers</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="element-progress-circle.html">
+                                            <span>Web Developers</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <a href="/">
+                                        <h2 class="page-list-title">
+                                          WordPress Developers
+                                        </h2>
+                                      </a>
+                                      <a href="/">
+                                        <h2 class="page-list-title">
+                                          CMS Developers
+                                        </h2>
+                                      </a>
+                                      <a href="/">
+                                        <h2 class="page-list-title">
+                                          UI/UX Designers
+                                        </h2>
+                                      </a>
+                                      <a href="/">
+                                        <h2 class="page-list-title">
+                                          Game Developers
+                                        </h2>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li className="has-children">
+                                  <Link to="/casestudies">
+                                    <span>Case Studies</span>
+                                  </Link>
+                                </li>
+                                <li className="has-children">
+                                  <Link to="/blog">
+                                    <span>Blog</span>
+                                  </Link>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* <!-- header right box --> */}
+                  <div class="header-right-box">
+                    <div class="header-right-inner" id="hidden-icon-wrapper">
+                      {/* <!-- Header Social Networks --> */}
+                      <div className="header-social-networks style-icons">
+                        <div className="inner YourClass">
+                          <a
+                            className=" social-link hint--black hint--bottom-left"
+                            aria-label="Twitter"
+                            href="https://twitter.com"
+                            data-hover="Twitter"
+                          >
+                            <i className="social-icon fab fa-twitter"></i>
+                          </a>
+                          <a
+                            className=" social-link hint--black hint--bottom-left"
+                            aria-label="Facebook"
+                            href="https://facebook.com"
+                            data-hover="Facebook"
+                          >
+                            <i className="social-icon fab fa-facebook-f"></i>
+                          </a>
+                          {/* <a
+                            className=" social-link hint--black hint--bottom-left"
+                            aria-label="Instagram"
+                            href="https://instagram.com"
+                            data-hover="Instagram"
+                          >
+                            <i className="social-icon fab fa-instagram"></i>
+                          </a> */}
+                          <a
+                            className=" social-link hint--black hint--bottom-left"
+                            aria-label="Linkedin"
+                            href="https://linkedin.com"
+                            data-hover="Linkedin"
+                          >
+                            <i className="social-icon fab fa-linkedin"></i>
+                          </a>
+                        </div>
+                      </div>
+                      {/* <!-- header-search-form --> */}
+                      <div class="header-search-form default-search">
+                        <form action="#" class="search-form-top">
+                          <input
+                            class="search-field"
+                            type="text"
+                            placeholder="Search…"
+                          />
+                          <button class="search-submit">
+                            <i class="search-btn-icon fa fa-search"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+
+                    {/* <!-- mobile menu --> */}
+                    <div
+                      className="mobile-navigation-icon d-block d-xl-none"
+                      id="mobile-menu"
+                      onClick={handleClick}
+                    >
+                      <i></i>
+                    </div>
+                    {/* <!-- hidden icons menu --> */}
+                    <div
+                      className="hidden-icons-menu d-block d-md-none"
+                      id="hidden-icon-trigger"
+                    >
+                      <a href="/">
+                        <i
+                          className="far fa-ellipsis-h-alt YourClass"
+                          // onClick={handleclick}
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <!-- Header Bottom Wrap End --> */}
       </div>
       {/* <!--====================  End of header area  ====================--> */}
 
@@ -1154,9 +1466,9 @@ const Header = () => {
                           </NavLink>
                         </li>
                         <li>
-                          <a href="element-box-icon.html">
+                          <NavLink to="/androiddev">
                             <span>Android App Developers</span>
-                          </a>
+                          </NavLink>
                         </li>
                         <li>
                           <a href="element-box-image.html">

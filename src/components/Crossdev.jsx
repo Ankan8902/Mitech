@@ -1,5 +1,5 @@
 import React from "react";
-import ioshero from "../assets/images/hero/ios.webp";
+import crosshero from "../assets/images/hero/cross-hero-hire.png";
 import ios2 from "../assets/images/icons/mitech-box-image-style-05-image-01-60x60.webp";
 import ios3 from "../assets/images/icons/mitech-box-image-style-05-image-02-60x60.webp";
 import ios4 from "../assets/images/icons/mitech-box-image-style-05-image-03-60x60.webp";
@@ -26,7 +26,7 @@ import ics from "../assets/images/hero/virtualics.webp";
 // import best from "../assets/images/icons/mitech-processing-service-image-04-80x83.webp";
 import { useState } from "react";
 
-const Iosdev = () => {
+const Crossdev = () => {
   const [toggle, setToggle] = useState(false);
   const [Toggle, SetToggle] = useState(false);
   const [ToggleBtn, SetToggleBtn] = useState(false);
@@ -70,13 +70,13 @@ const Iosdev = () => {
                   <div class="infotechno-hero-text  wow move-up">
                     {/* <h6>IT Design & Consulting </h6> */}
                     <h1 class="font-weight--reguler mb-15">
-                      Hire iOS Developers{" "}
+                      Hire Cross-Platform App Developers{" "}
                     </h1>
                     <p>
-                      iOS app development services by a leading mobile app
-                      development company, at OverNinja, you can find answers to
-                      your app development needs by hiring iPhone app developers
-                      with 5+ years of experience.
+                      Double or triple your business reach with our
+                      cross-platform app development services. Hire dedicated
+                      mobile app developers that build native-like applications
+                      for android and iOS applications.
                     </p>
                     <div class="hero-button  mt-30">
                       <a href="/" class="ht-btn ht-btn-md">
@@ -95,7 +95,7 @@ const Iosdev = () => {
                       />
                     </div>
                     <div class="infotechno-inner-two  wow move-up">
-                      <img class="img-fluid" src={ioshero} alt="" />
+                      <img class="img-fluid" src={crosshero} alt="" />
                     </div>
                   </div>
                 </div>
@@ -109,21 +109,20 @@ const Iosdev = () => {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="text-center">
-                    <h2>Hire Dedicated iOS App Developers</h2>
+                    <h2>Hire Dedicated Cross Platform App Developers</h2>
                     <div className="section-under-iosdev text-center mt-30">
-                      With more than 10+ years of experience in developing iOS
-                      applications for devices such as iPhone, iPad, and now
-                      venturing into the wearable and Apple TV market, we are
-                      industry's one of the most innovative iOS application
-                      development company. We have years of experience in
-                      building feature-rich applications that are
-                      high-performing and meet the needs of the Apple app
-                      standards. Leverage our end-to-end iOS development
-                      services and hire iPhone app developer that can help you
-                      achieve your business goals. You can hire iOS app
-                      developers based on your project needs; our flexible
-                      hiring model allows you to hire them on an hourly,
-                      part-time and full-time basis.
+                      Cross-platform mobile app development allows you to reduce
+                      your app development cost and meet your business needs
+                      much more efficiently. However, it requires a lot of
+                      talent and technical skill set to develop an app that
+                      functions similar to native but has benefits of the
+                      cross-application. So, if you are looking for
+                      cross-platform developers for hire, consider MultiQoS. We
+                      have the best cross-platform mobile application
+                      development services, where we utilize the new
+                      technologies to meet your business needs efficiently. Our
+                      hiring model is flexible and allows you to hire resources
+                      on the basis of your project needs.
                     </div>
                   </div>
                 </div>
@@ -138,8 +137,8 @@ const Iosdev = () => {
                 <div className="col-lg-12">
                   <div className="section-title-wrap text-center section-space--mb_20">
                     <h3 className="heading">
-                      How Hiring iOS App Developers Will Help to Build a
-                      Result-Oriented App?
+                      How Hiring Cross Platform App Developers Will Help to
+                      Build Innovative and Versatile App?
                     </h3>
                   </div>
                 </div>
@@ -232,7 +231,7 @@ const Iosdev = () => {
                   <div class="section-title-wrap text-center section-space--mb_0">
                     {/* <h6 class="section-sub-title mb-20">Our services</h6> */}
                     <h3 class="heading">
-                      Our iOS App Development{" "}
+                      Our React Native Development{" "}
                       <span class="text-color-primary"> Services</span>
                     </h3>
                   </div>
@@ -631,7 +630,7 @@ const Iosdev = () => {
                   {/* <!-- section-title-wrap Start --> */}
                   <div class="section-title-wrap text-center section-space--mb_30">
                     <h3 class="heading">
-                      Why hire iPhone Application Developers From
+                      Why Hire Cross-Platform Developers From
                       <span class="text-color-primary"> OverNinja?</span>
                     </h3>
                   </div>
@@ -1144,4 +1143,4 @@ const Iosdev = () => {
   );
 };
 
-export default Iosdev;
+export default Crossdev;
