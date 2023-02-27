@@ -7,7 +7,7 @@ import geolocalize from "../assets/images/svg/linea-basic-geolocalize-05.svg";
 import money from "../assets/images/svg/linea-ecommerce-money.svg";
 import text from "../assets/images/svg/linea-basic-spread-text-bookmark.svg";
 
-import home from "../assets/images/hero/home.webp";
+import home from "../assets/images/hero/home2.png";
 import home2 from "../assets/images/hero/home-2.jpg";
 import box from "../assets/images/box-image/blog-01-480x298.webp";
 import info from "../assets/images/box-image/mitech-home-infotechno-box-large-image-03-480x298.webp";
@@ -80,8 +80,57 @@ export const Home = () => {
   return (
     <div id="main-wrapper">
       <div className="site-wrapper-reveal">
+        {/* <!--=================Infotechno Hero Start======================--> */}
+        <div className="processing-hero processing-hero-bg">
+          <div className="container">
+            <div className="row align-items-center">
+              {/* <!--baseline--> */}
+              <div className="col-lg-8 col-md-7">
+                <div className="processing-hero-text wow move-up animated">
+                  <h6>IT Software Design</h6>
+                  <h1 className="font-weight--regular mb-15">
+                    "Virtual Technology in a "
+                    <span className="text-color-secondary">
+                      Refined IT System
+                    </span>
+                  </h1>
+                  <p>
+                    Set the trends for desktop & server virtualization
+                    technology
+                  </p>
+                  <div className="hero-button mt-30">
+                    <a href="/" className="btn btn--secondary">
+                      Learn more
+                    </a>
+                    <div className="hero-popup-video video-popup">
+                      <a href="/" className="video-link">
+                        <div className="video-content">
+                          <div className="video-play">
+                            <span className="video-play-icon">
+                              <i className="fa fa-play"></i>
+                            </span>
+                          </div>
+                          <div className="video-text">How we work</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-5">
+                <div className="processing-hero-images-wrap wow move-up animated">
+                  <div className="processing-hero-images">
+                    <img src={home} alt="" className="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <!--=============== Infotechno Hero End =======================--> */}
+
         {/* <!--============ Software Innovation Hero Start ============--> */}
-        <div class="software-innovation-hero-wrapper">
+        {/* <div class="software-innovation-hero-wrapper">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-6">
@@ -110,7 +159,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <!--============ Software Innovation Hero End ============--> */}
 
         {/* <!--===========  feature-icon-wrapper  Start =============--> */}
